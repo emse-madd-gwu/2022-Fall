@@ -1,19 +1,144 @@
 project:
   type: website
+  output-dir: _site
+  preview:
+    port: 5896
+    browser: false
+  render:
+    - "*.qmd"
+    - "!fragments/"
 
 website:
-  title: "mysite"
+  image: images/logo.png
+  site-url: https://madd.seas.gwu.edu/2022-Fall/
+  favicon: images/favicon.ico
+  repo-url: https://github.com/emse-madd-gwu/2022-Fall
+  description: 'Course website for Fall 2022 semester of the EMSE course "Marketing Analytics for Design Decisions" at GWU'
+  search: true
+  open-graph: true
+  twitter-card:
+    site: "@johnhelveston"
   navbar:
     background: primary
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Home
+        href: index.qmd
+      - text: Syllabus
+        href: syllabus.qmd
+      - text: "Schedule"
+        href: schedule.qmd
+      - text: Class
+        menu:
+          - text: "Aug 29: Getting Started"
+            href: c1-getting-started.qmd
+          - text: "Sep 08: Data Wrangling"
+            href: c2-data-wrangling.qmd
+          - text: "Sep 15: RMarkdown & Plotting"
+            href: c3-rmd-plotting.qmd
+          - text: "Sep 22: Intro to formr"
+            href: c4-formr.qmd
+          - text: "Oct 06: Conjoint Questions"
+            href: c6-conjoint-questions.qmd
+          - text: "Oct 13: Utility Models"
+            href: c7-utility.qmd
+          - text: "Oct 20: Optimization & MLE"
+            href: c8-mle.qmd
+          - text: "Oct 27: Uncertainty"
+            href: c9-uncertainty.qmd
+          - text: "Nov 03: DOE & Power Analysis"
+            href: c10-doe.qmd
+          - text: "Nov 10: WTP & Simulations"
+            href: c11-wtp-simulation.qmd
+          - text: "Nov 17: Heterogeneity"
+            href: c12-heterogeneity.qmd
+          - text: "Dec 01: Exam Review & Final Analysis Overview"
+            href: c14-review.qmd
+          - text: "Dec 08: Exam Solutions"
+            href: c15-exam-solutions.qmd
+      - text: "Assignments"
+        menu:
+          - text: Self Assessment (optional)
+            href: a0-self-assessment.qmd
+          - text: "Sep 01: Data Wrangling (Due 09/07)"
+            href: a1-data-wrangling.qmd
+          - text: "Sep 08: Plotting (Due 09/14)"
+            href: a2-plotting.qmd
+          - text: "Sep 15: formr (Due 09/21)"
+            href: a3-formr.qmd
+          - text: "Oct 06: Utility Models (Due 10/12)"
+            href: a4-utility-models.qmd
+          - text: "Oct 13: Estimation (Due 10/19)"
+            href: a5-estimation.qmd
+          - text: "Oct 20: Uncertainty (Due 10/26)"
+            href: a6-uncertainty.qmd
+          - text: "Oct 27: Design of Experiment (Due 11/02)"
+            href: a7-doe.qmd
+          - text: "Nov 03: WTP & Simulations (Due 11/09)"
+            href: a8-wtp-simulation.qmd
+          - text: "Nov 10: Heterogeneity (Due 11/16)"
+            href: a9-heterogeneity.qmd
+          - text: "Dec 01: Exam (Due 12/05)"
+            href: a10-exam.qmd
+      - text: Project
+        menu:
+          - text: Project Overview
+            href: p0-overview.qmd
+          - text: Project Proposal (Due 09/26)
+            href: p1-proposal.qmd
+          - text: Survey Plan (Due 10/05)
+            href: p2-survey-plan.qmd
+          - text: Pilot Survey (Due 10/15)
+            href: p3-pilot-survey.qmd
+          - text: Pilot Analysis (Due 11/07)
+            href: p4-pilot-analysis.qmd
+          - text: Final Survey (Due 11/14)
+            href: p5-final-survey.qmd
+          - text: Final Analysis (Due 12/13)
+            href: p6-final-analysis.qmd
+          - text: Final Presentation (Due 12/15)
+            href: p7-final-presentation.qmd
+      - text: Help
+        menu:
+          - text: Schedule a call w/Prof. Helveston
+            href: https://jhelvy.appointlet.com/b/professor-helveston
+          - text: Course Software
+            icon: fas fa-hdd
+            href: ref-course-software.qmd
+          - text: Getting Help
+            icon: fas fa-question-circle
+            href: ref-getting-help.qmd
+          - text: Visualizing Data
+            icon: fas fa-chart-bar
+            href: ref-visualizing-data.qmd
+          - text: Programming in R
+            icon: fas fa-terminal
+            href: ref-programming.qmd
+          - text: R Markdown
+            icon: fas fa-feather-alt
+            href: ref-rmarkdown.qmd
+          - text: Other
+            icon: fas fa-expand
+            href: ref-other.qmd
+      - icon: slack
+        href: https://emse-madd-f22.slack.com
+    right:
+    - icon: fas fa-bars
+      menu:
+      - text: About
+        href: about.qmd
+      - text: License
+        href: LICENSE.qmd
+      - text: Contact
+        href: mailto:jph@gwu.edu
+      - icon: github
+        href: https://github.com/emse-madd-gwu/2022-Fall/
+  page-footer:
+    center:
+      - text: 'EMSE 6035: Marketing Analytics for Design Decisions (Fall 2022)<br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10 - 8:40 PM | <a href="https://acadtech.gwu.edu/location?id=355&campus=FB&type=building&selection=22"><i class="fa fa-map-marker-alt"></i> Tompkins 302</a> | <a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a>'
 
 format:
   html:
     theme: united
     css: styles.css
-
-
-
+    include-in-header: "_includes/header.html"
+    include-in-footer: "_includes/footer.html"

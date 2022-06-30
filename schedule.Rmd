@@ -1,0 +1,101 @@
+---
+title: "Course Schedule"
+output:
+  html_document:
+    number_sections: false
+    toc: no
+    css:
+      - css/custom.css
+---
+
+```{r child = "_knitr_setup.Rmd"}
+```
+
+```{r echo=FALSE}
+# 9/01
+# Labor day: 9/06
+# 9/08
+# 9/15
+# 9/22
+# 9/29
+# 10/06
+# 10/13
+# 10/20
+# Fall break: 10/22
+# 10/27
+# 11/03
+# 11/10
+# 11/17
+# 11/24: Thanksgiving: 11/24 - 11/27
+# 12/01
+# Designated Friday: 12/07
+# 12/08
+# Make-up day: 12/13
+# Last day of class: 12/11
+# Final exam: 12/15
+
+library(kableExtra)
+library(tidyverse)
+
+# Setup some common values
+fa <- list(
+  quiz        = '[<i class="fas fa-edit"></i>]',
+  assignments = '[<i class="fas fa-book-reader"></i>]',
+  class       = '[<i class="fas fa-laptop-code"></i>]',
+  project     = '[<i class="fas fa-pencil-ruler"></i>]'
+)
+
+# Make the schedule data frame
+quizUrl <- "https://quiz10.formr.org/"
+schedule <- get_schedule() %>%
+  mutate(
+    date_raw = date,
+    date = format(date, format = "%b %d"),
+    assign_due = format(assign_due, format = "%b %d"),
+    project_due = format(project_due, format = "%b %d"),
+    # Replace NA values with ""
+    class_desc = ifelse(is.na(class_desc), "", class_desc),
+    project_desc = ifelse(is.na(project_desc), "", project_desc),
+    # Build markdown
+    quiz = ifelse(
+      is.na(quiz), "", 
+      paste0(fa$quiz, "(", quizUrl, ")")),
+    class_url = ifelse(
+      is.na(class_url), "", 
+      paste0(fa$class, "(c", week, "-",  class_url, ".html)")),
+    class = ifelse(
+      is.na(class), "",
+      paste0("**", class, "**<br>", class_desc)),
+    class = paste(class_url, class, sep = " "),
+    projects = ifelse(
+      is.na(project), NA,
+      paste0("**", project, "**<br>", project_desc)),
+    assignments = ifelse(
+      is.na(assign_name), NA,
+      paste0(
+        fa$assignments, "(a", assign_n, "-", assign_url, ".html) **",
+        assign_name, "**<br>Due ", assign_due)),
+    project = ifelse(
+      is.na(project_name), NA,
+      paste0(
+        fa$project, "(p", project_n, "-", project_url, ") **", 
+        project_name, "**<br>Due ", project_due))
+  )
+
+highlight <- which(Sys.Date() > schedule$date_raw)
+
+# Make the final schedule
+names(schedule) <- str_to_title(names(schedule))
+schedule %>%
+  select(-Date_raw) %>% 
+  rename(` ` = Project) %>%
+  select(Week, Date, Quiz, Class, Projects, Assignments, ` `) %>%
+  kable(format = 'html', escape = FALSE,
+        align = c('c', 'c', 'c', 'l', 'l', 'l', 'l')) %>%
+  kable_styling(full_width = F, bootstrap_options = c("striped", "hover")) %>%
+  column_spec(column = 4, width = '16em') %>% 
+  column_spec(column = 5, width = '16em') %>% 
+  column_spec(column = 6, width = '10em') %>% 
+  column_spec(column = 7, width = '10em')
+  # row_spec(highlight, background = "#e1e1e1")
+```
