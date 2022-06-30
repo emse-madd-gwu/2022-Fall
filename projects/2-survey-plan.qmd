@@ -1,11 +1,6 @@
 ---
 title: "Survey Plan"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_level: 2
-    number_sections: false
+toc: true
 params:
   number: 2
   weight: '4%'
@@ -16,7 +11,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_pheader.Rmd"}
+```{r child = here::here("fragments", "project.qmd")}
 ```
 
 As a team, write a **survey plan** to guide your survey design in formr. This plan does not have to be "set in stone" but rather a first attempt at defining the scope and general content of your survey. The course instructor will review and grade your plan and provide written feedback to guide the development of your pilot survey. Follow the instructions below to prepare your survey plan.

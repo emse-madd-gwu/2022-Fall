@@ -1,11 +1,6 @@
 ---
 title: "Pilot Analysis"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_level: 2
-    number_sections: false
+toc: true
 params:
   number: 4
   weight: '9%'
@@ -16,7 +11,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_pheader.Rmd"}
+```{r child = here::here("fragments", "project.qmd")}
 ```
 
 As a team, analyze your pilot survey data, and write a report of your findings. The course instructor will review and grade your analysis and report and provide feedback. The primary purpose of the report is to 1) lay some initial groundwork for analyzing your survey data (you will be able to re-use this code for your final analysis), and 2) gain insights to improve your final survey.

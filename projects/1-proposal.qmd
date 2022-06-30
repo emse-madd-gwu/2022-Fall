@@ -1,11 +1,6 @@
 ---
 title: "Project Proposal"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    toc_level: 2
-    number_sections: false
+toc: true
 params:
   number: 1
   weight: '7%'
@@ -16,7 +11,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_pheader.Rmd"}
+```{r child = here::here("fragments", "project.qmd")}
 ```
 
 As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the [project selection guidelines](p0-overview.html#Project_Selection).

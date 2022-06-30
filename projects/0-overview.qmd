@@ -1,10 +1,6 @@
 ---
 title: "Project Overview"
-output:
-  html_document:
-    number_sections: false
-    toc: yes
-    toc_float: yes
+toc: true
 ---
 
 ```{r child = here::here("fragments", "setup.qmd")}
