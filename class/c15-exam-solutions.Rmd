@@ -1,0 +1,14 @@
+---
+title: "Exam Solutions"
+output:
+  html_document:
+    number_sections: false
+    toc: no
+params:
+  class: "15-exam-solutions"
+---
+
+```{r child = "_knitr_setup.Rmd"}
+```
+
+All we're doing today is going over the exam and then spending the rest of class working on your final analysis, report, and presentation!

@@ -1,0 +1,15 @@
+---
+title: "DOE & Power Analysis"
+output:
+  html_document:
+    number_sections: false
+    toc: no
+params:
+  class: "10-doe"
+---
+
+```{r child = "_knitr_setup.Rmd"}
+```
+
+```{r child = "_slides.Rmd"}
+```
