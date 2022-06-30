@@ -5,8 +5,8 @@ on:
 name: Render & Deploy Site
 
 jobs:
-  build:
-    runs-on: macOS-latest
+  quarto-render-and-deploy:
+    runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
