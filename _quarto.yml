@@ -6,6 +6,7 @@ project:
     browser: false
   render:
     - "*.qmd"
+    - "class/*.qmd"
     - "!fragments/"
 
 website:
@@ -30,95 +31,95 @@ website:
       - text: Class
         menu:
           - text: "Aug 29: Getting Started"
-            href: c1-getting-started.qmd
+            href: class/1-getting-started.qmd
           - text: "Sep 08: Data Wrangling"
-            href: c2-data-wrangling.qmd
+            href: 2-data-wrangling.qmd
           - text: "Sep 15: RMarkdown & Plotting"
-            href: c3-rmd-plotting.qmd
+            href: 3-rmd-plotting.qmd
           - text: "Sep 22: Intro to formr"
-            href: c4-formr.qmd
+            href: 4-formr.qmd
           - text: "Oct 06: Conjoint Questions"
-            href: c6-conjoint-questions.qmd
+            href: 5-conjoint-questions.qmd
           - text: "Oct 13: Utility Models"
-            href: c7-utility.qmd
+            href: 6-utility.qmd
           - text: "Oct 20: Optimization & MLE"
-            href: c8-mle.qmd
+            href: 7-mle.qmd
           - text: "Oct 27: Uncertainty"
-            href: c9-uncertainty.qmd
+            href: 8-uncertainty.qmd
           - text: "Nov 03: DOE & Power Analysis"
-            href: c10-doe.qmd
+            href: 9-doe.qmd
           - text: "Nov 10: WTP & Simulations"
-            href: c11-wtp-simulation.qmd
+            href: 10-wtp-simulation.qmd
           - text: "Nov 17: Heterogeneity"
-            href: c12-heterogeneity.qmd
+            href: 11-heterogeneity.qmd
           - text: "Dec 01: Exam Review & Final Analysis Overview"
-            href: c14-review.qmd
+            href: 12-review.qmd
           - text: "Dec 08: Exam Solutions"
-            href: c15-exam-solutions.qmd
+            href: 13-exam-solutions.qmd
       - text: "Assignments"
         menu:
           - text: Self Assessment (optional)
-            href: a0-self-assessment.qmd
+            href: 0-self-assessment.qmd
           - text: "Sep 01: Data Wrangling (Due 09/07)"
-            href: a1-data-wrangling.qmd
+            href: 1-data-wrangling.qmd
           - text: "Sep 08: Plotting (Due 09/14)"
-            href: a2-plotting.qmd
+            href: 2-plotting.qmd
           - text: "Sep 15: formr (Due 09/21)"
-            href: a3-formr.qmd
+            href: 3-formr.qmd
           - text: "Oct 06: Utility Models (Due 10/12)"
-            href: a4-utility-models.qmd
+            href: 4-utility-models.qmd
           - text: "Oct 13: Estimation (Due 10/19)"
-            href: a5-estimation.qmd
+            href: 5-estimation.qmd
           - text: "Oct 20: Uncertainty (Due 10/26)"
-            href: a6-uncertainty.qmd
+            href: 6-uncertainty.qmd
           - text: "Oct 27: Design of Experiment (Due 11/02)"
-            href: a7-doe.qmd
+            href: 7-doe.qmd
           - text: "Nov 03: WTP & Simulations (Due 11/09)"
-            href: a8-wtp-simulation.qmd
+            href: 8-wtp-simulation.qmd
           - text: "Nov 10: Heterogeneity (Due 11/16)"
-            href: a9-heterogeneity.qmd
+            href: 9-heterogeneity.qmd
           - text: "Dec 01: Exam (Due 12/05)"
-            href: a10-exam.qmd
+            href: 10-exam.qmd
       - text: Project
         menu:
           - text: Project Overview
-            href: p0-overview.qmd
+            href: 0-overview.qmd
           - text: Project Proposal (Due 09/26)
-            href: p1-proposal.qmd
+            href: 1-proposal.qmd
           - text: Survey Plan (Due 10/05)
-            href: p2-survey-plan.qmd
+            href: 2-survey-plan.qmd
           - text: Pilot Survey (Due 10/15)
-            href: p3-pilot-survey.qmd
+            href: 3-pilot-survey.qmd
           - text: Pilot Analysis (Due 11/07)
-            href: p4-pilot-analysis.qmd
+            href: 4-pilot-analysis.qmd
           - text: Final Survey (Due 11/14)
-            href: p5-final-survey.qmd
+            href: 5-final-survey.qmd
           - text: Final Analysis (Due 12/13)
-            href: p6-final-analysis.qmd
+            href: 6-final-analysis.qmd
           - text: Final Presentation (Due 12/15)
-            href: p7-final-presentation.qmd
+            href: 7-final-presentation.qmd
       - text: Help
         menu:
           - text: Schedule a call w/Prof. Helveston
             href: https://jhelvy.appointlet.com/b/professor-helveston
           - text: Course Software
             icon: fas fa-hdd
-            href: ref-course-software.qmd
+            href: course-software.qmd
           - text: Getting Help
             icon: fas fa-question-circle
-            href: ref-getting-help.qmd
+            href: getting-help.qmd
           - text: Visualizing Data
             icon: fas fa-chart-bar
-            href: ref-visualizing-data.qmd
+            href: visualizing-data.qmd
           - text: Programming in R
             icon: fas fa-terminal
-            href: ref-programming.qmd
+            href: programming.qmd
           - text: R Markdown
             icon: fas fa-feather-alt
-            href: ref-rmarkdown.qmd
+            href: rmarkdown.qmd
           - text: Other
             icon: fas fa-expand
-            href: ref-other.qmd
+            href: other.qmd
       - icon: slack
         href: https://emse-madd-f22.slack.com
     right:
@@ -140,5 +141,8 @@ format:
   html:
     theme: united
     css: styles.css
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
     include-in-header: "_includes/header.html"
-    include-in-footer: "_includes/footer.html"
