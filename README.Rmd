@@ -9,7 +9,7 @@ output:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-## `r settings$title` <a href='https://github.com/emse-madd-gwu/2021-Fall'><img src='images/logo.png' align="right" height="139"/></a>
+## `r settings$title` <a href='`r settings$repo`'><img src='images/logo.png' align="right" height="139"/></a>
 
 <!-- badges: start -->
 ![Render & Deploy Site](https://github.com/emse-madd-gwu/2022-Fall/workflows/Render%20&%20Deploy%20Site/badge.svg)
