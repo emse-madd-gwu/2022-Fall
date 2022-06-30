@@ -7,29 +7,4 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r echo=FALSE}
-library(tidyverse)
-library(fontawesome)
-
-due <- get_schedule() %>%
-  mutate(assign_due = format(assign_due, format = "%b %d")) %>%
-  filter(assign_n == params$number) %>%
-  pull(assign_due)
-due <- paste0(due, " by 11:59pm")
-```
-
-> **Due**: `r due`
->
-> **Weight**: This assignment is worth 10% of your final grade.
-
-The exam for this class is a take home exam. You will be sent exam instructions after class on December 1, and you must submit your response on Blackboard by **midnight on December 5**.
-
-Rules:
-
-- You must work **on your own** for this exam - you may not work with, ask questions, or otherwise collaborate with anyone else on the exam.
-- You may use:
-    - RStudio.
-    - All class materials (slides, your notes, prior assignments, etc.)
-- You may **not** use:
-    - Any other resources (e.g. the internet, solution sites, etc.).
-    - Other people (e.g. your classmates, people who took this class last year, etc.)
+Coming soon!

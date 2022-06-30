@@ -8,40 +8,4 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = here::here("fragments", "hw.qmd")}
-```
-
-# Pilot Surveys
-
-In addition to the assignment below, this week you should also help out your fellow classmates by providing feedback on their pilot surveys. For every team other than your own, answer their pilot survey and provide any feedback you have in a row in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Bsi4IoFwiGunXq8AlDVnI5OQMkt83K45po8lJbzUH5I/edit?usp=sharing). Feedback should be anonymous, constructive, and objective. Note things that didn't work and / or things that weren't clear or were confusing.
-
-If you got screened out early in the survey, go back and take it again and pick a response so that you won't get screened out. Do your best to actually answer the conjoint questions honestly (don't just click randomly).
-
-Completing all the surveys shouldn't take more than an hour. In addition to giving everyone very useful feedback, this exercise may also give you new ideas for improving your own survey.
-
-# 1. Getting Organized
-
-Download and edit [this template](`r url_template`) when working through this assignment.
-
-# 2. Readings
-
-Last week we introduced the concept of utility models, which is the primary theoretical framework we'll be using to construct our choice models.
-
-This week, we'll be learning about how we estimate the unknown parameters of those models by watching the second video in [our Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg) on choice modeling: _Maximum Likelihood Estimation & Optimization_
-
-**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
-
-Click [here](content/slides_mle_optimization.pdf) to download the slides in the video as a PDF.
-
-<center>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/myeAGFTKYkY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-# 3. Reflect, Knit, & Submit
-
-Reflect on what you've learned and any questions or points of confusion you have about optimization or maximum likelihood estimation. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? After reflecting, do the following:
-
-- Write a few sentences in the template you downloaded for this assignment.
-- Click the "knit" button to compile your .Rmd file into a html web page.
-- Open up the resulting html file in your web browser and see how it looks!
-- Create a zip file of everything in your R Project folder and submit the zip file in the "Assignment Submission" page on Blackboard.
+Coming soon!

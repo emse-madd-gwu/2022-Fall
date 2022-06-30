@@ -9,4 +9,4 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-All we're doing today is going over the exam and then spending the rest of class working on your final analysis, report, and presentation!
+Coming soon!

@@ -8,34 +8,4 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = here::here("fragments", "hw.qmd")}
-```
-
-# 1. Getting Organized
-
-Download and edit [this template](`r url_template`) when working through this assignment. Notice that this week's template is a .Rmd file.
-
-# 2. Readings
-
-Next week we will start getting into choice modeling. I have pre-recorded videos covering most of the technical concepts we will use for estimating choice models in [this Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg). Feel free to look ahead at concepts we'll be covering over the next few weeks.
-
-> For this coming week, you should watch the first video:<br>_Introduction to Choice Modeling_
-
-**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
-
-Click [here](content/slides_choice_modeling.pdf) to download the slides in the video as a PDF.
-
-<center>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/CjFLZf-hHwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-If you are interested in more details about the logit model, see [Chapter 3 (free pdf)](https://eml.berkeley.edu/books/choice2nd/Ch03_p34-75.pdf) of Kenneth Train's book, ["Discrete Choice Methods with Simulation"](https://eml.berkeley.edu/books/choice2.html)
-
-# 3. Reflect, Knit, & Submit
-
-Reflect on what you've learned and any questions or points of confusion you have about the basics of utility models. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? After reflecting, do the following:
-
-- Write a few sentences in the template you downloaded for this assignment.
-- Click the "knit" button to compile your .Rmd file into a html web page. 
-- Open up the resulting html file in your web browser and see how it looks!
-- Create a zip file of everything in your R Project folder and submit the zip file in the "Assignment Submission" page on Blackboard.
+Coming soon!
