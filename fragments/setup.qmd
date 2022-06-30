@@ -23,6 +23,7 @@ knitr::opts_chunk$set(
 settings <- list(
     semester = 'Fall 2022',
     repo     = "https://github.com/emse-madd-gwu/2022-Fall",
+    site_url = "https://madd.seas.gwu.edu/2022-Fall/",
     title    = "EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022",
     weekday  = "Wednesdays",
     time     = "06:10PM - 08:40PM EST",
