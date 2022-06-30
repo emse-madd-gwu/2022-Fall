@@ -1,0 +1,43 @@
+Type: Website
+Package: emsemadd
+Title: Marketing Analytics for Design Decisions
+Maintainer: John Helveston <jph@gwu.edu>
+Author: John Helveston <jph@gwu.edu>
+Authors@R: c(
+    person("John", "Helveston", email = "jph@gwu.edu", role = c("aut", "cre")),
+    )
+Depends: R (>= 3.6.0)
+License: CC-BY
+Encoding: UTF-8
+License: CC-BY-SA
+Encoding: UTF-8
+Imports:
+    countdown,
+    cowplot,
+    devtools,
+    emo,
+    fastDummies,
+    fontawesome,
+    ggrepel,
+    gsheet,
+    here,
+    janitor,
+    kableExtra,
+    knitr,
+    logitr,
+    metathis,
+    remotes,
+    rmarkdown,
+    roxygen2,
+    tidyverse,
+    viridis,
+    xaringanExtra,
+    yaml
+Remotes:
+    gadenbuie/countdown,
+    hadley/emo,
+    rstudio/fontawesome,
+    haozhu233/kableExtra,
+    r-lib/remotes,
+    rstudio/rmarkdown,
+    gadenbuie/xaringanExtra
