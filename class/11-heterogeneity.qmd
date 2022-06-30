@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
+title: "Heterogeneity"
 params:
-  class: "1-getting-started"
-  logitrcars: FALSE
+  class: "11-heterogeneity"
+  logitrcars: TRUE
   formr4conjoint: FALSE
 ---
 

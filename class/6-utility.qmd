@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
+title: "Utility Models"
 params:
-  class: "1-getting-started"
-  logitrcars: FALSE
+  class: "6-utility"
+  logitrcars: TRUE
   formr4conjoint: FALSE
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
+title: "WTP & Simulations"
 params:
-  class: "1-getting-started"
-  logitrcars: FALSE
+  class: "10-wtp-simulation"
+  logitrcars: TRUE
   formr4conjoint: FALSE
 ---
 

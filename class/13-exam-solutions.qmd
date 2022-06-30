@@ -1,11 +1,9 @@
 ---
 title: "Exam Solutions"
-output:
-  html_document:
-    number_sections: false
-    toc: no
 params:
-  class: "15-exam-solutions"
+  class: "13-exam-solutions"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
 ---
 
 ```{r child = here::here("fragments", "setup.qmd")}

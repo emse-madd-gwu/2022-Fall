@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
+title: "Exam Review & Final Analysis Overview"
 params:
-  class: "1-getting-started"
-  logitrcars: FALSE
+  class: "12-review"
+  logitrcars: TRUE
   formr4conjoint: FALSE
 ---
 

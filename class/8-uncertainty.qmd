@@ -1,9 +1,9 @@
 ---
-title: "Getting Started"
+title: "Uncertainty"
 params:
-  class: "1-getting-started"
-  logitrcars: FALSE
-  formr4conjoint: FALSE
+  class: "8-uncertainty"
+  logitrcars: TRUE
+  formr4conjoint: TRUE
 ---
 
 ```{r child = here::here("fragments", "setup.qmd")}

@@ -85,7 +85,7 @@ tr:last-child {
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  padding: .9rem;
+  padding: .5rem;
   line-height: .5;
   border-radius: .3rem;
 }
@@ -102,7 +102,7 @@ tr:last-child {
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
-  padding: .9rem;
+  padding: .5rem;
   line-height: .5;
   border-radius: .3rem;
 }

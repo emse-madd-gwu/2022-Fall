@@ -1,15 +1,13 @@
 ---
 title: "Intro to formr"
-output:
-  html_document:
-    number_sections: false
-    toc: no
 params:
   class: "4-formr"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
 ---
 
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_slides.Rmd"}
+```{r child = here::here("fragments", "class.qmd")}
 ```
