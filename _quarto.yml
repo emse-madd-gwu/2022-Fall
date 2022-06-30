@@ -59,27 +59,27 @@ website:
       - text: "Assignments"
         menu:
           - text: Self Assessment (optional)
-            href: assignments/0-self-assessment.qmd
+            href: hw/0-self-assessment.qmd
           - text: "Sep 01: Data Wrangling (Due 09/07)"
-            href: assignments/1-data-wrangling.qmd
+            href: hw/1-data-wrangling.qmd
           - text: "Sep 08: Plotting (Due 09/14)"
-            href: assignments/2-plotting.qmd
+            href: hw/2-plotting.qmd
           - text: "Sep 15: formr (Due 09/21)"
-            href: assignments/3-formr.qmd
+            href: hw/3-formr.qmd
           - text: "Oct 06: Utility Models (Due 10/12)"
-            href: assignments/4-utility-models.qmd
+            href: hw/4-utility-models.qmd
           - text: "Oct 13: Estimation (Due 10/19)"
-            href: assignments/5-estimation.qmd
+            href: hw/5-estimation.qmd
           - text: "Oct 20: Uncertainty (Due 10/26)"
-            href: assignments/6-uncertainty.qmd
+            href: hw/6-uncertainty.qmd
           - text: "Oct 27: Design of Experiment (Due 11/02)"
-            href: assignments/7-doe.qmd
+            href: hw/7-doe.qmd
           - text: "Nov 03: WTP & Simulations (Due 11/09)"
-            href: assignments/8-wtp-simulation.qmd
+            href: hw/8-wtp-simulation.qmd
           - text: "Nov 10: Heterogeneity (Due 11/16)"
-            href: assignments/9-heterogeneity.qmd
+            href: hw/9-heterogeneity.qmd
           - text: "Dec 01: Exam (Due 12/05)"
-            href: assignments/10-exam.qmd
+            href: hw/10-exam.qmd
       - text: Project
         menu:
           - text: Project Overview
@@ -101,24 +101,25 @@ website:
       - text: Help
         menu:
           - text: Schedule a call w/Prof. Helveston
+            icon: person
             href: help/https://jhelvy.appointlet.com/b/professor-helveston
           - text: Course Software
-            icon: fas fa-hdd
+            icon: hdd
             href: help/course-software.qmd
           - text: Getting Help
-            icon: fas fa-question-circle
+            icon: question-circle
             href: help/getting-help.qmd
           - text: Visualizing Data
-            icon: fas fa-chart-bar
+            icon: bar-chart
             href: help/visualizing-data.qmd
           - text: Programming in R
-            icon: fas fa-terminal
+            icon: terminal
             href: help/programming.qmd
           - text: R Markdown
-            icon: fas fa-feather-alt
+            icon: pen
             href: help/rmarkdown.qmd
           - text: Other
-            icon: fas fa-expand
+            icon: chevron-expand
             href: help/other.qmd
       - icon: slack
         href: https://emse-madd-f22.slack.com

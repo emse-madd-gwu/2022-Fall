@@ -18,7 +18,7 @@ Teams will apply topics covered in class to develop quantitative models of consu
 
 **Summary of Deliverables**: To make the overall project more manageable, it is broken down into separate "milestone" deliverables due throughout the semester, starting with a proposal.
 
-<div style="width:400px">
+<div style="width:600px">
 Item            | Weight towards<br>final grade | Due Date<br>(by 11:59pm)
 ----------------|----------------------------|--------------------
 Project Proposal      | 7 %    | Sep. 26
