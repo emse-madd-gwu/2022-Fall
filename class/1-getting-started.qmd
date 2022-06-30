@@ -4,8 +4,9 @@ params:
   class: "1-getting-started"
 ---
 
-```{r child = "../fragments/setup.qmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "../fragments/class.qmd"}
+```{r child = here::here("fragments", "class.qmd")}
 ```
+
