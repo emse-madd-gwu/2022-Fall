@@ -3,7 +3,7 @@ title: "Getting Help"
 output: html_document
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 # Slack

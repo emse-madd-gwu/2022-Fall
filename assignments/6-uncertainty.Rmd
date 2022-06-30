@@ -9,7 +9,7 @@ params:
   purpose: "The purpose of this assignment is to introduce how we quantify uncertainty around estimated parameters that result from maximizing the log-likelihood function."
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_aheader.Rmd"}

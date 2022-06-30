@@ -13,7 +13,7 @@ params:
   assessment: 'Your survey plan will be assessed using [this rubric](project/survey_plan/rubric.html){target="_blank"}.'
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_pheader.Rmd"}

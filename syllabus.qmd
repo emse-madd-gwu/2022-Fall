@@ -3,7 +3,7 @@ title: Syllabus
 toc: true
 ---
 
-```{r child = file.path("fragments", "setup.qmd")}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 # Course Information
@@ -30,17 +30,17 @@ Analyzing data to inform design decisions in an uncertain, competitive, market, 
 
 ## Longer Description
 
-```{r child = file.path("fragments", "description.qmd")}
+```{r child = here::here("fragments", "description.qmd")}
 ```
 
 ## Prerequisites
 
-```{r child = file.path("fragments", "prerequisites.qmd")}
+```{r child = here::here("fragments", "prerequisites.qmd")}
 ```
 
 # Learning Objectives
 
-```{r child = file.path("fragments", "learning-objectives.qmd")}
+```{r child = here::here("fragments", "learning-objectives.qmd")}
 ```
 
 # Pep Talk!

@@ -9,7 +9,7 @@ params:
   purpose: "The purpose of this assignment is to introduce the concept of willingness to pay (WTP) and to learn how we can use estimated model coefficients to compute estimates of WTP and make predictions about how likely people would be to choose each option in a set of alternatives."
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_aheader.Rmd"}

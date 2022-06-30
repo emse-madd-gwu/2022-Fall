@@ -9,7 +9,7 @@ params:
   purpose: "The purpose of this assignment is to get familiar with utility models, which will be the underyling modeling framework we will use for constructing choice models."
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_aheader.Rmd"}

@@ -9,7 +9,7 @@ params:
   purpose: 'The purpose of this assignment is to get familiar with creating plots using the ggplot2 library and to introduce you to the "RMarkdown" file format.'
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_aheader.Rmd"}

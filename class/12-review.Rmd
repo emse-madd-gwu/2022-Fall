@@ -8,7 +8,7 @@ params:
   class: "14-review"
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r, echo=FALSE}

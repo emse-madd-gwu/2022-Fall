@@ -6,7 +6,7 @@ output:
     toc: no
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 # Programming in R

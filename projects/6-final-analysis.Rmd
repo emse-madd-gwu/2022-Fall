@@ -13,7 +13,7 @@ params:
   assessment: 'Your final analysis will be assessed using [this rubric](project/final_analysis/rubric.html){target="_blank"}.'
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r child = "_pheader.Rmd"}

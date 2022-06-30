@@ -2,7 +2,7 @@
 title: "EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022"
 ---
 
-```{r child = file.path("fragments", "setup.qmd")}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 <div class = "row">
@@ -19,17 +19,17 @@ title: "EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022"
 
 **Description**:
 
-```{r child = file.path("fragments", "description.qmd")}
+```{r child = here::here("fragments", "description.qmd")}
 ```
 
 **Learning Objectives**:
 
-```{r child = file.path("fragments", "learning-objectives.qmd")}
+```{r child = here::here("fragments", "learning-objectives.qmd")}
 ```
 
 **Prerequisites**:
 
-```{r child = file.path("fragments", "prerequisites.qmd")}
+```{r child = here::here("fragments", "prerequisites.qmd")}
 ```
 
 </div>

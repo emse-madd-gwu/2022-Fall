@@ -2,7 +2,7 @@
 title: Course Schedule
 ---
 
-```{r child = file.path("fragments", "setup.qmd")}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r echo=FALSE}

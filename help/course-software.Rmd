@@ -6,7 +6,7 @@ output:
     toc: no
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 This page lists all the software we'll be using in class.

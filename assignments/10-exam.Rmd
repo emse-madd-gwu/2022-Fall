@@ -7,7 +7,7 @@ params:
   number: 10
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 ```{r echo=FALSE}

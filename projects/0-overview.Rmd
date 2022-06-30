@@ -7,7 +7,7 @@ output:
     toc_float: yes
 ---
 
-```{r child = "_knitr_setup.Rmd"}
+```{r child = here::here("fragments", "setup.qmd")}
 ```
 
 # Overview
