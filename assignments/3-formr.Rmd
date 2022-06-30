@@ -1,9 +1,5 @@
 ---
 title: "formr"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 3
   purpose: 'The purpose of this assignment is to get familiar with the [formr.org](https://formr.org/) survey platform, which we will be using to implement our surveys.'
@@ -14,7 +10,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # 1. Getting Organized

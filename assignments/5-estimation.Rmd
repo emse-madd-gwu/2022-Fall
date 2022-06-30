@@ -1,9 +1,5 @@
 ---
 title: "Estimation"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 5
   purpose: "The purpose of this assignment is to introduce the concept of maximum likelihood estimation, which is the estimation approach we'll be using in class to estimate our choice models."
@@ -12,7 +8,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # Pilot Surveys

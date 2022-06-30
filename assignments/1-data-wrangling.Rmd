@@ -1,9 +1,5 @@
 ---
 title: "Data Wrangling"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 1
   purpose: 'The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.'
@@ -12,7 +8,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # 1. Software 

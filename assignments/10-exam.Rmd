@@ -1,8 +1,5 @@
 ---
 title: "Exam"
-output:
-  html_document:
-    toc: false
 params:
   number: 10
 ---
@@ -19,10 +16,6 @@ due <- get_schedule() %>%
   filter(assign_n == params$number) %>%
   pull(assign_due)
 due <- paste0(due, " by 11:59pm")
-
-url_template <- paste0(
-  'https://madd.seas.gwu.edu/2021-Fall/templates/reflection',
-  params$number, '.zip')
 ```
 
 > **Due**: `r due`

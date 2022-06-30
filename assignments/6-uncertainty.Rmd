@@ -1,9 +1,5 @@
 ---
 title: "Uncertainty"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 6
   purpose: "The purpose of this assignment is to introduce how we quantify uncertainty around estimated parameters that result from maximizing the log-likelihood function."
@@ -12,7 +8,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # 1. Getting Organized

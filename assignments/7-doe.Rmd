@@ -1,9 +1,5 @@
 ---
 title: "Design of Experiment"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 7
   purpose: "The purpose of this assignment is to introduce the concept of design of experiments and to understand how experiment design can impact the amount of information available about different model effects."
@@ -12,7 +8,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # 1. Getting Organized

@@ -1,9 +1,5 @@
 ---
 title: "WTP & Simulations"
-output:
-  html_document:
-    toc: false
-    number_sections: false
 params:
   number: 8
   purpose: "The purpose of this assignment is to introduce the concept of willingness to pay (WTP) and to learn how we can use estimated model coefficients to compute estimates of WTP and make predictions about how likely people would be to choose each option in a set of alternatives."
@@ -12,7 +8,7 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-```{r child = "_aheader.Rmd"}
+```{r child = here::here("fragments", "hw.qmd")}
 ```
 
 # 1. Getting Organized
