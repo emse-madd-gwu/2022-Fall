@@ -6,7 +6,6 @@ project:
     browser: false
   render:
     - "*.qmd"
-    - "class/*.qmd"
     - "!fragments/"
 
 website:
