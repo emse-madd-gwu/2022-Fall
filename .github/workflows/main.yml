@@ -5,8 +5,8 @@ on:
 name: Render & Deploy Site
 
 jobs:
-  quarto-render-and-deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -37,8 +37,10 @@ jobs:
           install.packages("pkgdown", type = "binary")
         shell: Rscript {0}
 
-      - name: "Install Quarto and render"
-        uses: pommevilla/quarto-render@main
+      - name: Render Site
+        run: |
+          quarto::quarto_render()
+        shell: Rscript {0}
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
