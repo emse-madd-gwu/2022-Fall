@@ -31,11 +31,11 @@ settings <- list(
     room_url = "https://acadtech.gwu.edu/location?id=355&campus=FB&type=building&selection=22",
     schedule_url = 'https://docs.google.com/spreadsheets/d/1LfYPKSVrEjORiWW3i4bNYvFjUOmdaxDU5C_s7YMv5oU/edit?usp=sharing',
     dates = "Aug. 29 - Dec. 12, 2022",
-    slack = "https://emse-p4a-s22.slack.com"
+    slack = "https://emse-madd-f22.slack.com"
 )
 
 # Load custom functions
 get_schedule <- function() {
-    return(gsheet::gsheet2tbl('https://docs.google.com/spreadsheets/d/1LfYPKSVrEjORiWW3i4bNYvFjUOmdaxDU5C_s7YMv5oU/edit?usp=sharing'))
+    return(gsheet::gsheet2tbl(settings$schedule_url))
 }
 ```

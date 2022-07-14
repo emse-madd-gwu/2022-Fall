@@ -20,15 +20,12 @@ Imports:
     janitor,
     kableExtra,
     knitr,
-    quarto,
     remotes,
     rmarkdown,
     tidyverse,
-    viridis,
-    xaringanExtra
+    viridis
 Remotes:
     rstudio/fontawesome,
     haozhu233/kableExtra,
     r-lib/remotes,
-    rstudio/rmarkdown,
-    gadenbuie/xaringanExtra
+    rstudio/rmarkdown
