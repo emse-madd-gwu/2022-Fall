@@ -3,9 +3,6 @@ title: "Project Overview"
 toc: true
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
-```
-
 # Overview
 
 Throughout the semester, you will work in teams of 3-4 students towards a final project. The project will have three phases:

@@ -8,7 +8,4 @@ params:
   assessment: 'Your final analysis will be assessed using [this rubric](project/final_analysis/rubric.html){target="_blank"}.'
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
-```
-
 Coming soon!

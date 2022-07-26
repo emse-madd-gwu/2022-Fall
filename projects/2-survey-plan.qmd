@@ -8,7 +8,4 @@ params:
   assessment: 'Your survey plan will be assessed using [this rubric](project/survey_plan/rubric.html){target="_blank"}.'
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
-```
-
 Coming soon!

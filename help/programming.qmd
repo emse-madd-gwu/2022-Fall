@@ -1,12 +1,12 @@
 ---
 title: "Programming in R"
-output:
-  html_document:
-    number_sections: false
-    toc: no
+toc: true
+toc-title: Table of contents
+toc-location: left
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
 ```
 
 # Programming in R

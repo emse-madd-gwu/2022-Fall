@@ -2,9 +2,6 @@
 title: "Self Assessment"
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
-```
-
 ## This assignment is optional
 
 ```{r child = here::here("fragments", "prerequisites.qmd")}
