@@ -67,11 +67,20 @@ get_schedule <- function() {
         ) %>%
         select(week, starts_with("class_"))
 
+    # Project vars
+    project <- df %>%
+        mutate(
+            # Replace NA values with ""
+            project_description = ifelse(
+                is.na(project_description), "", project_description)) %>%
+        select(week, starts_with("project_"))
+    
     # Final schedule data frame
     schedule <- df %>%
         select(week, date, quiz) %>%
         mutate(date_md = format(date, format = "%b %d")) %>%
         left_join(class, by = "week") %>% 
+        left_join(project, by = "week") %>% 
         left_join(assignments, by = "week") %>% 
         left_join(final, by = "week")
     

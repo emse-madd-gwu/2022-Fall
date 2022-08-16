@@ -17,38 +17,30 @@ fa <- list(
 # Make the schedule data frame
 schedule <- get_schedule() %>%
   mutate(
-    date_raw = date,
-    date = format(date, format = "%b %d"),
     assign_due = format(assign_due, format = "%b %d"),
-    project_due = format(project_due, format = "%b %d"),
-    # Replace NA values with ""
-    class_desc = ifelse(is.na(class_desc), "", class_desc),
-    project_desc = ifelse(is.na(project_desc), "", project_desc),
+    final_due = format(final_due, format = "%b %d"),
     # Make projects column
     project = ifelse(
-      is.na(project), NA,
-      paste0("<b>", project, "</b><br>", project_desc)),
+      is.na(project_name), NA,
+      paste0("<b>", project_name, "</b><br>", project_description)),
     # Build links
     class = ifelse(
-      is.na(class_stub), NA,
+      is.na(class_stub), paste0("<b>", class_name, "</b>"),
       paste0(
-          '<a href="c', class_n, "-", class_stub, '.html">',
-          fa$class, '</a><b> ', class_name, "</b><br> ", class_desc)),
-    assignments = ifelse(
-      is.na(assign_name), NA,
+          '<a href="class/', class_stub, '.html">',
+          fa$class, '</a><b> ', class_name, "</b><br> ", class_description)),
+    assignments = ifelse(is.na(assign_due), NA, 
+        paste0(
+        '<a href="hw/', assign_n, "-", assign_stub, '.html">',
+        fa$assignment, '</a><b> ', assign_name, "</b><br>Due: ", assign_due)),
+    final = ifelse(
+      is.na(final_name), NA,
       paste0(
-          '<a href="', "a", assign_n, "-", assign_stub, '.html">',
-          fa$assignment, '</a><b> ', assign_name, "</b><br>Due ",
-          assign_due)),
-    projects = ifelse(
-      is.na(project_name), NA,
-      paste0(
-          '<a href="', "p", project_n, "-", project_stub, '.html">',
-          fa$project, '</a><b> ', project_name, "</b><br>Due ",
-          project_due))
+          '<a href="project/', final_stub, '.html">',
+        fa$project, '</a><b> ', final_name, "</b><br>Due: ", final_due))
   )
 
-highlight <- which(Sys.Date() > schedule$date_raw)
+highlight <- which(Sys.Date() > schedule$date)
 ```
 
 :::{.column-page}
@@ -57,8 +49,7 @@ highlight <- which(Sys.Date() > schedule$date_raw)
 # Make the final schedule
 names(schedule) <- str_to_title(names(schedule))
 schedule %>%
-  select(-Date_raw) %>% 
-  rename(` ` = Projects) %>%
+  rename(` ` = Final) %>%
   select(Week, Date, Quiz, Class, Project, Assignments, ` `) %>%
   kable(format = 'html', escape = FALSE,
         align = c('c', 'c', 'c', 'l', 'l', 'l', 'l')) %>%
