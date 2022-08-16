@@ -35,14 +35,14 @@ get_schedule <- function() {
     df <- gsheet::gsheet2tbl(schedule_url) %>%
         mutate(
             class_stub  = clean_schedule_name(class_name),
-            assign_stub = clean_schedule_name(class_name),
-            final_stub  = clean_schedule_name(class_name)
+            assign_stub = clean_schedule_name(assign_name),
+            final_stub  = clean_schedule_name(final_name)
         )
 
     # Weekly assignment vars
     assignments <- df %>%
         filter(!is.na(assign_name)) %>%
-        mutate(assign_due = format(assign_due, format = "%b %d")) %>%
+        mutate(assign_due = format(assign_due, format = "%m/%d")) %>%
         select(week, starts_with("assign_"))
 
     # Final project vars

@@ -15,11 +15,6 @@ class <- df %>%
         class = paste(text, href, sep = "\n")
     )
 class <- class$class
-# Add final interviews
-class <- c(class,
-'        - text: "Final Interviews"
-          href: class/interviews.qmd
-')
 class <- paste0(class, collapse = "")
 # Remove last "\n"
 class <- str_sub(class[length(class)], 1, -2)
@@ -39,10 +34,10 @@ assignment <- df %>%
         assignment = paste(text, href, sep = "\n")
     )
 assignment <- assignment$assignment
-# Insert primer assignment
+# Insert self assessment assignment
 assignment <- c(
-'        - text: "Course Primer (optional)"
-          href: hw/0-course-primer.qmd
+'        - text: "Self Assessment (optional)"
+          href: hw/0-self-assessment.qmd
 ',
     assignment
 )
@@ -50,23 +45,6 @@ assignment <- paste0(assignment, collapse = "")
 # Remove last "\n"
 assignment <- str_sub(assignment[length(assignment)], 1, -2)
 
-# Mini projects string
-mini <- df %>%
-    filter(!is.na(mini_name)) %>% 
-    mutate(
-        text = paste0(
-            '        - text: "', mini_name, " (Due ", mini_due, ')"'
-        ), 
-        href = paste0(
-            "          href: ", "project-mini/", mini_stub, ".qmd\n"
-        ),
-        mini = paste(text, href, sep = "\n")
-    )
-mini <- mini$mini
-mini <- paste0(mini, collapse = "")
-# Remove last "\n"
-mini <- str_sub(mini[length(mini)], 1, -2)
-    
 # Final projects string
 final <- df %>%
     filter(!is.na(final_name)) %>% 
@@ -95,6 +73,5 @@ final <- str_sub(final[length(final)], 1, -2)
 
 cat(class)
 cat(assignment)
-cat(mini)
 cat(final)
 
