@@ -9,15 +9,25 @@ project:
     - "!fragments/"
 
 website:
+  title: EMSE 6035
   image: images/logo.png
   site-url: https://madd.seas.gwu.edu/2022-Fall/
   favicon: images/favicon.ico
   repo-url: https://github.com/emse-madd-gwu/2022-Fall
+  repo-actions: [edit, issue]
   description: 'Course website for Fall 2022 semester of the EMSE course "Marketing Analytics for Design Decisions" at GWU'
-  search: true
-  open-graph: true
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+  open-graph:
+    locale: es_ES
+    site-name: https://madd.seas.gwu.edu/
   twitter-card:
+    creator: "@johnhelveston"
     site: "@johnhelveston"
+    image: "images/logo-square.png"
+    card-style: summary
   navbar:
     background: primary
     left:
@@ -108,6 +118,8 @@ website:
           - text: Getting Help
             icon: question-circle
             href: help/getting-help.qmd
+          - text: Example Projects
+            href: help/example-projects.qmd
           - text: Visualizing Data
             icon: bar-chart
             href: help/visualizing-data.qmd
@@ -135,7 +147,7 @@ website:
         href: https://github.com/emse-madd-gwu/2022-Fall/
   page-footer:
     center:
-      - text: 'EMSE 6035: Marketing Analytics for Design Decisions (Fall 2022)<br><i class="far fa-calendar-alt"></i> Wednesdays | <i class="far fa-clock"></i> 6:10 - 8:40 PM | <a href="https://acadtech.gwu.edu/location?id=355&campus=FB&type=building&selection=22"><i class="fa fa-map-marker-alt"></i> Tompkins 302</a> | <a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a>'
+      - text: '© 2021 John Paul Helveston <a href="LICENSE.html"><i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i><i class="fab fa-creative-commons-sa"></i></a><br><<i class="far fa-calendar-alt"></i> {{< var weekday >}} | <i class="far fa-clock"></i> {{< var time >}} | <a href="{{< var room_url >}}"><i class="fa fa-map-marker-alt"></i> {{< var room >}}</a> | <a href="https://www.jhelvy.com"><i class="fas fa-user"></i> Dr. John Paul Helveston</a> | <a href="mailto:jph@gwu.edu"><i class="fas fa-envelope"></i> jph@gwu.edu</a> | <a href="{{< var repo >}}"><i class="fab fa-github"></i></a>'
 
 format:
   html:
