@@ -14,18 +14,13 @@ Encoding: UTF-8
 Imports:
     cowplot,
     fontawesome,
+    here,
     ggrepel,
     gsheet,
-    here,
-    janitor,
     kableExtra,
     knitr,
-    remotes,
+    quarto,
     rmarkdown,
+    rvest,
     tidyverse,
     viridis
-Remotes:
-    rstudio/fontawesome,
-    haozhu233/kableExtra,
-    r-lib/remotes,
-    rstudio/rmarkdown
