@@ -1,0 +1,485 @@
+[
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Licensing and copyright information",
+    "section": "",
+    "text": "The course material is licensed under the Creative Commons Attribution 4.0 International License and the course code is licensed under a MIT License by John Helveston."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This course was first created by Dr. John Paul Helveston at the George Washington University for the Spring 2019 semester of EMSE 6035, which was previously called Marketing of Technology. See the LICENSE page for information about reusing and sharing content."
+  },
+  {
+    "objectID": "class/1-getting-started.html",
+    "href": "class/1-getting-started.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/10-wtp-simulation.html",
+    "href": "class/10-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/11-heterogeneity.html",
+    "href": "class/11-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/12-review.html",
+    "href": "class/12-review.html",
+    "title": "Exam Review & Final Analysis Overview",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/13-exam-solutions.html",
+    "href": "class/13-exam-solutions.html",
+    "title": "Exam Solutions",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/2-data-wrangling.html",
+    "href": "class/2-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/3-rmd-plotting.html",
+    "href": "class/3-rmd-plotting.html",
+    "title": "RMarkdown & Plotting",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/4-formr.html",
+    "href": "class/4-formr.html",
+    "title": "Intro to formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/5-conjoint-questions.html",
+    "href": "class/5-conjoint-questions.html",
+    "title": "Conjoint Questions",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/6-utility.html",
+    "href": "class/6-utility.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/7-mle.html",
+    "href": "class/7-mle.html",
+    "title": "Optimization & MLE",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/8-uncertainty.html",
+    "href": "class/8-uncertainty.html",
+    "title": "Uncertainty",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "class/9-doe.html",
+    "href": "class/9-doe.html",
+    "title": "DOE & Power Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "help/course-software.html",
+    "href": "help/course-software.html",
+    "title": "Course Software",
+    "section": "",
+    "text": "You should install and set everything here before the first day of class.\n\n\nInstall / setup these tools:\n\n\nSlack: You can find a sign up link on the announcement in Blackboard.\nInstall the Slack app on your phone and Turn notifications on!\n\n\nInstall the latest version of R and RStudio:\n\n\nDownload and install R (version 4.0.2 or higher)\nDownload and install RStudio (Desktop version)\n\nWe will always work in RStudio, so be careful to open RStudio and not the default R application that comes with R:\n\n\n\n\n\n\n\n\nOpen this\nNot this!\n\n\n\n\n\n\n\n\n\n\n\nSign up for RStudio cloud (the free version). It’s basically the same thing as RStudio, but accessible via a web browser. If things aren’t working on your computer, this is a great backup to quickly get back to working in R!\nYou’ll need to install some R packages in RStudio that we will use throughout the semester. To do so, open RStudio then copy-paste this code into the console and press Return. This will install all the packages listed in the file.\n\nThat’s it - you’re all set for class!"
+  },
+  {
+    "objectID": "help/example-projects.html",
+    "href": "help/example-projects.html",
+    "title": "Example Analyses",
+    "section": "",
+    "text": "Previous course showcases\n\n\n\n\n\nFall 2021 Showcase\nProjects from the fall 2021 semester of this class."
+  },
+  {
+    "objectID": "help/finding-data.html",
+    "href": "help/finding-data.html",
+    "title": "Finding Data",
+    "section": "",
+    "text": "Here are some other resources:\n\nLarge, search-able sites\nBasically like running a Google search but only for data sets:\n\nGoogle Dataset Search\nQuandl: Over 2 million financial, economic, and social datasets.\nWharton Research Data Services: Single-point access to over 200 terabytes of data across multiple disciplines, including Finance, Marketing, and Economics.\n\n\n\nWebsites\nA collection of various websites that have lots of interesting datasets:\n\n“Tidy Tuesday” challenges: Wide variety of datasets for data visualization practice. See many of the visualizations others have created here.\n“Makeover Monday” challenges: Wide variety of datasets for data visualization practice.\nTableau Community Forums: Sometimes you’ll find some interesting datasets in here.\n“Data is Beautiful” subreddit: Feed of user-generated data visualizations, though quality varies substantially.\nKaggle: Hosts machine learning competitions, and as a result has lots of really interesting data sets open to the public.\n\n\n\nPackages\nMany packages contain interesting datasets. If you can find a package with data, it will usually be nicely-formatted 😄\nHere is a table of lots of packages that contain multiple dataset. Some of my favorites are:\n\ndslabs\nDAAG\nMASS\n\nIn addition, some packages exclusively just contain datasets, such as:\n\nfivethirtyeight: Datasets and code published by the data journalism website ‘FiveThirtyEight’, available at https://github.com/fivethirtyeight/data\ngapminder\nbabynames\nnycflights13\nfueleconomy\nnasaweather\nusdanutrients\n\n\n\nGovernment-ish sources:\n“Government-ish” because while some of these sites host government data, the sites themselves may or may not be affiliated with a government agency:\n\nUS Open Gov Data: links to federal and non-federal sources in US and abroad\nUS City Open Data Census: Open data from more than 100 U.S. cities.\nOpen Africa\nEU Open Data Portal\nChina data: Various datasets on China posted by Gang He.\n\n\n\nEnergy data\nSince I happen to work with energy data a lot, here’s some common go-to sources:\n\nChina Energy Portal Statistics: Loads of energy statistics from China.\nU.S. Energy Information Administration: from Wikipedia: the “principal agency of the U.S. Federal Statistical System responsible for collecting, analyzing, and disseminating energy information to promote sound policymaking, efficient markets, and public understanding of energy and its interaction with the economy and the environment. EIA programs cover data on coal, petroleum, natural gas, electric, renewable and nuclear energy. EIA is part of the U.S. Department of Energy.”\nEnvironmental Performance Index, Yale University: Ranks 163 countries on 25 performance indicators tracked across ten policy categories covering both environmental public health and ecosystem vitality. These indicators provide a gauge at a national government scale of how close countries are to established environmental policy goals.\n\n\n\nSpatial data\n\nhttp://freegisdata.rtwilson.com/\nhttps://data.nasa.gov/\nhttps://planet.parts/\nhttps://www.efi.int/knowledge/maps/forest\nhttps://land.copernicus.eu/\nhttps://maps.elie.ucl.ac.be/CCI/viewer/\nhttps://www.ecad.eu//dailydata/predefinedseries.php\nhttp://www.worldclim.org/version2\nhttps://www.geoportal.org/\nhttps://scihub.copernicus.eu/\nhttps://sedac.ciesin.columbia.edu/\nhttps://earthexplorer.usgs.gov/"
+  },
+  {
+    "objectID": "help/getting-help.html",
+    "href": "help/getting-help.html",
+    "title": "Getting Help",
+    "section": "",
+    "text": "Office hours\nOffice hours are set times dedicated to all of you. This means that I will be in my office (wistfully) waiting for you to come by with whatever questions you have. This is the best and easiest way to find me outside of class and the best chance for discussing class material and concerns (or anything really). Please come by!\nThis can be a difficult class - do not suffer in silence! Come talk to me!\n\n\nTutoring hours\nSimilar to office hours, your class tutors will each hold a specific period of time each week dedicated to help you will course assignments. Please don’t make your tutors sit and do emails for two hours - come by and ask for help!\n\n\nLibrary Services\nWhile the University Library is not a stand in for TAs, you can schedule a consultation for general help with Coding, Programming, Data, Statistical, and GIS. See more at https://academiccommons.gwu.edu/writing-research-help"
+  },
+  {
+    "objectID": "help/other.html",
+    "href": "help/other.html",
+    "title": "Other",
+    "section": "",
+    "text": "Helpful Tutorials\n\nRStudio Primers\nTidyverse in R\nTransitioning from Excel to R\n\n\n\nInspiration\n\nAn Incomplete List of Females in Data Visualization, by Stephanie Evergreen\nThe Links Between Open Science and Star Wars\n\n\n\nGiving talks\nYou will all have to give a presentation at some point - make sure you start it right: “How to start a speech”\n\n\nWhen all else fails…\nYou will inevitably run into problems; things won’t work the way you expect, and you’ll get lots of confusing error messages. When this happens, many turn to the following tried and true problem-solving approaches:"
+  },
+  {
+    "objectID": "help/programming.html",
+    "href": "help/programming.html",
+    "title": "Programming in R",
+    "section": "",
+    "text": "Programming in R\n\nProgramming for Analytics course website\nGrolemund, Garrett. “Hands-On Programming with R” [free online], [buy on amazon]\nPeng, Roger D. “R Programming for Data Science” [online - pay what you want]\n\n\n\nData Analysis in R\n\nGrolemund, Garrett and Wickham, Hadley. “R for Data Science” [free online], [buy on amazon]\nPeng, Roger D. “Exploratory Data Analysis with R” [online - pay what you want]\n16 HOWTO’s, by Lingyun Zhang\n\n\n\nRMarkdown\n\nAndrew Heiss’s Markdown guide\n60 second markdown guide\n10 minute markdown tutorial\nMarkdown It: Quickly demo Markdown code.\nTable generator: Create tables and get export code for multiple formats.\nCMU RMarkdown guide (very detailed)\n\n\n\nRStudio “Cheatsheets”\n\nAll cheatsheets\nData wrangling with the dplyr library\nData visualization with the ggplot2 library\nRMarkdown"
+  },
+  {
+    "objectID": "help/rmarkdown.html",
+    "href": "help/rmarkdown.html",
+    "title": "R Markdown",
+    "section": "",
+    "text": "The most comprehensive resource on working with R Markdown is the Definitive Guide.\nFor a quick reference guide that you can print out, check out the Rstudio Rmarkdown cheatsheet.\nHere are some useful tools for learning and working with R Markdown:\n\n60 second markdown guide\n10 minute markdown tutorial\nMarkdown It: Quickly demo Markdown code\nTable generator: Create tables and get export code for multiple formats\nCMU RMarkdown guide (detailed)\n\nFinally, here are a few more links for help with specific issues / customization:\n\nImages and image sizing\nPimp my RMD: a guide for lots of cool features and customization options\nRStudio R Markdown documentation\nProducing html documents from .R scripts using knitr::spin\nAdvanced RMD tips and tricks"
+  },
+  {
+    "objectID": "help/visualizing-data.html",
+    "href": "help/visualizing-data.html",
+    "title": "Visualizing Data",
+    "section": "",
+    "text": "Principles of data visualization\n\nHealy, Kieran. “Data Visualization: A practical introduction” [free online], [buy on amazon]\nWilke, Claus O. “Fundamentals of Data Visualization” [free online], [buy on amazon]\nVideo: How Humans See Data, by John Rauser. This is probably the best overviews I’ve seen on how to exploit the psychology of how our brains interpret images to make effective visualizations.\n\n\n\nChoosing the right chart\nYou will want to choose different chart types depending on the relationship or message you want to convey. Fortunately, we live in the future and awesome people have created wonderful tools to help you find the most appropriate graph for your data. Take a look through some of these resources - these will come in handy when you start working on your final project:\n\n Stephen Few’s Graph Selection Matrix\nThe Data Visualisation Catalogue\nData-to-Viz\nR Graph Gallery\nVisual Vocabulary\nThe Data Viz Project\n\n\n\nMaking plots with ggplot2\n\nThe R Graph Catalog: 124 examples (with code) for making common ggplots.\nThe ggplot2 Extensions gallery: 64 registered libraries that extend the functionality of ggplot2.\nTop 50 ggplot2 visualizations\nR Cookbook for ggplot2\nRStudio ggplot2 Cheatsheet\nTidyverse ggplot2 reference guide\nggThemeAssist: Package for customizing plot themes and layout\n16 HOWTO’s, by Lingyun Zhang - super useful for making specific types of charts\n\n\n\nPolishing ggplot2 plots\n\nggplot2: Elegant Graphics for Data Analysis\nFollow good design rules\n\n\n\nChoosing colors\n\nColor wheel tool\nggplot2 book chapter 12\nR graph gallery\nCoolors.co - super nice color palette generator\n\n\n\nAnimating ggplot2 plots\n\nAnimate your ggplots with gganimate\nHow to make a bar chart race"
+  },
+  {
+    "objectID": "hw/0-self-assessment.html",
+    "href": "hw/0-self-assessment.html",
+    "title": "Self Assessment",
+    "section": "",
+    "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html",
+    "href": "hw/1-data-wrangling.html",
+    "title": "Data Wrangling",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/10-exam.html",
+    "href": "hw/10-exam.html",
+    "title": "Exam",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/2-plotting.html",
+    "href": "hw/2-plotting.html",
+    "title": "Plotting",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/3-formr.html",
+    "href": "hw/3-formr.html",
+    "title": "formr",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/4-utility-models.html",
+    "href": "hw/4-utility-models.html",
+    "title": "Utility Models",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/5-estimation.html",
+    "href": "hw/5-estimation.html",
+    "title": "Estimation",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/6-uncertainty.html",
+    "href": "hw/6-uncertainty.html",
+    "title": "Uncertainty",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/7-doe.html",
+    "href": "hw/7-doe.html",
+    "title": "Design of Experiment",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/8-wtp-simulation.html",
+    "href": "hw/8-wtp-simulation.html",
+    "title": "WTP & Simulations",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "hw/9-heterogeneity.html",
+    "href": "hw/9-heterogeneity.html",
+    "title": "Heterogeneity",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EMSE 6035:Marketing Analytics for Design Decisions(Fall 2022)",
+    "section": "",
+    "text": "Department: Engineering Management and Systems Engineering @ GWU\nCredits: 3\nDescription:\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions.\nLearning Objectives:\nHaving successfully completed this course, students will be able to:\n\nImport, wrangle, visualize, and export data in R.\nDesign surveys to obtain informative data about consumer preferences for product features.\nBuild and estimate discrete choice models.\nAnalyze consumer choice data to estimate consumer preferences for product features.\nDesign and create effective charts and presentations.\nCommunicate results in terms of design insights.\n\nPrerequisites:\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "project/0-overview.html",
+    "href": "project/0-overview.html",
+    "title": "Project Overview",
+    "section": "",
+    "text": "Project Selection\nI want this project to be as useful for you and your future career as possible - you’ll hopefully want to show off your final project in a portfolio or during job interviews. Accordingly, you get to choose the topic for your project, but it must meet certain guidelines.\nProjects must be selected during the first two weeks of class. Projects much be an emerging technology, product, or policy with a clearly identified market that has not yet been introduced into the mass market, such as a new invention from a research laboratory at GWU or a new product being explored by a firm. Students have the option to choose a sponsored project or propose their own project if it is approved by the instructor and meets the following criteria:\n\nInnovative / Emerging: The proposed project involves a new product or technology with attributes (e.g. price, efficiency, reliability, size, performance, color, etc.) that may be competitive in the marketplace but for which actual market adoption is still uncertain.\nWell-Defined: This course focuses on mathematical modeling to support design decision-making. There is not sufficient time in the course for conceptual design of a new product.\nIdentified Target Market: A target market has been identified for this new product or technology. Competing products in that market are known, and the attributes on which new market entrants compete can be identified. Representative potential customers can be identified for survey solicitation. If the new product or technology is a component of a larger product sold to a consumer market, students may assess the market implications for the final consumer product.\nPrior to Mass Commercialization: The new product or technology has only recently or has not yet been introduced to the mass market.\nModerate Scope and Complexity: The product or technology should involve moderate complexity. For example, a non-differentiated commodity, such as sugar, is too simple, and a complex product involving many components and manufacturing operations, such as a vehicle, is too complex.\nExpertise: If the product involves a new technology that requires specialized knowledge about its attributes, the team should have reliable access to experts who can supply the requisite knowledge.\nDecision Variables: The product should have several non-trivial design decisions. For example, choosing between two materials or topologies, setting dimensions of a component, or selecting among a set of alternative component configurations are suitable design decisions. The models developed in the project will be used to support decision-making along such dimensions.\n\n\n\nTeamwork\nThe experience of working in teams on this project will serve as preparation for teamwork throughout your careers. Some teams may experience an imbalance in team member contributions, effort, or reliability. The instructor is available to provide advice and interact in resolving team inequity and conflict; however, students should view this as a learning experience. Such situations regularly occur in any career, and learning how to handle them is a valuable skill. If you experience challenges within your team, it is a good opportunity to develop strategies and figure out how you will address such challenges in the future. One common job interview question is, “Describe a time when you experienced difficulties working in a team or experienced a team failure. What did you do about it?” This is a good chance to build a strong answer to this question."
+  },
+  {
+    "objectID": "project/1-proposal.html",
+    "href": "project/1-proposal.html",
+    "title": "Project Proposal",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/2-survey-plan.html",
+    "href": "project/2-survey-plan.html",
+    "title": "Survey Plan",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/3-pilot-survey.html",
+    "href": "project/3-pilot-survey.html",
+    "title": "Pilot Survey",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/4-pilot-analysis.html",
+    "href": "project/4-pilot-analysis.html",
+    "title": "Pilot Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/5-final-survey.html",
+    "href": "project/5-final-survey.html",
+    "title": "Final Survey",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/6-final-analysis.html",
+    "href": "project/6-final-analysis.html",
+    "title": "Final Analysis",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "project/7-final-presentation.html",
+    "href": "project/7-final-presentation.html",
+    "title": "Final Presentation",
+    "section": "",
+    "text": "Coming soon!"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Course Schedule",
+    "section": "",
+    "text": "Week \n    Date \n    Quiz \n    Class \n    Project \n    Assignments \n      \n  \n \n\n  \n    1 \n    Aug 31 \n     \n     Getting Started Class orientation, intro to R, workflow, packages \n    IntroductionsIntroductions to each other and potential projects \n     Data WranglingDue: 09/07 \n     \n  \n  \n    2 \n    Sep 07 \n     \n     Data Wrangling Importing, wrangling, and summarizing data in R \n    Decision VariablesDistinguishing between decision variables and product attributes \n     PlottingDue: 09/14 \n     \n  \n  \n    3 \n    Sep 14 \n    1 \n     RMarkdown & Plotting Intro to \"literate programming\" with RMarkdown and plotting with {ggplot2} \n    Project ScopeDefining attribute levels, target survey population, competitors \n     formrDue: 09/21 \n     ProposalDue: Sep 26 \n  \n  \n    4 \n    Sep 21 \n     \n     Intro to formr Designing and implementing surveys in formr \n    Survey Plan 1Overview of survey plan, work on proposals \n     \n     \n  \n  \n    5 \n    Sep 28 \n     \n     No Class - Team Meetings \n     \n     \n     Survey PlanDue: Oct 05 \n  \n  \n    6 \n    Oct 05 \n    2 \n     Conjoint Questions Generating conjoint questions in R, implementing in formr \n    Survey Plan 2Begin implementing survey plan in formr \n     Utility ModelsDue: 10/12 \n     Pilot SurveyDue: Oct 15 \n  \n  \n    7 \n    Oct 12 \n     \n     Utility Models Intro to utility models, discrete vs. continuous parameters, parameter coding \n    Pilot SurveyFinish implementing pilot survey in formr \n     EstimationDue: 10/19 \n     \n  \n  \n    8 \n    Oct 19 \n    3 \n     Optimization & MLE Optimization, maximum likelihood estimation \n    Pilot Analysis 1Import & clean pilot data, joins \n     UncertaintyDue: 10/26 \n     \n  \n  \n    9 \n    Oct 26 \n     \n     Uncertainty Computing uncertainty in coefficient estimates \n    Pilot Analysis 2Reshaping data, estimating models \n     Design of ExperimentDue: 11/02 \n     Pilot AnalysisDue: Nov 07 \n  \n  \n    10 \n    Nov 02 \n    4 \n     DOE & Power Analysis Designing your survey to reduce error \n    Pilot Analysis 3Refine attributes & levels, conduct power analysis, plot results \n     WTP & SimulationsDue: 11/09 \n     \n  \n  \n    11 \n    Nov 09 \n     \n     WTP & Simulations Computing WTP, WTP space models, market simulations \n    WTP & SimulationsCompute WTP, define market simulations, finalize final survey \n     HeterogeneityDue: 11/16 \n     Final SurveyDue: Nov 19 \n  \n  \n    12 \n    Nov 16 \n    5 \n     Heterogeneity Modeling differences in preferences across sample population \n    HeterogeneityEstimate mixed logit and subpopulation models on pilot data \n     \n     \n  \n  \n    13 \n    Nov 23 \n     \n     Thanksgiving - no class \n    Final Survey FeildingCollecting data for final survey \n     \n     \n  \n  \n    14 \n    Nov 30 \n     \n     Class Review Overview of course concepts \n    Sensitivity AnalysesCompute sensitivity analyses \n     ExamDue: 12/05 \n     Final AnalysisDue: Dec 13 \n  \n  \n    15 \n    Dec 07 \n     \n     Exam Solutions Go over exam solutions and also discuss tips for making a good presentation \n    Final Analysis LabIn class time to work on final analysis \n     \n     \n  \n  \n    16 \n    Dec 14 \n     \n     Final Presentations Don't panic! \n    Final PresentationsDon't panic! \n     \n     Final PresentationDue: Dec 15"
+  },
+  {
+    "objectID": "syllabus.html#gw-bulletin-description-short",
+    "href": "syllabus.html#gw-bulletin-description-short",
+    "title": "Syllabus",
+    "section": "GW Bulletin Description (short)",
+    "text": "GW Bulletin Description (short)\nAnalyzing data to inform design decisions in an uncertain, competitive, market, topics include consumer choice modeling, programming in R, survey design, conjoint analysis, optimization market simulation, and professional communication skills."
+  },
+  {
+    "objectID": "syllabus.html#longer-description",
+    "href": "syllabus.html#longer-description",
+    "title": "Syllabus",
+    "section": "Longer Description",
+    "text": "Longer Description\nThis course provides students with data analysis techniques to inform design decisions in an uncertain, competitive market; topics include consumer choice modeling, programming in the R programming language, survey design, conjoint analysis, optimization, market simulation, and professional communication skills. Over the course of the semester, students will learn and apply theory and methods to a team project to assess the market competitiveness of an emerging product / technology and use marketing analytics to generate design insights. At the end of the semester, students will submit a final, reproducible report of their project along with a presentation of their findings. This course has a “flipped” classroom structure. Students will spend the majority of class time working through guiding practice exercises or working on their projects. To prepare for class, students must complete weekly assignments that involve watching and reviewing recorded lecture materials and answering related practice questions."
+  },
+  {
+    "objectID": "syllabus.html#prerequisites",
+    "href": "syllabus.html#prerequisites",
+    "title": "Syllabus",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis course requires prior exposure to:\n\nProbability theory\nMultivariable calculus\nLinear algebra\nRegression\n\nEach of these concepts will be applied throughout the course, and no time will be spent reviewing the foundational elements of each concept.\nIn addition, we will work in the R programming language throughout the course, but no prior programming experience is required. We will spend the first three weeks going through exercises to get up to speed in R.\nStudents are encouraged to complete this self assessment prior to registering for the course to self-assess familiarity with these concepts."
+  },
+  {
+    "objectID": "syllabus.html#software",
+    "href": "syllabus.html#software",
+    "title": "Syllabus",
+    "section": "Software",
+    "text": "Software\nGo to the Course Software page for detailed instructions on how to install the software we’ll be using. Here’s a quick list:\n\nR (version 4.1.0 or later), which can be downloaded from The Comprehensive R Archive Network (CRAN)\nRStudio (Desktop Version), a free IDE for R, which can be downloaded from RStudio\nWe’ll be using Slack for most communication."
+  },
+  {
+    "objectID": "syllabus.html#class-participation",
+    "href": "syllabus.html#class-participation",
+    "title": "Syllabus",
+    "section": "Class Participation",
+    "text": "Class Participation\nRegular class attendance is essential. Much of the class time will be spent doing exercises and working with your team on your project. Multiple unexcused absences, inappropriate or unprofessional behavior during class (such as monopolizing discussions or being rude or disruptive), not participating in classroom exercises, and not being prepared for class will result in poor performance in this class."
+  },
+  {
+    "objectID": "syllabus.html#quizzes",
+    "href": "syllabus.html#quizzes",
+    "title": "Syllabus",
+    "section": "Quizzes",
+    "text": "Quizzes\nThere will be 5 quizzes given about once every two weeks immediately at the beginning of class. Quizzes cover material presented in previous classes and assignments during the weeks since the most-recent quiz. Quizzes are short (~5 minutes) and are designed to identify areas where additional study is needed. Quizzes are low-stakes - your worst one is dropped, and the rest count for just 12% of your final grade. If you do poorly on one, use that as feedback on where you need additional improvement.\n\nWhy quiz at all? Research shows that giving small quizzes throughout a class can dramatically help with retention. It’s a phenomenon known as the “retrieval effect” - basically, you have to practice remembering things, otherwise your brain won’t remember them. The phenomenon and research on it is explained in detail in the book “Make It Stick: The Science of Successful Learning,” by Brown, Roediger, and McDaniel."
+  },
+  {
+    "objectID": "syllabus.html#assignments-1",
+    "href": "syllabus.html#assignments-1",
+    "title": "Syllabus",
+    "section": "Assignments",
+    "text": "Assignments\nEach week, students will be assigned readings and exercises to prepare for the next class period. Students will need to submit reflections on these readings each week, which may involve answering some practice questions. These are graded using a check system:\n\n✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.\n✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.\n✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will hopefully not assign these often.\n\nNotice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write. I’m looking for thoughtful engagement, that’s all."
+  },
+  {
+    "objectID": "syllabus.html#final-project",
+    "href": "syllabus.html#final-project",
+    "title": "Syllabus",
+    "section": "Final Project",
+    "text": "Final Project\nThroughout the semester, students will work in teams of 3-4 students towards a final project. The project is broken into multiple phases with key deliverables due throughout the semester. See the Project Overview page for more details."
+  },
+  {
+    "objectID": "syllabus.html#final-exam",
+    "href": "syllabus.html#final-exam",
+    "title": "Syllabus",
+    "section": "Final Exam",
+    "text": "Final Exam\nThe final exam is a take-home exam, and we will spend a portion of the last day of class going over the solutions together."
+  },
+  {
+    "objectID": "syllabus.html#category-breakdown",
+    "href": "syllabus.html#category-breakdown",
+    "title": "Syllabus",
+    "section": "Category Breakdown",
+    "text": "Category Breakdown\nFinal grades will be calculated as follows:\n\n\n\n\nItem\nWeight\nNotes\n\n\n\n\nReflections\n27 %\nWeekly assignment (9 x 3%)\n\n\nQuizzes\n12 %\n5 quizzes, lowest dropped\n\n\nProject Proposal\n7 %\nTeams of 3-4 students\n\n\nSurvey Plan\n4 %\n\n\n\nPilot Survey\n4 %\n\n\n\nPilot Analysis\n9 %\n\n\n\nFinal Survey\n5 %\n\n\n\nFinal Analysis Report\n14 %\n\n\n\nFinal Presentation\n8 %\n\n\n\nFinal Exam\n10 %\nTake home exam\n\n\n\n\nHere’s a visual breakdown by category:"
+  },
+  {
+    "objectID": "syllabus.html#grading-scale",
+    "href": "syllabus.html#grading-scale",
+    "title": "Syllabus",
+    "section": "Grading Scale",
+    "text": "Grading Scale\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n94 - 100%\nC\n74 - 76.99%\n\n\nA-\n90 - 93.99%\nC-\n70 - 73.99%\n\n\nB+\n87 - 89.99%\nD+\n67 - 69.99%\n\n\nB\n84 - 86.99%\nD\n64 - 66.99%\n\n\nB-\n80 - 83.99%\nD-\n60 - 63.99%\n\n\nC+\n77 - 79.99%\nF\n< 60%\n\n\n\n\nThe course instructors may choose to change the scales at their discretion. You are guaranteed that your letter grade will never become worse as a result of changing scales."
+  },
+  {
+    "objectID": "syllabus.html#slack",
+    "href": "syllabus.html#slack",
+    "title": "Syllabus",
+    "section": "Slack",
+    "text": "Slack\nAll course communication will be managed through Slack. A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.\nYou can use Slack to:\n\nAsk general questions.\nAsk for help with an assignment.\nSend direct, private messages to each other or the instructors (just like email…but better!)\n\nAsking for help on Slack:\nYou can post questions on slack and receive quick responses. This also enables other students to see answers to common questions. Be specific - if your code has an error you don’t understand, include the code and the error message in your question."
+  },
+  {
+    "objectID": "syllabus.html#office-hours",
+    "href": "syllabus.html#office-hours",
+    "title": "Syllabus",
+    "section": "Office hours",
+    "text": "Office hours\nScheduling a time to answer questions is hard, so rather than hold regular office hours, you can use this link to schedule a zoom call with me most days of the week."
+  },
+  {
+    "objectID": "syllabus.html#tutoring-hours",
+    "href": "syllabus.html#tutoring-hours",
+    "title": "Syllabus",
+    "section": "Tutoring hours",
+    "text": "Tutoring hours\nYour class tutors will each hold a dedicated period of time each week for zoom tutoring hours. Please don’t make your tutors sit and do emails for two hours - come by and ask for help!"
+  },
+  {
+    "objectID": "syllabus.html#library-services",
+    "href": "syllabus.html#library-services",
+    "title": "Syllabus",
+    "section": "Library Services",
+    "text": "Library Services\nWhile the University Library is not a stand in for TAs, you can schedule a consultation for general help with Coding, Programming, Data, Statistical, and GIS. See more at https://academiccommons.gwu.edu/writing-research-help"
+  },
+  {
+    "objectID": "syllabus.html#tldr",
+    "href": "syllabus.html#tldr",
+    "title": "Syllabus",
+    "section": "tl;dr",
+    "text": "tl;dr\n\nBE NICE. BE HONEST. DON’T CHEAT.\nYou get 5 late days - use them however you want, but you can’t use more than 2 late days on any one assignment.\nIf you’re not sure about something, talk with me and we’ll figure it out."
+  },
+  {
+    "objectID": "syllabus.html#late-policy",
+    "href": "syllabus.html#late-policy",
+    "title": "Syllabus",
+    "section": "Late Policy",
+    "text": "Late Policy\nEach students is allowed 5 late homework submission days - use them however you want, no questions asked. No more than 2 days can be applied toward a single assignment. Late days are meant to cover illness, family emergencies, and religious holidays. Assignments submitted more than 2 days after the due date will not be graded. In extreme circumstances, contact the instructor."
+  },
+  {
+    "objectID": "syllabus.html#cheating",
+    "href": "syllabus.html#cheating",
+    "title": "Syllabus",
+    "section": "Cheating",
+    "text": "Cheating\nCheating results in a penalty on the first offense, and failing the course on the second offense. Cheating on assignments can include:\n\nCopying or stealing any amount of code from someone currently in the class or someone who has taken the class before.\nNOTE: Copying is never okay, whether the code is provided electronically, visually, audibly, or on paper.\nProviding code you have written for an assignment to anyone else in the class.\nFinding code online and using it in the assignment. One exception: you may use code from the course website.\nPutting code solutions from the course assignments online.\nReceiving code-level assistance from any person not associated with the course.\nGetting someone else to write the assignment code for you.\nAsking questions about the assignments on any online services outside of the course office hours / Slack.\n\nCheating on quizzes, assignments, or the final project can include:\n\nReferring to any external resources while completing the assignment (phones, notes, etc.).\nCopying part of an answer off of another student’s paper, even if it is very small.\nUsing solutions provided by students who previously took the course.\n\n\nPenalties\nViolations will be reported to the Office of Student Rights & Responsibilities. Penalties are decided by the course instructors, and can vary based on the severity of the offense. Possible penalties include:\n\nReceiving a 0 on the assignment/quiz in question.\nReceiving a full letter grade deduction in the course.\nAutomatically failing the course.\n\nDepending on the student’s prior academic history, violations may also be accompanied by a letter to the Dean of Student Affairs, again at the instructors’ discretion. This can lead to university-level penalties, such as being suspended or expelled."
+  },
+  {
+    "objectID": "syllabus.html#children-in-class",
+    "href": "syllabus.html#children-in-class",
+    "title": "Syllabus",
+    "section": "Children in class",
+    "text": "Children in class\n\n\nI applaud all of you who attend school with children! It is difficult to balance academic, work, and family commitments, and I want you to succeed. Here are my policies regarding children in class:\n\nAll breastfeeding babies are welcome in class as often as necessary.\nNon-nursing babies and older children are welcome whenever alternate arrangements cannot be made. As a parent of young children, I understand that babysitters fall through, partners have conflicting schedules, children get sick, and other issues arise that leave parents with few other options.\nIn cases where children come to class, I invite parents/caregivers to sit close to the door so as to more easily excuse yourself to attend to your child’s needs. Non-parents in the class: please reserve seats near the door for your parenting classmates.\nAll students are expected to join with me in creating a welcoming environment that is respectful of your classmates who bring children to class.\n\nI understand that sleep deprivation and exhaustion are among the most difficult aspects of parenting young children. The struggle of balancing school, work, childcare, and graduate school is tiring, and I will do my best to accommodate any such issues while maintaining the same high expectations for all students enrolled in the class. Please do not hesitate to contact me with any questions or concerns."
+  },
+  {
+    "objectID": "syllabus.html#laurens-promise",
+    "href": "syllabus.html#laurens-promise",
+    "title": "Syllabus",
+    "section": "Lauren’s Promise",
+    "text": "Lauren’s Promise\n\n\nI will listen and believe you if someone is threatening you.\nLauren McCluskey, a 21-year-old honors student athlete, was murdered on October 22, 2018 by a man she briefly dated on the University of Utah campus. We must all take action to ensure that this never happens again.\nIf you are in immediate danger, call 911 or GWU police at 202-994-6111 (GWPD).\nIf you are experiencing sexual assault, domestic violence, or stalking, if you report it to me I will listen and connect you to resources or call GWU’s Counseling and Psychological Services (202-994-5300).\nAny form of sexual harassment or violence will not be excused or tolerated at GWU. GWU has instituted procedures to respond to violations of these laws and standards, programs aimed at the prevention of such conduct, and intervention on behalf of the victims. GWU Police officers will treat victims of sexual assault, domestic violence, and stalking with respect and dignity. Advocates on campus and in the community can help with victims’ physical and emotional health, reporting options, and academic concerns."
+  },
+  {
+    "objectID": "syllabus.html#use-of-course-materials",
+    "href": "syllabus.html#use-of-course-materials",
+    "title": "Syllabus",
+    "section": "Use of Course Materials",
+    "text": "Use of Course Materials\nAll course materials available on the course website are developed open source - you are welcome to post and share them following the licensing guidelines listed in the license page.\nHowever, all solutions to assignments and quizzes are proprietary. Don’t post them online or try to sell them - this is a violation of the student code of conduct."
+  },
+  {
+    "objectID": "syllabus.html#what-to-do-if-the-instructor-does-not-arrive",
+    "href": "syllabus.html#what-to-do-if-the-instructor-does-not-arrive",
+    "title": "Syllabus",
+    "section": "What To Do if the Instructor Does Not Arrive",
+    "text": "What To Do if the Instructor Does Not Arrive\nWait 20 minutes, after that you’re free to leave. One member of the class should be selected to notify the EMSE Department of the Instructor’s absence by calling the EMSE Department 202-994-4892 on next business day."
+  },
+  {
+    "objectID": "syllabus.html#university-policy-on-religious-holidays",
+    "href": "syllabus.html#university-policy-on-religious-holidays",
+    "title": "Syllabus",
+    "section": "University Policy on Religious Holidays",
+    "text": "University Policy on Religious Holidays\nIn accordance with University Policy, students should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance. Official university policy here: https://students.gwu.edu/accommodations-religious-holidays\n\nStudents should notify faculty during the first week of the semester of their intention to be absent from class on their day(s) of religious observance.\nFaculty should extend to these students the courtesy of absence without penalty on such occasions, including permission to make up examinations.\nFaculty who intend to observe a religious holiday should arrange at the beginning of the semester to reschedule missed classes or to make other provisions for their course-related activities."
+  },
+  {
+    "objectID": "syllabus.html#support-for-students-outside-the-classroom",
+    "href": "syllabus.html#support-for-students-outside-the-classroom",
+    "title": "Syllabus",
+    "section": "Support for Students Outside the Classroom",
+    "text": "Support for Students Outside the Classroom\nDisability Support Services (DSS): Any student who may need an accommodation based on the potential impact of a disability should contact the Disability Support Services office at 202-994-8250 in the Rome Hall, Suite 102, to establish eligibility and to coordinate reasonable accommodations. For additional information please refer to: https://disabilitysupport.gwu.edu/\nMental Health Services (202-994-5300): The University’s Mental Health Services offers 24/7 assistance and referral to address students’ personal, social, career, and study skills problems. Services for students include: crisis and emergency mental health consultations confidential assessment, counseling services (individual and small group), and referrals. https://healthcenter.gwu.edu/counseling-and-psychological-services"
+  },
+  {
+    "objectID": "syllabus.html#academic-integrity-code",
+    "href": "syllabus.html#academic-integrity-code",
+    "title": "Syllabus",
+    "section": "Academic Integrity Code",
+    "text": "Academic Integrity Code\nAcademic dishonesty is defined as cheating of any kind, including misrepresenting one’s own work, taking credit for the work of others without crediting them and without appropriate authorization, and the fabrication of information. For the remainder of the code, see: https://studentconduct.gwu.edu/code-academic-integrity\nIn addition to the formal code of academic integrity, the instructor expects that students will treat this course with the level of professionalism required in the workplace. Remember that real firms are sponsoring student projects throughout the semester; in a workplace setting, these firms would be paying clients for the analyses being conducted. This course prepares students to succeed in the workplace, and maintaining a high degree of professionalism is expected."
+  }
+]
