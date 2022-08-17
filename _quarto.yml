@@ -117,6 +117,7 @@ website:
           icon: person
           href: help/https://jhelvy.appointlet.com/b/professor-helveston
         - text: Example Projects
+          icon: file-earmark-medical
           href: help/example-projects.qmd
         - text: Course Software
           icon: hdd
