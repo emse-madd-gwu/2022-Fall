@@ -53,7 +53,7 @@ final <- df %>%
             "        - text: ", final_name, " (Due ", final_due, ")"
         ), 
         href = paste0(
-            "          href: ", "project-final/", final_stub, ".qmd\n"
+            "          href: ", "project/", final_stub, ".qmd\n"
         ),
         final = paste(text, href, sep = "\n")
     )

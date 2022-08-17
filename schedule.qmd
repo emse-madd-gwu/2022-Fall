@@ -29,7 +29,7 @@ schedule <- get_schedule() %>%
       paste0(
           '<a href="class/', class_stub, '.html">',
           fa$class, '</a><b> ', class_name, "</b><br> ", class_description)),
-    assignments = ifelse(is.na(assign_due), NA, 
+    assignments = ifelse(is.na(assign_n), "",
         paste0(
         '<a href="hw/', assign_n, "-", assign_stub, '.html">',
         fa$assignment, '</a><b> ', assign_name, "</b><br>Due: ", assign_due)),
@@ -50,7 +50,7 @@ highlight <- which(Sys.Date() > schedule$date)
 names(schedule) <- str_to_title(names(schedule))
 schedule %>%
   rename(` ` = Final) %>%
-  select(Week, Date, Quiz, Class, Project, Assignments, ` `) %>%
+  select(Week, Date = Date_md, Quiz, Class, Project, Assignments, ` `) %>%
   kable(format = 'html', escape = FALSE,
         align = c('c', 'c', 'c', 'l', 'l', 'l', 'l')) %>%
   kable_styling(full_width = F, bootstrap_options = c("striped", "hover")) %>%

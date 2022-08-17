@@ -96,21 +96,21 @@ website:
       - text: Project
         menu:
         - text: "Project Overview"
-          href: project-final/0-overview.qmd
+          href: project/0-overview.qmd
         - text: Proposal (Due Sep 26)
-          href: project-final/1-proposal.qmd
+          href: project/1-proposal.qmd
         - text: Survey Plan (Due Oct 05)
-          href: project-final/2-survey-plan.qmd
+          href: project/2-survey-plan.qmd
         - text: Pilot Survey (Due Oct 15)
-          href: project-final/3-pilot-survey.qmd
+          href: project/3-pilot-survey.qmd
         - text: Pilot Analysis (Due Nov 07)
-          href: project-final/4-pilot-analysis.qmd
+          href: project/4-pilot-analysis.qmd
         - text: Final Survey (Due Nov 19)
-          href: project-final/5-final-survey.qmd
+          href: project/5-final-survey.qmd
         - text: Final Analysis (Due Dec 13)
-          href: project-final/6-final-analysis.qmd
+          href: project/6-final-analysis.qmd
         - text: Final Presentation (Due Dec 15)
-          href: project-final/7-final-presentation.qmd
+          href: project/7-final-presentation.qmd
       - text: Help
         menu:
         - text: Schedule a call w/Prof. Helveston
@@ -136,8 +136,8 @@ website:
         - text: Other
           icon: chevron-expand
           href: help/other.qmd
-        - icon: slack
-          href: https://emse-madd-f22.slack.com
+      - icon: slack
+        href: https://emse-madd-f22.slack.com
     right:
     - icon: fas fa-bars
       menu:
