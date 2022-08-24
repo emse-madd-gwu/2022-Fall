@@ -2,6 +2,7 @@
 
 # Install packages from CRAN
 install.packages(c(
+    "Cairo",
     "cowplot",
     "fastDummies",
     "ggrepel",
