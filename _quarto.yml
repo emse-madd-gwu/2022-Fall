@@ -160,5 +160,5 @@ format:
     css: styles.css
     anchor-sections: true
     smooth-scroll: true
-    link-external-newwindow: true
+    link-external-newwindow: false
     include-in-header: "_includes/header.html"
