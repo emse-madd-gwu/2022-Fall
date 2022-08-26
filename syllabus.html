@@ -443,7 +443,7 @@ ul.task-list{list-style: none;}
 </tr>
 <tr class="odd">
 <td><i class="fab fa-twitter"></i> <a href="https://twitter.com/JohnHelveston">@JohnHelveston</a></td>
-<td><i class="fab fa-slack"></i> <a href="https://emse-madd-f22.slack.com">Slack</a></td>
+<td><i class="fab fa-slack"></i> <a href="https://emse-madd-f22.slack.com" target="_blank">Slack</a></td>
 </tr>
 </tbody>
 </table>
@@ -507,7 +507,7 @@ ul.task-list{list-style: none;}
 <ul>
 <li>R (version 4.1.0 or later), which can be downloaded from <a href="https://cloud.r-project.org">The Comprehensive R Archive Network (CRAN)</a></li>
 <li>RStudio (Desktop Version), a free IDE for R, which can be downloaded from <a href="https://rstudio.com/products/rstudio/download/">RStudio</a></li>
-<li>We’ll be using <a href="https://emse-madd-f22.slack.com">Slack</a> for most communication.</li>
+<li>We’ll be using <a href="https://emse-madd-f22.slack.com" target="_blank">Slack</a> for most communication.</li>
 </ul>
 </section>
 </section>
@@ -682,7 +682,7 @@ ul.task-list{list-style: none;}
 <p>This class can be challenging - <strong>do not suffer in silence!</strong> We have lots of ways to get help.</p>
 <section id="slack" class="level2">
 <h2 class="anchored" data-anchor-id="slack">Slack</h2>
-<p>All course communication will be managed through <a href="https://emse-madd-f22.slack.com">Slack</a>. A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.</p>
+<p>All course communication will be managed through <a href="https://emse-madd-f22.slack.com" target="_blank">Slack</a>. A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.</p>
 <p><strong>You can use Slack to</strong>:</p>
 <ul>
 <li>Ask general questions.</li>
@@ -923,20 +923,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp(/https:\/\/github\.com\/emse-madd-gwu\/2022-Fall/);
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
