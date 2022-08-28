@@ -35,8 +35,8 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/12-review.html",
-    "href": "class/12-review.html",
+    "objectID": "class/12-class-review.html",
+    "href": "class/12-class-review.html",
     "title": "Exam Review & Final Analysis Overview",
     "section": "",
     "text": "Coming soon!"
@@ -56,15 +56,15 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/3-rmd-plotting.html",
-    "href": "class/3-rmd-plotting.html",
+    "objectID": "class/3-rmarkdown-plotting.html",
+    "href": "class/3-rmarkdown-plotting.html",
     "title": "RMarkdown & Plotting",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/4-formr.html",
-    "href": "class/4-formr.html",
+    "objectID": "class/4-intro-to-formr.html",
+    "href": "class/4-intro-to-formr.html",
     "title": "Intro to formr",
     "section": "",
     "text": "Coming soon!"
@@ -77,15 +77,15 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/6-utility.html",
-    "href": "class/6-utility.html",
+    "objectID": "class/6-utility-models.html",
+    "href": "class/6-utility-models.html",
     "title": "Utility Models",
     "section": "",
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/7-mle.html",
-    "href": "class/7-mle.html",
+    "objectID": "class/7-optimization-mle.html",
+    "href": "class/7-optimization-mle.html",
     "title": "Optimization & MLE",
     "section": "",
     "text": "Coming soon!"
@@ -98,8 +98,8 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "class/9-doe.html",
-    "href": "class/9-doe.html",
+    "objectID": "class/9-doe-power-analysis.html",
+    "href": "class/9-doe-power-analysis.html",
     "title": "DOE & Power Analysis",
     "section": "",
     "text": "Coming soon!"
@@ -217,8 +217,8 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "hw/7-doe.html",
-    "href": "hw/7-doe.html",
+    "objectID": "hw/7-design-of-experiment.html",
+    "href": "hw/7-design-of-experiment.html",
     "title": "Design of Experiment",
     "section": "",
     "text": "Coming soon!"
@@ -305,7 +305,7 @@
     "href": "schedule.html",
     "title": "Course Schedule",
     "section": "",
-    "text": "Week \n    Date \n    Class \n    Project \n    Assignments \n      \n  \n \n\n  \n    1 \n    Aug 31 \n     Getting Started Class orientation, intro to R, workflow, packages \n    IntroductionsIntroductions to each other and potential projects \n     Data WranglingDue: 09/07 \n     \n  \n  \n    2 \n    Sep 07 \n     Data Wrangling Importing, wrangling, and summarizing data in R \n    Decision VariablesDistinguishing between decision variables and product attributes \n     PlottingDue: 09/14 \n     \n  \n  \n    3 \n    Sep 14 \n     RMarkdown & Plotting Intro to \"literate programming\" with RMarkdown and plotting with {ggplot2} \n    Project ScopeDefining attribute levels, target survey population, competitors \n     formrDue: 09/21 \n     ProposalDue: Sep 26 \n  \n  \n    4 \n    Sep 21 \n     Intro to formr Designing and implementing surveys in formr \n    Survey Plan 1Overview of survey plan, work on proposals \n     \n     \n  \n  \n    5 \n    Sep 28 \n     No Class - Team Meetings \n     \n     \n     Survey PlanDue: Oct 05 \n  \n  \n    6 \n    Oct 05 \n     Conjoint Questions Generating conjoint questions in R, implementing in formr \n    Survey Plan 2Begin implementing survey plan in formr \n     Utility ModelsDue: 10/12 \n     Pilot SurveyDue: Oct 15 \n  \n  \n    7 \n    Oct 12 \n     Utility Models Intro to utility models, discrete vs. continuous parameters, parameter coding \n    Pilot SurveyFinish implementing pilot survey in formr \n     EstimationDue: 10/19 \n     \n  \n  \n    8 \n    Oct 19 \n     Optimization & MLE Optimization, maximum likelihood estimation \n    Pilot Analysis 1Import & clean pilot data, joins \n     UncertaintyDue: 10/26 \n     \n  \n  \n    9 \n    Oct 26 \n     Uncertainty Computing uncertainty in coefficient estimates \n    Pilot Analysis 2Reshaping data, estimating models \n     Design of ExperimentDue: 11/02 \n     Pilot AnalysisDue: Nov 07 \n  \n  \n    10 \n    Nov 02 \n     DOE & Power Analysis Designing your survey to reduce error \n    Pilot Analysis 3Refine attributes & levels, conduct power analysis, plot results \n     WTP & SimulationsDue: 11/09 \n     \n  \n  \n    11 \n    Nov 09 \n     WTP & Simulations Computing WTP, WTP space models, market simulations \n    WTP & SimulationsCompute WTP, define market simulations, finalize final survey \n     HeterogeneityDue: 11/16 \n     Final SurveyDue: Nov 19 \n  \n  \n    12 \n    Nov 16 \n     Heterogeneity Modeling differences in preferences across sample population \n    HeterogeneityEstimate mixed logit and subpopulation models on pilot data \n     \n     \n  \n  \n    13 \n    Nov 23 \n     Thanksgiving - no class \n    Final Survey FeildingCollecting data for final survey \n     \n     \n  \n  \n    14 \n    Nov 30 \n     Class Review Overview of course concepts \n    Sensitivity AnalysesCompute sensitivity analyses \n     ExamDue: 12/05 \n     Final AnalysisDue: Dec 13 \n  \n  \n    15 \n    Dec 07 \n     Exam Solutions Go over exam solutions and also discuss tips for making a good presentation \n    Final Analysis LabIn class time to work on final analysis \n     \n     \n  \n  \n    16 \n    Dec 14 \n     Final Presentations Don't panic! \n    Final PresentationsDon't panic! \n     \n     Final PresentationDue: Dec 15"
+    "text": "Week \n    Date \n    Class \n    Project \n    Assignments \n      \n  \n \n\n  \n    1 \n    Aug 31 \n     Getting Started Class orientation, intro to R, workflow, packages \n    IntroductionsIntroductions to each other and potential projects \n     Data WranglingDue: 09/07 \n     \n  \n  \n    2 \n    Sep 07 \n     Data Wrangling Importing, wrangling, and summarizing data in R \n    Decision VariablesDistinguishing between decision variables and product attributes \n     PlottingDue: 09/14 \n     \n  \n  \n    3 \n    Sep 14 \n     RMarkdown & Plotting Intro to \"literate programming\" with RMarkdown and plotting with {ggplot2} \n    Project ScopeDefining attribute levels, target survey population, competitors \n     formrDue: 09/21 \n     ProposalDue: Sep 26 \n  \n  \n    4 \n    Sep 21 \n     Intro to formr Designing and implementing surveys in formr \n    Survey Plan 1Overview of survey plan, work on proposals \n     \n     \n  \n  \n    5 \n    Sep 28 \n    No Class - Team Meetings \n     \n     \n     Survey PlanDue: Oct 05 \n  \n  \n    6 \n    Oct 05 \n     Conjoint Questions Generating conjoint questions in R, implementing in formr \n    Survey Plan 2Begin implementing survey plan in formr \n     Utility ModelsDue: 10/12 \n     Pilot SurveyDue: Oct 15 \n  \n  \n    7 \n    Oct 12 \n     Utility Models Intro to utility models, discrete vs. continuous parameters, parameter coding \n    Pilot SurveyFinish implementing pilot survey in formr \n     EstimationDue: 10/19 \n     \n  \n  \n    8 \n    Oct 19 \n     Optimization & MLE Optimization, maximum likelihood estimation \n    Pilot Analysis 1Import & clean pilot data, joins \n     UncertaintyDue: 10/26 \n     \n  \n  \n    9 \n    Oct 26 \n     Uncertainty Computing uncertainty in coefficient estimates \n    Pilot Analysis 2Reshaping data, estimating models \n     Design of ExperimentDue: 11/02 \n     Pilot AnalysisDue: Nov 07 \n  \n  \n    10 \n    Nov 02 \n     DOE & Power Analysis Designing your survey to reduce error \n    Pilot Analysis 3Refine attributes & levels, conduct power analysis, plot results \n     WTP & SimulationDue: 11/09 \n     \n  \n  \n    11 \n    Nov 09 \n     WTP & Simulation Computing WTP, WTP space models, market simulations \n    WTP & SimulationCompute WTP, define market simulations, finalize final survey \n     HeterogeneityDue: 11/16 \n     Final SurveyDue: Nov 19 \n  \n  \n    12 \n    Nov 16 \n     Heterogeneity Modeling differences in preferences across sample population \n    HeterogeneityEstimate mixed logit and subpopulation models on pilot data \n     \n     \n  \n  \n    13 \n    Nov 23 \n    Thanksgiving - no class \n    Final Survey FeildingCollecting data for final survey \n     \n     \n  \n  \n    14 \n    Nov 30 \n     Class Review Overview of course concepts \n    Sensitivity AnalysesCompute sensitivity analyses \n     ExamDue: 12/05 \n     Final AnalysisDue: Dec 13 \n  \n  \n    15 \n    Dec 07 \n     Exam Solutions Go over exam solutions and also discuss tips for making a good presentation \n    Final Analysis LabIn class time to work on final analysis \n     \n     \n  \n  \n    16 \n    Dec 14 \n    Final Presentations \n     \n     \n     Final PresentationDue: Dec 15"
   },
   {
     "objectID": "syllabus.html#gw-bulletin-description-short",
