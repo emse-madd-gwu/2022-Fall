@@ -58,8 +58,8 @@ website:
           href: class/8-uncertainty.qmd
         - text: "Nov 02: DOE & Power Analysis"
           href: class/9-doe-power-analysis.qmd
-        - text: "Nov 09: WTP & Simulations"
-          href: class/10-wtp-simulations.qmd
+        - text: "Nov 09: WTP & Simulation"
+          href: class/10-wtp-simulation.qmd
         - text: "Nov 16: Heterogeneity"
           href: class/11-heterogeneity.qmd
         - text: "Nov 23: Thanksgiving - no class"
@@ -68,7 +68,6 @@ website:
         - text: "Dec 07: Exam Solutions"
           href: class/13-exam-solutions.qmd
         - text: "Dec 14: Final Presentations"
-          href: class/14-final-presentations.qmd
       - text: "Assignments"
         menu:
         - text: "Self Assessment (optional)"
@@ -87,8 +86,8 @@ website:
           href: hw/6-uncertainty.qmd
         - text: "Oct 26: Design of Experiment (Due 11/02)"
           href: hw/7-design-of-experiment.qmd
-        - text: "Nov 02: WTP & Simulations (Due 11/09)"
-          href: hw/8-wtp-simulations.qmd
+        - text: "Nov 02: WTP & Simulation (Due 11/09)"
+          href: hw/8-wtp-simulation.qmd
         - text: "Nov 09: Heterogeneity (Due 11/16)"
           href: hw/9-heterogeneity.qmd
         - text: "Nov 30: Exam (Due 12/05)"
