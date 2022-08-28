@@ -16,12 +16,16 @@ Instructor | Course
 <i class="fas fa-university"></i> Science & Engineering Hall, 2830 | <i class="fa fa-map-marker-alt"></i> [{{< var room >}}]({{< var room_url >}})
 <i class="fas fa-phone"></i> +1 (202) 994-7173 | <i class="far fa-calendar-alt"></i> {{< var dates >}}
 <i class="fas fa-envelope"></i> [jpg@gwu.edu](mailto:jph@gwu.edu) | <i class="far fa-clock"></i> {{< var time >}}
-<i class="fab fa-twitter"></i> [\@JohnHelveston](https://twitter.com/JohnHelveston) | <i class="fab fa-slack"></i> [Slack]({{< var slack >}})
+<i class="fab fa-twitter"></i> [\@JohnHelveston](https://twitter.com/JohnHelveston) | <i class="fab fa-slack"></i> [Slack]({{< var slack >}}){target="_blank"}
 </div>
 
 # COVID-19 Precautions
 
 Please help us all stay safe so we can continue having in-person classes. Please wear a mask in class, and wash your hands often. If you're sick, stay home and send me a message, we'll work it out. Let's work together on this folks.
+
+# Remote attendance / class recording
+
+You should plan to attend class in person. I will only open a zoom for virtual attendance on an individual case-by-case basis for specific excusable absences (e.g. illness, family matters, etc.). Lectures will **not** be recorded. In-person attendance is critical as we will spend a lot of time working on problems and writing code during class. If you have any questions or need special accommodations, send me a message on slack and we can discuss.
 
 # Course Description
 
@@ -64,7 +68,7 @@ Go to the [Course Software](help/course-software.qmd) page for detailed instruct
 
 - R (version 4.1.0 or later), which can be downloaded from [The Comprehensive R Archive Network (CRAN)](https://cloud.r-project.org)
 - RStudio (Desktop Version), a free IDE for R, which can be downloaded from [RStudio](https://rstudio.com/products/rstudio/download/)
-- We'll be using [Slack]({{< var slack >}}) for most communication.
+- We'll be using [Slack]({{< var slack >}}){target="_blank"} for most communication.
 
 # Assignments
 
@@ -74,7 +78,9 @@ Regular class attendance is **essential**. Much of the class time will be spent 
 
 ## Quizzes
 
-There will be 5 quizzes given about once every two weeks immediately at the beginning of class. Quizzes cover material presented in previous classes and assignments during the weeks since the most-recent quiz. Quizzes are **short** (~5 minutes) and are designed to identify areas where additional study is needed. **Quizzes are low-stakes** - your worst one is dropped, and the rest count for just 12% of your final grade. If you do poorly on one, use that as feedback on where you need additional improvement.
+There will be 5 quizzes given about once every other week immediately at the beginning of class. You will not be told in advance when there is a quiz, and make up quizzes will not be available if you miss it (except for excused absences). Please show up on time to class each week to ensure that you do not miss a quiz.
+
+Quizzes will cover material presented in previous classes and assignments during the weeks since the most-recent quiz. Quizzes are **short** (5-10 minutes) and are designed to test for fluency and to demonstrate where additional study is needed. **Quizzes are low-stakes** - your worst one is dropped, and the rest count for a small portion of your final grade. If you do poorly on one or two, use that as feedback on where you need additional improvement.
 
 > **Why quiz at all?** Research shows that giving small quizzes throughout a class can dramatically help with *retention*. It's a phenomenon known as the "retrieval effect" - basically, you have to _practice_ remembering things, otherwise your brain won't remember them. The phenomenon and research on it is explained in detail in the book ["Make It Stick: The Science of Successful Learning,"](https://www.hup.harvard.edu/catalog.php?isbn=9780674729018) by Brown, Roediger, and McDaniel.
 
@@ -106,15 +112,15 @@ Final grades will be calculated as follows:
 <div style="width:550px">
 Item                  | Weight | Notes
 ----------------------|--------|-------------------------------------
-Reflections           | 27 %   | Weekly assignment (9 x 3%)
-Quizzes               | 12 %   | 5 quizzes, lowest dropped
-Project Proposal      | 7 %    | Teams of 3-4 students
+Reflections           | 36 %   | Weekly assignment (9 x 4%)
+Quizzes               | 8 %    | 5 quizzes, lowest dropped
+Project Proposal      | 6 %    | Teams of 3-4 students
 Survey Plan           | 4 %    |
 Pilot Survey          | 4 %    |
-Pilot Analysis        | 9 %    |
+Pilot Analysis        | 8 %    |
 Final Survey          | 5 %    |
 Final Analysis Report | 14 %   |
-Final Presentation    | 8 %    |
+Final Presentation    | 5 %    |
 Final Exam            | 10 %   | Take home exam
 </div>
 
@@ -127,7 +133,7 @@ library(ggrepel)
 df <- data.frame(
     category = c(
       'Reflections', 'Quizzes', 'Project', 'Exam'),
-    percent = c(27, 12, 51, 10)) %>%
+    percent = c(36, 8, 46, 10)) %>%
     arrange(desc(percent)) %>%
     mutate(
       cumpercent = cumsum(percent),
@@ -168,7 +174,7 @@ This class can be challenging - **do not suffer in silence!** We have lots of wa
 
 ## Slack
 
-All course communication will be managed through [Slack]({{< var slack >}}). A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.
+All course communication will be managed through [Slack]({{< var slack >}}){target="_blank"}. A link to sign up for the course slack page can be found on the one (and only) announcement on Blackboard.
 
 **You can use Slack to**:
 
