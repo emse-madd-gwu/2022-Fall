@@ -7,6 +7,11 @@ project:
   render:
     - "*.qmd"
     - "!fragments/"
+  resources:
+    - "class"
+    - "content"
+    - "project"
+    - "slides"
 
 website:
   title: EMSE 6035
@@ -163,5 +168,5 @@ format:
     css: styles.css
     anchor-sections: true
     smooth-scroll: true
-    link-external-newwindow: false
+    link-external-newwindow: true
     include-in-header: "_includes/header.html"
