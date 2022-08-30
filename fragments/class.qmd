@@ -8,6 +8,7 @@ path_notes <- here::here("slides", params$class, paste0(params$class, ".zip"))
 ::: {.grid}
 
 ::: {.g-col-6}
+
 **KEYBOARD SHORTCUTS FOR SLIDES:**
 
 - Use <kbd>←</kbd> and <kbd>→</kbd> to navigate through the slides.
