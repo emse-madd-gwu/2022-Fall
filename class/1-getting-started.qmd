@@ -9,4 +9,5 @@ params:
 ```{r child = here::here("fragments", "setup.qmd")}
 ```
 
-Coming soon!
+```{r child = here::here("fragments", "class.qmd")}
+```
