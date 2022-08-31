@@ -12,6 +12,7 @@ project:
     - "content"
     - "project"
     - "slides"
+    - "templates"
 
 website:
   title: EMSE 6035
