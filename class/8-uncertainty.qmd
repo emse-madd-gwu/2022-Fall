@@ -6,7 +6,8 @@ params:
   formr4conjoint: TRUE
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
 ```
 
 Coming soon!

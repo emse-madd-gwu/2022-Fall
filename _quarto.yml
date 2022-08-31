@@ -144,7 +144,7 @@ website:
       - icon: slack
         href: https://emse-madd-f22.slack.com
     right:
-    - icon: fas fa-bars
+    - icon: list
       menu:
       - text: About
         icon: question-circle
