@@ -5,7 +5,8 @@ params:
   purpose: 'The purpose of this assignment is to get more familiar with R and RStudio and to develop some basic strategies for working with data in R.'
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
 ```
 
 ```{r child = here::here("fragments", "hw.qmd")}
