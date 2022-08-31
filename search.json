@@ -168,11 +168,25 @@
     "text": "This optional assignment allows you to self-assess whether you have the prerequisite knowledge required for this course. Take this three-question self-assessment quiz. It shouldn’t take more than 10-20 minutes to complete, and answers can be compared with the solutions.\nIf you have trouble answering these questions, you may find this course challenging and may want to take other courses or review refresher materials on these topics prior to taking this course."
   },
   {
-    "objectID": "hw/1-data-wrangling.html",
-    "href": "hw/1-data-wrangling.html",
+    "objectID": "hw/1-data-wrangling.html#inspect-data-from-other-packages",
+    "href": "hw/1-data-wrangling.html#inspect-data-from-other-packages",
     "title": "Data Wrangling",
-    "section": "",
-    "text": "Coming soon!"
+    "section": "Inspect data from other packages",
+    "text": "Inspect data from other packages\nWrite R code to install the dslabs package from CRAN, then write code to load the library. Write some code to preview and inspect the movielens data frame that gets loaded when you load the library using some of the techniques we saw in class. For each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is this dataset about?\nHow many observations are in the data frame?\nWhat is the original source of the data?\nWhat type of data is each variable?\nWhat are the years of the earliest and most recent observations in the data set?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html#answer-questions-about-the-data",
+    "href": "hw/1-data-wrangling.html#answer-questions-about-the-data",
+    "title": "Data Wrangling",
+    "section": "Answer questions about the data",
+    "text": "Answer questions about the data\nFor each of the following questions, write code to find your answer and leave a detailed response in a comment:\n\nWhat is the min, mean, and max rating in the data set?\nHow many observations received the maximum rating?\nWhat percentage of total observations received the maximum rating?\nWhat is the title of the observation with the longest title (in terms of numbers of letters in the title)?"
+  },
+  {
+    "objectID": "hw/1-data-wrangling.html#installing-packages-from-github-the-brrr-library",
+    "href": "hw/1-data-wrangling.html#installing-packages-from-github-the-brrr-library",
+    "title": "Data Wrangling",
+    "section": "Installing packages from Github: the BRRR library",
+    "text": "Installing packages from Github: the BRRR library\nThe vast majority of the time, you will install external packages using the install.packages() function. This installs packages from the Comprehensive R Archive Network (CRAN), where most packages are published. But you can also install packages that are under development or haven’t been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it’s also where all of the files that make up this website are stored).\nTo install a package from GitHub, you first need to install the remotes library. Then you can use the remotes::install_github()` function to install packages directly from GitHub. To try this out, install the remotes library, then trying installing the BRRR package:\n\nremotes::install_github(\"brooke-watson/BRRR\")\n\n\nNote: Packges on GitHub are in development and often require other packges to work. So if you get an installation error about some other package dependency, try restarting your R session and try again.\n\nNot sure what this package does? Well, one of the other nice things about packages listed on GitHub is the authors tend to write detailed descriptions - check out the GitHub page for the BRRR package. Then try using the BRRR::skrrrahh() function with different number arguments (turn your volume up). In the #welcome channel on slack, post your favorite argument to skrrrahh() (mine is 24)."
   },
   {
     "objectID": "hw/10-exam.html",
