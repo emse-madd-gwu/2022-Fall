@@ -39,7 +39,7 @@ RStudio offers many excellent [primers](https://rstudio.cloud/learn/primers/) to
 
 # 5. Reflect
 
-Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your `hw1.Rmd` file.
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your `hw1.R` file.
 
 # 6. Submit
 
