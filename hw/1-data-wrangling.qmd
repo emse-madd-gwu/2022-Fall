@@ -14,11 +14,11 @@ source(here::here("R", "settings.R"))
 
 # 1. Software
 
-If you haven't yet, go to the [Course Software](ref-course-software.html) page and install all the software we'll need for this course. You'll need these tools for this assignment.
+If you haven't yet, go to the [Course Software](../help/course-software.html) page and install all the software we'll need for this course. You'll need these tools for this assignment.
 
 # 2. Getting Organized
 
-Download and edit [this template](`r url_template`) when working through this assignment.
+Download and edit [this template](`r url_template`) when working through this assignment. This is for now mostly a blank file that you can use to jot down examples and play with code.
 
 # 3. Readings
 
@@ -44,7 +44,6 @@ Reflect on what you've learned while going through these readings and exercises.
 # 6. Submit
 
 To submit this assignment, create a zip file of all the files in your R project folder for this assignment. Name the zip file ``r paste0('hw', params$number, '-netID.zip')``, replacing `netID` with your netID (e.g., ``r paste0('hw', params$number, '-jph.zip')``). Then copy that zip file into the "submissions" folder in your Box folder created for this class (the Box folder is named your GW netID).
-
 
 ----
 
@@ -73,7 +72,7 @@ For each of the following questions, write code to find your answer and leave a 
 
 ## Installing packages from Github: the **BRRR** library
 
-The vast majority of the time, you will install external packages using the `install.packages()` function. This installs packages from the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN), where most packages are published. But you can also install packages that are under development or haven't been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it's also where all of the files that make up this website are [stored](https://github.com/emse-madd-gwu/2021-Fall)).
+The vast majority of the time, you will install external packages using the `install.packages()` function. This installs packages from the [Comprehensive R Archive Network](https://cran.r-project.org/) (CRAN), where most packages are published. But you can also install packages that are under development or haven't been published to CRAN yet. Most of the time, these packages are hosted on GitHub - an online platform for sharing code (it's also where all of the files that make up this website are [stored](https://github.com/emse-madd-gwu/2022-Fall)).
 
 To install a package from GitHub, you first need to install the **remotes** library. Then you can use the `remotes`::install_github()` function to install packages directly from GitHub. To try this out, install the **remotes** library, then trying installing the **BRRR** package:
 

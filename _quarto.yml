@@ -8,11 +8,11 @@ project:
     - "*.qmd"
     - "!fragments/"
   resources:
-    - "class"
-    - "content"
-    - "project"
-    - "slides"
-    - "templates"
+    - "class/"
+    - "content/"
+    - "project/"
+    - "slides/"
+    - "templates/"
 
 website:
   title: EMSE 6035
