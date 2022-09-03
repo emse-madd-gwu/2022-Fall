@@ -270,7 +270,42 @@
     "href": "project/1-proposal.html",
     "title": "Project Proposal",
     "section": "",
-    "text": "Coming soon!"
+    "text": "As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the project selection guidelines.\nThe course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal."
+  },
+  {
+    "objectID": "project/1-proposal.html#get-organized",
+    "href": "project/1-proposal.html#get-organized",
+    "title": "Project Proposal",
+    "section": "1. Get Organized",
+    "text": "1. Get Organized\nDownload and unzip this template for your proposal. Open the proposal.Rproj file and write your proposal in the proposal.Rmd file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:\n\nWrite your project title in the title field (and provide a subtitle if you wish, or delete the subtitle field).\nIn the author field, list the names of all teammates, e.g. author: Luke Skywalker, Leia Organa, and Han Solo."
+  },
+  {
+    "objectID": "project/1-proposal.html#writing-quality",
+    "href": "project/1-proposal.html#writing-quality",
+    "title": "Project Proposal",
+    "section": "2. Writing Quality",
+    "text": "2. Writing Quality\nYour proposal should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The proposal should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the spelling package and running this in the R console:\n\nspelling::spell_check_files(\"proposal.Rmd\")\n\nAll figures should be referenced in the text."
+  },
+  {
+    "objectID": "project/1-proposal.html#proposal-contents",
+    "href": "project/1-proposal.html#proposal-contents",
+    "title": "Project Proposal",
+    "section": "3. Proposal Contents",
+    "text": "3. Proposal Contents\nYour proposal should contain the following items listed as separate sections.\n\nNOTE: If your team is working on a policy project rather than a product, see the Policy Proposal Contents section below.\n\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the product you are studying?\nWhat key product attributes make it different than its competitors?\nWhat major design decision variables will you focus on for your analysis?\n\n\n\nIntroduction\nProvide a brief description and background of the product or technology. Include a picture or diagram of the product.\n\n\nMarket Opportunity\n\nIdentify Your Customer\nIf there are multiple potential markets, choose one to focus on for your analysis. Describe who you plan on taking your survey and how you intend to gain access to that population. You may survey customers of a “downstream” product, if appropriate (e.g. survey electric vehicle buyers to learn about preferences for electric vehicle battery attributes).\n\n\nIdentify Competitors\nWhich other products will compete with yours? Benchmark how competitors compare on your product’s attributes.\n\n\nIdentify Market Size\nEstimate the size of the annual market (expected sales in units per year) for this product and its competitors. Specify if your estimated annual market size is regional, national, or global, and provide references.\n\n\n\nProduct Attributes & Decision Variables\nA key component of your proposal is to identify the relationships between your product attributes and decision variables.\n\nProduct Attributes\nThese are the product features that consumers observe and care about. For example, price is almost always an important product attribute that influences consumer choices. You should list and describe the major product attributes you will include in your analysis. Where possible, label the product attributes on the diagram of your design. Where possible, quantify the metrics for each attribute (e.g. if one of your attributes is weight, the metric could be “kilograms”). Also list the set or range of possible levels you plan to explore for each attribute (e.g. for color you may choose the set {red, green, blue}, or for price you may choose the range $1 - $10).\n\n\nDecision Variables\nThese are key elements of the product / technology that the designers focused on in designing the product. For example, engineers might be trying to choose the best thickness for a solar cell, which affects multiple product attributes, including weight (thicker cells are heavier), price (thicker cells use more material), lifetime (cell thickness may affect how quickly a cell degrades), etc. You should discuss ~2-3 key decision variables that are related to your product’s design that you propose to consider. Discuss why you chose these variables, and label them on your diagram of the product design. For each variable, specify units and the range of potential values under consideration.\n\n\nModel Relationships Table\nInclude a clearly legible image of your model relationships table identifying relationships between your product attributes and decision variables. For now, these relationships can simply be directional (e.g. cell thickness is positively related to cell weight). Use this example as a template.\n\n\n\nQuestions\nList major outstanding questions (e.g. about the product / technology performance metrics, market opportunities, etc.) that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
+  },
+  {
+    "objectID": "project/1-proposal.html#knit-and-submit",
+    "href": "project/1-proposal.html#knit-and-submit",
+    "title": "Project Proposal",
+    "section": "4. Knit and submit",
+    "text": "4. Knit and submit\nClick the “knit” button to compile your proposal.Rmd file into a html web page, then create a zip file of everything in your R Project folder. Go to your team Box folder and submit your zip file in the “submissions” file. Only one person from your team should submit the report."
+  },
+  {
+    "objectID": "project/1-proposal.html#policy-proposal-contents",
+    "href": "project/1-proposal.html#policy-proposal-contents",
+    "title": "Project Proposal",
+    "section": "Policy Proposal Contents",
+    "text": "Policy Proposal Contents\nFor teams looking at a policy design rather than a product design, your proposal should contain the following sections.\n\nAbstract\nA few sentences summarizing the overall proposal and convincing the reader why it is important. Specifically, tell the reader:\n\nWhat is the problem you are trying to address?\nWhat policy options are you considering to address the problem?\nWhat is the target population of your policies? Who will be affected by them?\n\n\n\nIntroduction\nProvide a brief description and background of the problem you are trying to address and the goal of the policies you are considering.\n\n\nTarget Population\nDescribe the target population for your analysis. Who will be affected by the policies you are considering? Who are you targeting these policies towards? Who are you planning on getting to take your survey, and how you intend to gain access to that population? Include an estimate of the size of the total target population.\n\n\nPolicy Options\n\nIdentify Policy Options\nWhich policies are you considering, and what are some of the potential pros and cons of them? Are some easier / more feasible to implement or enforce than others? Are some more costly to implement than others? Include a summary table comparing some basic features of each policy, e.g.\n\n\n\nPolicy\nDescription\nPro\nCon\n\n\n\n\nPolicy 1\nBrief description\nEasily implemented\nExpensive\n\n\nPolicy 2\nBrief description\nHard to enforce\nCheap\n\n\n\n\n\nIdentify Policy Attributes\nFor each policy, identify the key attributes that your target population will observe. For example, if the policy involves a fee or tax, then the amount of that fee or tax would be a key attribute. For each attribute, specify the range of possible levels you plan to explore (e.g. for amount you may choose the range $1 - $10). You should choose levels that reflect the range of existing policies or potential policies. You may choose to include policies / attributes that have not yet been implemented as well.\n\n\n\nQuestions\nList major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project."
   },
   {
     "objectID": "project/2-survey-plan.html",
@@ -397,6 +432,13 @@
     "title": "Syllabus",
     "section": "Grading Scale",
     "text": "Grading Scale\n\n\n\n\nGrade\nRange\nGrade\nRange\n\n\n\n\nA\n94 - 100%\nC\n74 - 76.99%\n\n\nA-\n90 - 93.99%\nC-\n70 - 73.99%\n\n\nB+\n87 - 89.99%\nD+\n67 - 69.99%\n\n\nB\n84 - 86.99%\nD\n64 - 66.99%\n\n\nB-\n80 - 83.99%\nD-\n60 - 63.99%\n\n\nC+\n77 - 79.99%\nF\n< 60%\n\n\n\n\nThe course instructors may choose to change the scales at their discretion. You are guaranteed that your letter grade will never become worse as a result of changing scales."
+  },
+  {
+    "objectID": "syllabus.html#rounding",
+    "href": "syllabus.html#rounding",
+    "title": "Syllabus",
+    "section": "Rounding",
+    "text": "Rounding\nI do not round final grades. Rather, I grade generously throughout the semester. For example, if you give a quiz your best shot and completely fail it, you will likely get a 50% instead of a 0%. The 50% is for trying (if you simply don’t take it, you’ll get a 0%). As a result, I will not modify or round your final score, even if you’re very close to a different letter grade (e.g., a 93.98 is an “A-” and will not be rounded up to an “A”)."
   },
   {
     "objectID": "syllabus.html#slack",
