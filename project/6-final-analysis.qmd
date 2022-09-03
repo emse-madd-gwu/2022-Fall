@@ -4,7 +4,6 @@ toc: true
 params:
   number: 6
   weight: '14%'
-  purpose: 'purpose'
   assessment: 'Your final analysis will be assessed using [this rubric](project/final_analysis/rubric.html){target="_blank"}.'
 ---
 
