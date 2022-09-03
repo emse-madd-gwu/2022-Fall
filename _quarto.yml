@@ -11,6 +11,7 @@ project:
     - "class/"
     - "content/"
     - "project/"
+    - "rubrics/"
     - "slides/"
     - "templates/"
 
