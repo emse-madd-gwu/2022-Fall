@@ -8,7 +8,8 @@ params:
   assessment: 'Your proposal will be assessed using [this rubric](../project/proposal/rubric.html){target="_blank"}.'
 ---
 
-```{r child = here::here("fragments", "setup.qmd")}
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
 ```
 
 ```{r child = here::here("fragments", "project.qmd")}
