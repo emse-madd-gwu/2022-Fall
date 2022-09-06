@@ -813,16 +813,19 @@ Item | Description
 # Today
 
 .cols3[
+
 ### Market Opportunity
 
 - Identify customer
 - Identify competitors
 - Identify market size
+
 ]
 
 --
 
 .cols3[
+
 ### Product Attributes
 
 Features your _customer_ cares about
@@ -832,9 +835,11 @@ Features your _customer_ cares about
 --
 
 .cols3[
+
 ### Decision Variables
 
 Features that _the designer_ cares about
+
 ]
 
 ---
@@ -845,12 +850,15 @@ background-color: #fff
 # .center[Example: **Folding solar panels**]
 
 .leftcol60[
+
 <center>
 <img src="images/solar.jpg" width=800>
 </center>
+
 ]
 
 .rightcol40[
+
 ### Who is your customer?
 
 - General public?
@@ -861,6 +869,7 @@ background-color: #fff
 
 - Similar folding panels 
 - Batteries?
+
 ]
 
 ---
@@ -871,12 +880,15 @@ background-color: #fff
 # .center[Example: **Electric vehicle battery**]
 
 .leftcol60[
+
 <center>
 <img src="images/ev.png" width=100%>
 </center>
+
 ]
 
 .rightcol40[
+
 ### Who is your customer?
 
 - Car buyers
@@ -885,6 +897,7 @@ background-color: #fff
 
 - Hybrid vehicles?
 - Efficient gasoline vehicles?
+
 ]
 
 ---
@@ -892,6 +905,7 @@ background-color: #fff
 class: center, middle
 
 .leftcol[
+
 ## Product Attributes
 
 #### Features your _customer_ cares about
@@ -899,9 +913,11 @@ class: center, middle
 ]
 
 .rightcol[
+
 ## Decision Variables
 
 #### Features that _the designer_ cares about
+
 ]
 
 ---
@@ -915,23 +931,23 @@ class: center
 
 # Model Relationships Table ([example](https://docs.google.com/spreadsheets/d/1iwMI9cbJjB6J8wghZY6Y_fCOSt7MDsUTnSuuC58_xjU/edit?usp=sharing))
 
-.border[
 <center>
 <img src="images/solar2.png" width=1100>
 </center>
-]
 
 ---
 
 class: inverse
 
 ```{r, echo=FALSE}
-countdown(minutes = 15,
-          warn_when = 30,
-          update_every = 1,
-          top = 0,
-          right = 0,
-          font_size = '2em')
+countdown(
+    minutes = 15,
+    warn_when = 30,
+    update_every = 1,
+    top = 0,
+    right = 0,
+    font_size = '2em'
+)
 ```
 
 ## Team Proposals
