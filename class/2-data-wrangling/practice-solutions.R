@@ -1,4 +1,4 @@
-# install.packages(c("tidyverse", "here"))
+ # install.packages(c("tidyverse", "here"))
 library(tidyverse)
 library(here)
 
@@ -89,22 +89,23 @@ glimpse(data)
 # What might one row represent?
 
 # ANSWER: 
-# These are observations of flights departing NYC airports in 2013
+# These are observations of bird impacts with aircraft. Each row
+# is one impact observation
 
-# How many unique airlines are in the data frame? 
+# How many unique airports are in the data frame?
 # HINT: Use unique()
-unique(data$carrier) # View all airports
-length(unique(data$carrier)) # Count how many there are
+unique(data$airport) # View all airports
+length(unique(data$airport)) # Count how many there are
 
 # What is the earliest and latest observation in the data frame?
 # HINT: Use min() and max()
-min(data$time_hour)
-max(data$time_hour)
+min(data$incident_date)
+max(data$incident_date)
 
-# What is the shortest and longest air time for any one flight in the data frame?
+# What is the lowest and highest cost of any one repair in the data frame?
 # HINT: Use min() and max() with na.rm = TRUE
-min(data$air_time, na.rm = TRUE)
-max(data$air_time, na.rm = TRUE)    
+min(data$cost_repairs_infl_adj, na.rm = TRUE)
+max(data$cost_repairs_infl_adj, na.rm = TRUE)
 
 
 
@@ -114,34 +115,34 @@ max(data$air_time, na.rm = TRUE)
 path_to_data <- here('data', 'data.csv')
 data <- read_csv(path_to_data)
 
-# Create a new data frame, flights_fall, that contains only flights that 
-# departed in the fall semester
-flights_fall <- data %>% 
-    filter(month >= 8)
+# Create a new data frame, dc, that contains only the rows from DC airports.
+dc <- data %>%
+    filter(state == 'DC')
 
-# Create a new data frame, flights_dc, that contains only flights that
-# flew to DC airports (Reagan or Dulles)
-flights_dc <- data %>% 
-    filter(dest %in% c('DCA', 'IAD'))
+# Create a new data frame, dc_dawn, that contains only the rows from DC
+# airports that occurred at dawn.
+dc_dawn <- data %>%
+    filter(state == 'DC') %>%
+    filter(time_of_day == 'Dawn')
 
-flights_dc <- data %>% 
-    filter(dest == 'DCA' | dest == 'IAD') # Same result
+dc_dawn <- data %>%
+    filter(state == 'DC', time_of_day == 'Dawn')
 
-# Create a new data frame, flights_dc_carrier, that contains only flights that
-# flew to DC airports (Reagan or Dulles) and only the columns about the 
-# month and carrier
-flights_dc_carrier <- data %>% 
-    filter(dest %in% c('DCA', 'IAD')) %>% 
-    select(month, carrier)
+dc_dawn <- data %>%
+    filter(state == 'DC' & time_of_day == 'Dawn')
 
-# How many unique airlines were flying to DC airports in July?
-flights_dc_carrier %>% 
-    filter(month == 7) %>% 
-    distinct(carrier)
+# Create a new data frame, dc_dawn_birds, that contains only the rows from DC
+# airports that occurred at dawn and only the variables (columns) about the
+# species of bird.
+dc_dawn_birds <- data %>%
+    filter(state == 'DC', time_of_day == 'Dawn') %>%
+    select(contains('species'))
 
-df_july <- flights_dc_carrier %>% 
-    filter(month == 7) 
-length(unique(df_july$carrier))
+# How many unique species of birds have been involved in accidents at DC
+# airports?
+unique(dc_dawn_birds$species)
+length(unique(dc_dawn_birds$species))
+
 
 
 # mutate() & arrange() --------------------------------------------------------
@@ -150,25 +151,22 @@ length(unique(df_july$carrier))
 path_to_data <- here('data', 'data.csv')
 data <- read_csv(path_to_data)
 
-# Create the "speed" variable in mph from the time (in minutes) 
-# and distance (in miles) variables. 
-# Which flight flew the fastest?
-data <- data %>% 
-    mutate(speed = distance / (air_time / 60))
-data %>% 
-    arrange(desc(speed))
+# Create the height_miles variable (the height variable converted to miles)
+# HINT: There are 5,280 feet in a mile
+data <- data %>%
+    mutate(height_miles = height / 5280)
 
-# Create the dep_delay_hour variable 
-# TRUE if the departure delay is greater or equal to one hour
-data <- data %>% 
-    mutate(dep_delay_hour = ifelse(dep_delay > 60, TRUE, FALSE))
+# Create the cost_mil variable
+# TRUE if the repair cost >= $1 million, otherwise FALSE
+data <- data %>%
+    mutate(cost_mil = ifelse(cost_repairs_infl_adj > 10^6, TRUE, FALSE))
 
-data <- data %>% 
-    mutate(dep_delay_hour = dep_delay > 60) # This also works
+data <- data %>%
+    mutate(cost_mil = cost_repairs_infl_adj > 10^6) # This also works
 
-# Remove rows that have NA for air_time and re-arrange the 
-# resulting data frame based on the longest air time and longest flight distance
+# Remove rows that have NA for cost_repairs_infl_adj and re-arrange the
+# resulting data frame based on the highest height and most expensive cost
 # HINT: The function is.na() returns TRUE if a value is NA
-data %>% 
-    filter(!is.na(air_time)) %>% 
-    arrange(desc(air_time), desc(distance)) 
+data <- data %>%
+    filter(!is.na(cost_repairs_infl_adj)) %>%
+    arrange(desc(height), desc(cost_repairs_infl_adj))

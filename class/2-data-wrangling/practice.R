@@ -1,4 +1,4 @@
-# install.packages(c("tidyverse", "here"))
+ # install.packages(c("tidyverse", "here"))
 library(tidyverse)
 library(here)
 
@@ -81,15 +81,14 @@ colnames(msleep)
 # Preview the different columns - what do you think this data is about? 
 # What might one row represent?
 
-# How many unique airlines are in the data frame? 
+# How many unique airports are in the data frame?
 # HINT: Use unique()
 
 # What is the earliest and latest observation in the data frame?
 # HINT: Use min() and max()
 
-# What is the shortest and longest air time for any one flight in the data frame?
+# What is the lowest and highest cost of any one repair in the data frame?
 # HINT: Use min() and max() with na.rm = TRUE
-
 
 
 
@@ -97,17 +96,17 @@ colnames(msleep)
 
 # Read in the data.csv file in the data folder:
 
-# Create a new data frame, flights_fall, that contains only flights that 
-# departed in the fall semester
+# Create a new data frame, dc, that contains only the rows from DC airports.
 
-# Create a new data frame, flights_dc, that contains only flights that
-# flew to DC airports (Reagan or Dulles)
+# Create a new data frame, dc_dawn, that contains only the rows from DC
+# airports that occurred at dawn.
 
-# Create a new data frame, flights_dc_carrier, that contains only flights that
-# flew to DC airports (Reagan or Dulles) and only the columns about the 
-# month and airline
+# Create a new data frame, dc_dawn_birds, that contains only the rows from DC
+# airports that occurred at dawn and only the variables (columns) about the
+# species of bird.
 
-# How many unique airlines were flying to DC airports in July?
+# How many unique species of birds have been involved in accidents at DC
+# airports?
 
 
 
@@ -115,13 +114,12 @@ colnames(msleep)
 
 # Read in the data.csv file in the data folder:
 
-# Create the "speed" variable in mph from the time (in minutes) 
-# and distance (in miles) variables. 
-# Which flight flew the fastest?
+# Create the height_miles variable (the height variable converted to miles)
+# HINT: There are 5,280 feet in a mile
 
-# Create the dep_delay_hour variable 
-# TRUE if the departure delay is greater or equal to one hour
+# Create the cost_mil variable
+# TRUE if the repair cost >= $1 million, otherwise FALSE
 
-# Remove rows that have NA for air_time and re-arrange the 
-# resulting data frame based on the longest air time and longest flight distance
+# Remove rows that have NA for cost_repairs_infl_adj and re-arrange the
+# resulting data frame based on the highest height and most expensive cost
 # HINT: The function is.na() returns TRUE if a value is NA

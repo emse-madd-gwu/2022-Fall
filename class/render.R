@@ -9,5 +9,6 @@ renderthis::to_pdf("index.html", paste0(lesson, ".pdf"))
 zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
-        'intro-to-R.R',
+        'practice.R',
+        'practice-solutions.R',
         paste0(lesson, ".Rproj")))
