@@ -1,7 +1,7 @@
 ---
 title: "Optimization & MLE"
 params:
-  class: "7-mle"
+  class: "7-optimization-mle"
   logitrcars: TRUE
   formr4conjoint: TRUE
 ---

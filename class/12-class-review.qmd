@@ -1,7 +1,7 @@
 ---
 title: "Exam Review & Final Analysis Overview"
 params:
-  class: "12-review"
+  class: "12-class-review"
   logitrcars: TRUE
   formr4conjoint: FALSE
 ---
