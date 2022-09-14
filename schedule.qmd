@@ -17,8 +17,6 @@ fa <- list(
 # Make the schedule data frame
 schedule <- get_schedule() %>%
   mutate(
-    assign_due = format(assign_due, format = "%b %d"),
-    final_due = format(final_due, format = "%b %d"),
     # Make projects column
     project = ifelse(
       is.na(project_name), NA,
@@ -32,12 +30,12 @@ schedule <- get_schedule() %>%
     assignments = ifelse(is.na(assign_n), "",
         paste0(
         '<a href="hw/', assign_n, "-", assign_stub, '.html">',
-        fa$assignment, '</a><b> ', assign_name, "</b><br>Due: ", assign_due)),
+        fa$assignment, '</a><b> ', assign_name, "</b><br>Due: ", assign_due_md)),
     final = ifelse(
       is.na(final_name), NA,
       paste0(
           '<a href="project/', final_stub, '.html">',
-        fa$project, '</a><b> ', final_name, "</b><br>Due: ", final_due))
+        fa$project, '</a><b> ', final_name, "</b><br>Due: ", final_due_md))
   )
 
 highlight <- which(Sys.Date() > schedule$date)
@@ -57,4 +55,5 @@ schedule %>%
   column_spec(column = 3, width = '18em') %>%
   row_spec(highlight, background = "#e1e1e1")
 ```
+
 :::

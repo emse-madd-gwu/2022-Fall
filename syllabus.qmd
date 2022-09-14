@@ -97,7 +97,7 @@ Notice that this is essentially a pass/fail system. I'm not grading your writing
 
 ## Final Project
 
-Throughout the semester, students will work in teams of 3-4 students towards a final project. The project is broken into multiple phases with key deliverables due throughout the semester. See the [Project Overview](p0-overview.qmd) page for more details.
+Throughout the semester, students will work in teams of 3-4 students towards a final project. The project is broken into multiple phases with key deliverables due throughout the semester. See the [Project Overview](project/0-overview.qmd) page for more details.
 
 ## Final Exam
 

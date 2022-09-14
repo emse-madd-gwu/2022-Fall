@@ -42,7 +42,7 @@ get_schedule <- function() {
     # Weekly assignment vars
     assignments <- df %>%
         filter(!is.na(assign_name)) %>%
-        mutate(assign_due = format(assign_due, format = "%m/%d")) %>%
+        mutate(assign_due_md = format(assign_due, format = "%m/%d")) %>%
         select(week, starts_with("assign_"))
 
     # Final project vars
@@ -50,7 +50,7 @@ get_schedule <- function() {
         filter(!is.na(final_name)) %>%
         mutate(
             final_n = row_number(),
-            final_due = format(as.Date(final_due), format = "%b %d"),
+            final_due_md = format(as.Date(final_due), format = "%b %d"),
             final_stub = paste0(final_n, "-", final_stub)
         ) %>%
         select(week, starts_with("final_"))
