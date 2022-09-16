@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.1.245">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -66,11 +66,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - formr">
-<meta property="og:description" content="Coming soon!">
+<meta property="og:description" content="Download and edit this template when working through this assignment. Notice that this week’s template is a .Rmd file.">
 <meta property="og:site-name" content="https://madd.seas.gwu.edu/">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="EMSE 6035 - formr">
-<meta name="twitter:description" content="Coming soon!">
+<meta name="twitter:description" content="Download and edit this template when working through this assignment. Notice that this week’s template is a .Rmd file.">
 <meta name="twitter:image" content="https://madd.seas.gwu.edu/2022-Fall/hw/images/logo-square.png">
 <meta name="twitter:creator" content="@johnhelveston">
 <meta name="twitter:card" content="summary">
@@ -357,9 +357,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Coming soon!</p>
+<script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
+<div class="cell">
+
+</div>
+<div class="cell" data-layout-align="center">
+
+</div>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: September 20 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 3% of your final grade.</p>
+<p><strong>Purpose</strong>: The purpose of this assignment is to get familiar with the <a href="https://formr.org/">formr.org</a> survey platform, which we will be using to implement our surveys.</p>
+<p><strong>Assessment</strong>: This assignment is graded using a check system:</p>
+<ul>
+<li>✔+ (110%): Responses shows phenomenal thought and engagement with the course content. I will not assign these often.</li>
+<li>✔ (100%): Responses are thoughtful, well-written, and show engagement with the course content. This is the expected level of performance.</li>
+<li>✔− (50%): Responses are hastily composed, too short, and/or only cursorily engages with the course content. This grade signals that you need to improve next time. I will <em>hopefully</em> not assign these often.</li>
+</ul>
+<p>Notice that this is essentially a pass/fail system. I’m not grading your writing ability and I’m not counting the number of words you write - I’m looking for thoughtful engagement. One or two sentences is <strong>not enough</strong>. Write at least a paragraph and show me that you did the readings assigned.</p>
+</blockquote>
+<section id="getting-organized" class="level1">
+<h1>1. Getting Organized</h1>
+<p>Download and edit <a href="https://madd.seas.gwu.edu/2022-Fall/templates/hw3.zip">this template</a> when working through this assignment. Notice that this week’s template is a .Rmd file.</p>
+</section>
+<section id="readings" class="level1">
+<h1>2. Readings</h1>
+<p>Next week we will start getting into designing conjoint surveys for our projects. We will implement them using <a href="https://formr.org/">formr.org</a>, which is an R-based platform for designing surveys. The platform allows you to use R or markdown code (just like you would in a .Rmd file) to define everything you see in an online survey. All survey elements are defined using Google Sheets.</p>
+<p>To get familiar with the platform, go to <strong><a href="https://www.jhelvy.com/talks/2021-01-21-surveys-with-formr/">this post</a></strong> on my website and watch the ~45 min video on the page. It is a recording of me introducing formr.org at a <a href="https://gwcoders.github.io/">GW Coders</a> community meet up back in 2021. The first 5 minutes is a high level introduction, and the rest of the video goes into a detailed demo of the platform.</p>
+<p><strong>Take notes</strong> as you watch the video.</p>
+<p>At the bottom of the page in the section titled “Surveys with {formr}”, you can see links to the actual surveys I used in the video.</p>
+</section>
+<section id="make-a-practice-survey" class="level1">
+<h1>3. Make a practice survey</h1>
+<p>Normally I would have each team create their own account on formr.org, but at the moment the site is undergoing several upgrades and they have temporarily suspended new accounts. So, the work around for this semester will be for every team to use the same account. I will post the log in information on the class <a href="https://emse-madd-f22.slack.com" target="_blank">Slack</a> in the #projects channel.</p>
+<p>For practice, try replicating the <a href="https://docs.google.com/spreadsheets/d/1hs551J6PYJNxc4sftmJyUqj6XYGYFVnN_5faQBWY7cs/edit?usp=sharing">random images</a> survey I demonstrated in the video. Follow these steps:</p>
+<ol type="1">
+<li>Make a copy of the survey Google Sheet in GW Google Drive account. <strong>Make sure you turn the share settings on so that anyone can view it</strong> (if you don’t, formr won’t be able to read it in).</li>
+<li>Log in to formr.org and create a new survey using that Google Sheet. Name your survey <code>practice_netID</code>, replacing <code>netID</code> with your <code>netID</code> (e.g.&nbsp;<code>practice_jph</code>).</li>
+<li>Once you have your survey uploaded, you can make it live by creating a “Run”. Create a new run, and give it the same name as your survey name. Add your survey to the run by clicking on the <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM325.8 139.7C310.1 124.1 284.8 124.1 269.2 139.7L247.8 161.1L318.7 232.1L340.1 210.7C355.8 195 355.8 169.7 340.1 154.1L325.8 139.7zM111.5 303.8L96.48 363.1C95.11 369.4 96.71 375.2 100.7 379.2C104.7 383.1 110.4 384.7 115.9 383.4L176 368.3C181.6 366.9 186.8 364 190.9 359.9L296.1 254.7L225.1 183.8L119.9 288.1C115.8 293.1 112.9 298.2 111.5 303.8z"></path></svg> icon, then add a stopping point by clicking the <svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M384 128v255.1c0 35.35-28.65 64-64 64H64c-35.35 0-64-28.65-64-64V128c0-35.35 28.65-64 64-64H320C355.3 64 384 92.65 384 128z"></path></svg> icon.</li>
+<li>The link to the survey will be <code>https://your_run_name.formr.org</code>. You can control whether your survey is “live” or not by modifying the “volume” icons. I recommend setting it to the <svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M412.6 181.9c-10.28-8.344-25.41-6.875-33.75 3.406c-8.406 10.25-6.906 25.37 3.375 33.78C393.5 228.4 400 241.8 400 256c0 14.19-6.5 27.62-17.81 36.87c-10.28 8.406-11.78 23.53-3.375 33.78c4.719 5.812 11.62 8.812 18.56 8.812c5.344 0 10.75-1.781 15.19-5.406C435.1 311.6 448 284.7 448 256S435.1 200.4 412.6 181.9zM301.2 34.84c-11.5-5.187-25.01-3.116-34.43 5.259L131.8 160H48c-26.51 0-48 21.49-48 47.1v95.1c0 26.51 21.49 47.1 48 47.1h83.84l134.9 119.9C272.7 477.2 280.3 480 288 480c4.438 0 8.959-.9313 13.16-2.837C312.7 472 320 460.6 320 448V64C320 51.41 312.7 39.1 301.2 34.84z"></path></svg> icon, which means people who have the link can access the survey.</li>
+<li>Try it out! See if the survey works as expected. You can also click through a few times and then see the response data by going to your survey (not the run) in the formr.org admin page.</li>
+</ol>
+</section>
+<section id="reflect-knit" class="level1">
+<h1>4. Reflect &amp; Knit</h1>
+<p>Reflect on what you’ve learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? After reflecting, do the following:</p>
+<ul>
+<li>Write at least a paragraph in your Rmd file.</li>
+<li>Click the “knit” button to compile your .Rmd file into a html web page.</li>
+<li>Open up the resulting reflection.html file in your web browser and see how it looks!</li>
+</ul>
+</section>
+<section id="submit" class="level1">
+<h1>5. Submit</h1>
+<p>To submit this assignment, create a zip file of all the files in your R project folder for this assignment. Name the zip file <code>hw3-netID.zip</code>, replacing <code>netID</code> with your netID (e.g., <code>hw3-jph.zip</code>). Then copy that zip file into the “submissions” folder in your Box folder created for this class (the Box folder is named your GW netID).</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
