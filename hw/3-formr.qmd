@@ -14,7 +14,7 @@ source(here::here("R", "settings.R"))
 ```{r child = here::here("fragments", "hw.qmd")}
 ```
 
-# 1. Getting Organized
+# 1. Get Organized
 
 Download and edit [this template](`r url_template`) when working through this assignment. Notice that this week's template is a .Rmd file.
 
