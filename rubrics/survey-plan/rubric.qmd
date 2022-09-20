@@ -1,6 +1,7 @@
 ---
-title: ""
-output: html_document
+title: Rubric: Survey Plan
+subtitle: EMSE 6035: Marketing Analytics for Design Decisions, Fall 2022
+toc: false
 ---
 
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE}
@@ -14,22 +15,19 @@ knitr::opts_chunk$set(
     message = FALSE,
     fig.path = "figs/"
 )
+```
+
+### `r sum(rubric$maxPoints)` Total Points
+
+```{r, echo=FALSE}
 rubric <- read_csv("rubric.csv") %>%
   mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
   select(-points) %>%
   spread(key = rating, value = description) %>%
   select(-category) %>%
-  rename(Category = label) %>% 
-  arrange(order) %>% 
-  select(-order)
-```
-
-### Rubric: Project Proposal
-#### EMSE 6035: Marketing Analytics for Design Decisions, Fall 2022
-#### `r sum(rubric$maxPoints)` Total Points
-
-```{r, echo=FALSE}
-rubric %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
   select(-maxPoints) %>%
   kable(format = 'html', escape = FALSE) %>%
   kable_styling(bootstrap_options = "striped")
