@@ -1,5 +1,5 @@
 ---
-title: Rubric: Survey Plan
+title: "Rubric: Survey Plan"
 subtitle: EMSE 6035: Marketing Analytics for Design Decisions, Fall 2022
 toc: false
 ---
