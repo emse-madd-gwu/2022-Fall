@@ -103,19 +103,19 @@ website:
         menu:
         - text: "Project Overview"
           href: project/0-overview.qmd
-        - text: Proposal (Due Sep 26)
+        - text: Proposal (Due Sep 25)
           href: project/1-proposal.qmd
-        - text: Survey Plan (Due Oct 05)
+        - text: Survey Plan (Due Oct 04)
           href: project/2-survey-plan.qmd
-        - text: Pilot Survey (Due Oct 15)
+        - text: Pilot Survey (Due Oct 18)
           href: project/3-pilot-survey.qmd
-        - text: Pilot Analysis (Due Nov 07)
+        - text: Pilot Analysis (Due Nov 06)
           href: project/4-pilot-analysis.qmd
-        - text: Final Survey (Due Nov 19)
+        - text: Final Survey (Due Nov 20)
           href: project/5-final-survey.qmd
-        - text: Final Analysis (Due Dec 13)
+        - text: Final Analysis (Due Dec 11)
           href: project/6-final-analysis.qmd
-        - text: Final Presentation (Due Dec 15)
+        - text: Final Presentation (On Dec 14)
           href: project/7-final-presentation.qmd
       - text: Help
         menu:
