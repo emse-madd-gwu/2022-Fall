@@ -5,4 +5,47 @@ params:
   purpose: "The purpose of this assignment is to get familiar with utility models, which will be the underyling modeling framework we will use for constructing choice models."
 ---
 
-Coming soon!
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+```
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+# 1. Get Organized
+
+Download and edit [this template](`r url_template`) when working through this assignment.
+
+Then unzip the template folder (make sure you unzip it!), then open the .Rproj file to open RStudio. Open the ``r paste0('hw', params$number, '.Rmd')`` file, take notes, and write some example code as you go through the following.
+
+# 2. Readings
+
+Next week we will start getting into choice modeling. I have pre-recorded videos covering most of the technical concepts we will use for estimating choice models in [this Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg). Feel free to look ahead at concepts we'll be covering over the next few weeks.
+
+> For this coming week, you should watch the first video:<br>_Introduction to Choice Modeling_
+
+**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
+
+Click [here](../content/slides_choice_modeling.pdf) to download the slides in the video as a PDF.
+
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/CjFLZf-hHwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+If you are interested in more details about the logit model, see [Chapter 3 (free pdf)](https://eml.berkeley.edu/books/choice2nd/Ch03_p34-75.pdf) of Kenneth Train's book, ["Discrete Choice Methods with Simulation"](https://eml.berkeley.edu/books/choice2.html)
+
+# 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r paste0('hw', params$number, '.Rmd')`` file. Here are some suggestions:
+
+- Discuss some of the key insights or things you found interesting in the readings or recent class periods.
+- Write about the messiest data you've seen.
+- Connect the course content to your own work or project you're working on.
+
+# 4. Knit
+
+Click the "knit" button to compile your ``r paste0('hw', params$number, '.Rmd')`` file into a html web page. Then open the ``r paste0('hw', params$number, '.html')`` file in a web browser and proofread your report. Does all of the formatting look correct?
+
+# 5. Submit
+
+To submit this assignment, create a zip file of all the files in your R project folder for this assignment. Name the zip file ``r paste0('hw', params$number, '-netID.zip')``, replacing `netID` with your netID (e.g., ``r paste0('hw', params$number, '-jph.zip')``). Then copy that zip file into the "submissions" folder in your Box folder created for this class.
