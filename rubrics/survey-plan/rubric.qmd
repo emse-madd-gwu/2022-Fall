@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 ### `r sum(rubric$maxPoints)` Total Points
 
 ```{r, echo=FALSE}
-rubric <- read_csv("rubric.csv") %>%
+read_csv("rubric.csv") %>%
   mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
   select(-points) %>%
   spread(key = rating, value = description) %>%
