@@ -613,3 +613,4 @@ class: inverse, center, middle
 --
 
 # Sign up for meeting slot next week<br>(link in #project channel)
+
