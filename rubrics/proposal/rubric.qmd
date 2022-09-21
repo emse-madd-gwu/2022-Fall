@@ -15,12 +15,18 @@ knitr::opts_chunk$set(
     message = FALSE,
     fig.path = "figs/"
 )
+
+rubric <- read_csv(here::here('rubrics', 'proposal', 'rubric.csv'))
+maxPoints <- rubric %>% 
+    filter(rating == "Excellent") %>% 
+    summarise(max = sum(maxPoints)) %>% 
+    pull(max)
 ```
 
-### `r sum(rubric$maxPoints)` Total Points
+### `r maxPoints` Total Points
 
 ```{r, echo=FALSE}
-read_csv("rubric.csv") %>%
+rubric %>%
   mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
   select(-points) %>%
   spread(key = rating, value = description) %>%
