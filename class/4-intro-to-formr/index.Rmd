@@ -346,7 +346,7 @@ countdown(
 )
 ```
 
-## Think Pair Share
+## Your turn
 
 - Using your GW Google drive, create a new survey spreadsheet<br>(you may wish to copy-paste from [this one](https://docs.google.com/spreadsheets/d/13jSdlIDFRVsIHbiObgyZlPTGovIcB-xDQ0dkhL75fZQ/edit?usp=sharing))
 - Name your sheet "`[netID]_practice`", replacing "`[netID]`" with your GW Net ID<br>(e.g. "`jph_practice`")
