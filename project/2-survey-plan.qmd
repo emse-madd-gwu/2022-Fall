@@ -4,11 +4,17 @@ toc: true
 params:
   number: 2
   weight: '4%'
-  assessment: 'Your proposal will be assessed using [this rubric](../project/survey-plan/rubric.html){target="_blank"}.'
 ---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 source(here::here("R", "settings.R"))
+
+# Read in rubric data
+rubric <- read_csv(here::here('rubrics', 'survey-plan.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
 ```
 
 ```{r child = here::here("fragments", "project.qmd")}
@@ -16,14 +22,14 @@ source(here::here("R", "settings.R"))
 
 As a team, write a **survey plan** to guide your survey design in formr. This plan does not have to be "set in stone" but rather a first attempt at defining the scope and general content of your survey. The course instructor will review and grade your plan and provide written feedback to guide the development of your pilot survey. Follow the instructions below to prepare your survey plan.
 
-## 1. Get Organized
+# 1. Get Organized
 
 Download and unzip [this template](templates/project_survey_plan.zip) for your survey plan. Open the `survey_plan.Rproj` file and write your plan in the `survey_plan.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
 
 - Write your project title in the `title` field (and provide a subtitle if you wish, or delete the `subtitle` field).
  - In the `author` field, list the names of all teammates, e.g. `author: Luke Skywalker, Leia Organa, and Han Solo`.
 
-## 2. Specify the Target Population
+# 2. Specify the Target Population
 
 What is the ideal population you would like to take your survey? If you cannot access this population, is there a different or similar population that you are planning to target?
 
@@ -31,7 +37,7 @@ Write out your eligibility requirements for people to be considered part of your
 
 By default, we will pay users on Amazon Mechanical Turk (i.e. people from the general U.S. population) to take your survey, but if a specific subpopulation is required (e.g. people currently shopping for a car), list that here and perhaps one or two strategies for reaching that population. If you have any other opportunities to distribute your survey to the target population (e.g. an external collaborator, personal networks, etc.), list those here.
 
-## 3. Specify the Conjoint Questions
+# 3. Specify the Conjoint Questions
 
 Write the exact conjoint choice question you plan on asking your respondents (e.g. "If these were your only options, which vehicle would you choose?").
 
@@ -44,7 +50,7 @@ Fuel economy | 20, 25, 30 | Miles per gallon
 Acceleration time | 6, 7, 8 | Seconds (from 0-60 mph)
 Powertrain | Gasoline, Electric | Type
 
-## 4. Specify Other Survey Content
+# 4. Specify Other Survey Content
 
 Your survey plan should include the following additional content (much of this will go directly into your pilot survey):
 
@@ -54,7 +60,24 @@ Your survey plan should include the following additional content (much of this w
 - **Critical respondent information**: What pieces of information about your respondent are absolutely necessary for your analysis (e.g. demographic factors like income, age, etc., or other information specific to the market for your product). Again, write the specific questions you plan on asking.
 - **Other questions**: What other information about your respondents would be helpful in your analysis? Are you planning on asking any behavioral or demographic questions? Include the specific question text you plan to include.
 
-## 5. Knit and submit
+# 5. Knit and submit
 
 Click the "knit" button to compile your `survey_plan.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Go to the "Assignment Submission" page on Blackboard and submit your zip file under "Project: Survey Plan". **Only one person from your team should submit the report.**
 
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```

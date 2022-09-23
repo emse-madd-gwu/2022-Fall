@@ -4,11 +4,17 @@ toc: true
 params:
   number: 1
   weight: '7%'
-  assessment: 'Your proposal will be assessed using [this rubric](../project/proposal/rubric.html){target="_blank"}.'
 ---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 source(here::here("R", "settings.R"))
+
+# Read in rubric data
+rubric <- read_csv(here::here('rubrics', 'proposal.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
 ```
 
 ```{r child = here::here("fragments", "project.qmd")}
@@ -131,3 +137,21 @@ For each policy, identify the key attributes that your target population will ob
 ### Questions
 
 List major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
+
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```

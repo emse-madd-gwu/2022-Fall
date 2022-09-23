@@ -4,7 +4,17 @@ toc: true
 params:
   number: 6
   weight: '14%'
-  assessment: 'Your final analysis will be assessed using [this rubric](project/final_analysis/rubric.html){target="_blank"}.'
 ---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+
+# Read in rubric data
+rubric <- read_csv(here::here('rubrics', 'final-analysis.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
+```
 
 Coming soon!
