@@ -24,7 +24,7 @@ As a team, write a **survey plan** to guide your survey design in formr. This pl
 
 # 1. Get Organized
 
-Download and unzip [this template](templates/project_survey_plan.zip) for your survey plan. Open the `survey_plan.Rproj` file and write your plan in the `survey_plan.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
+Download and unzip [this template](templates/survey-plan.zip) for your survey plan. Open the `survey_plan.Rproj` file and write your plan in the `survey_plan.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
 
 - Write your project title in the `title` field (and provide a subtitle if you wish, or delete the `subtitle` field).
  - In the `author` field, list the names of all teammates, e.g. `author: Luke Skywalker, Leia Organa, and Han Solo`.

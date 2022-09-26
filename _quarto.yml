@@ -79,26 +79,28 @@ website:
         menu:
         - text: "Self Assessment (optional)"
           href: hw/0-self-assessment.qmd
-        - text: "Aug 31: Data Wrangling (Due 09/07)"
+        - text: "Aug 31: Data Wrangling (Due 09/06)"
           href: hw/1-data-wrangling.qmd
-        - text: "Sep 07: Plotting (Due 09/14)"
-          href: hw/2-plotting.qmd
-        - text: "Sep 14: formr (Due 09/21)"
-          href: hw/3-formr.qmd
-        - text: "Oct 05: Utility Models (Due 10/12)"
-          href: hw/4-utility-models.qmd
-        - text: "Oct 12: Estimation (Due 10/19)"
-          href: hw/5-estimation.qmd
-        - text: "Oct 19: Uncertainty (Due 10/26)"
-          href: hw/6-uncertainty.qmd
-        - text: "Oct 26: Design of Experiment (Due 11/02)"
-          href: hw/7-design-of-experiment.qmd
-        - text: "Nov 02: WTP & Simulation (Due 11/09)"
-          href: hw/8-wtp-simulation.qmd
-        - text: "Nov 09: Heterogeneity (Due 11/16)"
-          href: hw/9-heterogeneity.qmd
+        - text: "Sep 07: RMarkdown & Plotting (Due 09/13)"
+          href: hw/2-rmarkdown-plotting.qmd
+        - text: "Sep 14: Intro to formr (Due 09/20)"
+          href: hw/3-intro-to-formr.qmd
+        - text: "Sep 28: Conjoint Surveys in formr (Due 10/04)"
+          href: hw/4-conjoint-surveys-in-formr.qmd
+        - text: "Oct 05: Utility Models (Due 10/11)"
+          href: hw/5-utility-models.qmd
+        - text: "Oct 12: Optimization & MLE (Due 10/18)"
+          href: hw/6-optimization-mle.qmd
+        - text: "Oct 19: Uncertainty (Due 10/25)"
+          href: hw/7-uncertainty.qmd
+        - text: "Oct 26: DOE & Power Analysis (Due 11/01)"
+          href: hw/8-doe-power-analysis.qmd
+        - text: "Nov 02: WTP & Simulation (Due 11/08)"
+          href: hw/9-wtp-simulation.qmd
+        - text: "Nov 09: Heterogeneity (Due 11/15)"
+          href: hw/10-heterogeneity.qmd
         - text: "Nov 30: Exam (Due 12/05)"
-          href: hw/10-exam.qmd
+          href: hw/11-exam.qmd
       - text: Project
         menu:
         - text: "Project Overview"
