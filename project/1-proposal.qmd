@@ -95,7 +95,7 @@ List major outstanding questions (e.g. about the product / technology performanc
 
 ## 4. Knit and submit
 
-Click the "knit" button to compile your `proposal.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Go to your team Box folder and submit your zip file in the "submissions" file. Only one person from your team should submit the report.
+Click the "knit" button to compile your `proposal.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Name your file `proposal.zip`, then go to your team Box folder and submit your zip file in the "submissions" file. Only one person from your team should submit the report.
 
 ---
 
