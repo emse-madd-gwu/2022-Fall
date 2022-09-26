@@ -62,7 +62,7 @@ Your survey plan should include the following additional content (much of this w
 
 # 5. Knit and submit
 
-Click the "knit" button to compile your `survey_plan.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Go to the "Assignment Submission" page on Blackboard and submit your zip file under "Project: Survey Plan". **Only one person from your team should submit the report.**
+Click the "knit" button to compile your `survey_plan.Rmd` file into a html web page, then create a zip file of everything in your R Project folder. Name your file `survey-plan.zip`, then go to your team Box folder and submit your zip file in the "submissions" folder. Only one person from your team should submit the report.
 
 # Grading Rubric
 
