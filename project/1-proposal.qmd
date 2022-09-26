@@ -4,11 +4,17 @@ toc: true
 params:
   number: 1
   weight: '7%'
-  assessment: 'Your proposal will be assessed using [this rubric](../project/proposal/rubric.html){target="_blank"}.'
 ---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 source(here::here("R", "settings.R"))
+
+# Read in rubric data
+rubric <- read_csv(here::here('rubrics', 'proposal.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
 ```
 
 ```{r child = here::here("fragments", "project.qmd")}
@@ -20,7 +26,7 @@ The course instructor will review and grade your proposal and provide feedback i
 
 ## 1. Get Organized
 
-Download and unzip [this template](../templates/project_proposal.zip) for your proposal. Open the `proposal.Rproj` file and write your proposal in the `proposal.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
+Download and unzip [this template](../templates/proposal.zip) for your proposal. Open the `proposal.Rproj` file and write your proposal in the `proposal.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:
 
 - Write your project title in the `title` field (and provide a subtitle if you wish, or delete the `subtitle` field).
  - In the `author` field, list the names of all teammates, e.g. `author: Luke Skywalker, Leia Organa, and Han Solo`.
@@ -131,3 +137,21 @@ For each policy, identify the key attributes that your target population will ob
 ### Questions
 
 List major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.
+
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```

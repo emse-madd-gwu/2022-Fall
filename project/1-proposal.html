@@ -126,6 +126,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="icon" href="images/favicon.ico">
 <script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - Project Proposal">
@@ -233,42 +236,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>  
         <li>
     <a class="dropdown-item" href="../hw/1-data-wrangling.html">
- <span class="dropdown-text">Aug 31: Data Wrangling (Due 09/07)</span></a>
+ <span class="dropdown-text">Aug 31: Data Wrangling (Due 09/06)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/2-plotting.html">
- <span class="dropdown-text">Sep 07: Plotting (Due 09/14)</span></a>
+    <a class="dropdown-item" href="../hw/2-rmarkdown-plotting.html">
+ <span class="dropdown-text">Sep 07: RMarkdown &amp; Plotting (Due 09/13)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/3-formr.html">
- <span class="dropdown-text">Sep 14: formr (Due 09/21)</span></a>
+    <a class="dropdown-item" href="../hw/3-intro-to-formr.html">
+ <span class="dropdown-text">Sep 14: Intro to formr (Due 09/20)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/4-utility-models.html">
- <span class="dropdown-text">Oct 05: Utility Models (Due 10/12)</span></a>
+    <a class="dropdown-item" href="../hw/4-conjoint-surveys-in-formr.html">
+ <span class="dropdown-text">Sep 28: Conjoint Surveys in formr (Due 10/04)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/5-estimation.html">
- <span class="dropdown-text">Oct 12: Estimation (Due 10/19)</span></a>
+    <a class="dropdown-item" href="../hw/5-utility-models.html">
+ <span class="dropdown-text">Oct 05: Utility Models (Due 10/11)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/6-uncertainty.html">
- <span class="dropdown-text">Oct 19: Uncertainty (Due 10/26)</span></a>
+    <a class="dropdown-item" href="../hw/6-optimization-mle.html">
+ <span class="dropdown-text">Oct 12: Optimization &amp; MLE (Due 10/18)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/7-design-of-experiment.html">
- <span class="dropdown-text">Oct 26: Design of Experiment (Due 11/02)</span></a>
+    <a class="dropdown-item" href="../hw/7-uncertainty.html">
+ <span class="dropdown-text">Oct 19: Uncertainty (Due 10/25)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/8-wtp-simulation.html">
- <span class="dropdown-text">Nov 02: WTP &amp; Simulation (Due 11/09)</span></a>
+    <a class="dropdown-item" href="../hw/8-doe-power-analysis.html">
+ <span class="dropdown-text">Oct 26: DOE &amp; Power Analysis (Due 11/01)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/9-heterogeneity.html">
- <span class="dropdown-text">Nov 09: Heterogeneity (Due 11/16)</span></a>
+    <a class="dropdown-item" href="../hw/9-wtp-simulation.html">
+ <span class="dropdown-text">Nov 02: WTP &amp; Simulation (Due 11/08)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../hw/10-exam.html">
+    <a class="dropdown-item" href="../hw/10-heterogeneity.html">
+ <span class="dropdown-text">Nov 09: Heterogeneity (Due 11/15)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../hw/11-exam.html">
  <span class="dropdown-text">Nov 30: Exam (Due 12/05)</span></a>
   </li>  
     </ul>
@@ -424,6 +431,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#policy-options" id="toc-policy-options" class="nav-link" data-scroll-target="#policy-options">Policy Options</a></li>
   <li><a href="#questions-1" id="toc-questions-1" class="nav-link" data-scroll-target="#questions-1">Questions</a></li>
   </ul></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2022-Fall/edit/main/project/1-proposal.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2022-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -455,13 +463,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <blockquote class="blockquote">
 <p><strong>Due</strong>: Sep 25 by 11:59pm</p>
 <p><strong>Weight</strong>: This assignment is worth 7% of your final grade.</p>
-<p><strong>Assessment</strong>: Your proposal will be assessed using <a href="../project/proposal/rubric.html" target="_blank">this rubric</a>.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
 </blockquote>
 <p>As a team, write a proposal defining the scope of your project plan. Your chosen project topic should follow the <a href="../project/0-overview.html#Project_Selection">project selection guidelines</a>.</p>
 <p>The course instructor will review and grade your proposal and provide feedback in team meetings the week following the due date. If your proposal is approved, you are done and can move on towards the next project task. In some cases, the instructor may ask you to submit a revised proposal, most likely by focusing / adjusting the proposal scope. Follow the guidelines below to prepare your proposal.</p>
 <section id="get-organized" class="level2">
 <h2 class="anchored" data-anchor-id="get-organized">1. Get Organized</h2>
-<p>Download and unzip <a href="../templates/project_proposal.zip">this template</a> for your proposal. Open the <code>proposal.Rproj</code> file and write your proposal in the <code>proposal.Rmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<p>Download and unzip <a href="../templates/proposal.zip">this template</a> for your proposal. Open the <code>proposal.Rproj</code> file and write your proposal in the <code>proposal.Rmd</code> file. The template comes with some text and code explaining how to use it - you should delete this code / text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
 <ul>
 <li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
 <li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
@@ -593,9 +601,73 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="questions-1" class="level3">
 <h3 class="anchored" data-anchor-id="questions-1">Questions</h3>
 <p>List major outstanding questions that you will need to know to conduct your analysis and how you propose to find answers. The purpose of this section is to identify high-priority items that you will need to know early on in your project.</p>
-
-
 </section>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>45 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Category </th>
+   <th style="text-align:left;"> Excellent </th>
+   <th style="text-align:left;"> Good </th>
+   <th style="text-align:left;"> Needs work </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Organization &amp; Formatting </td>
+   <td style="text-align:left;"> <b>5</b><br>All formatting guidelines are followed; YAML is correct with all team members listed. </td>
+   <td style="text-align:left;"> <b>4</b><br>Most formatting guidelines are followed; YAML is correct with all team members listed. </td>
+   <td style="text-align:left;"> <b>3</b><br>Several or all formatting guidelines not followed; YAML contains elements that aren't updated from the template. Some template text / content remains in submitted proposal. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Abstract </td>
+   <td style="text-align:left;"> <b>5</b><br>Abstract clearly defines the product, product attributes, and design decision variables. </td>
+   <td style="text-align:left;"> <b>4</b><br>Abstract defines the product, product attributes, and design decision variables, but some components are unclear. </td>
+   <td style="text-align:left;"> <b>3</b><br>Abstract is missing a component: product, product attributes, or design decision variables. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Introduction </td>
+   <td style="text-align:left;"> <b>5</b><br>Includes a description of the product with some background content and a picture / diagram. </td>
+   <td style="text-align:left;"> <b>4</b><br>Includes a description of the product with limited background content and a poor quality picture / diagram. </td>
+   <td style="text-align:left;"> <b>3</b><br>Includes a description of the product with little to no background content and / or is missing a picture / diagram. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Market Opportunity </td>
+   <td style="text-align:left;"> <b>10 / 9</b><br>Clearly identifies customer, competitors, and estimated market size. </td>
+   <td style="text-align:left;"> <b>8 / 7 / 6</b><br>Identifies customer, competitors, and estimated market size, but parts are unclear. </td>
+   <td style="text-align:left;"> <b>5 / 4 / 3</b><br>Section is missing a key component: customer, competitors, or estimated market size. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Product Attributes &amp; Decision Variables </td>
+   <td style="text-align:left;"> <b>10 / 9</b><br>All product attributes and decision variables are listed; metrics and level ranges are specified; diagram is appropriately labeled; model relationships table is well-defined. </td>
+   <td style="text-align:left;"> <b>8 / 7 / 6</b><br>All product attributes and decision variables are listed; metrics and level ranges are not all specified; diagram is poorly labeled; model relationships table not well-defined. </td>
+   <td style="text-align:left;"> <b>5 / 4 / 3</b><br>Product attributes and decision variables are listed, but some key ones are missing; metrics and level ranges are not specified; diagram is not labeled; model relationships table is poorly-defined or missing. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Questions </td>
+   <td style="text-align:left;"> <b>5</b><br>Includes at leaset three thoughtful questions. </td>
+   <td style="text-align:left;"> <b>4</b><br>Includes one or two thoughtful questions. </td>
+   <td style="text-align:left;"> <b>3</b><br>Includes few or no questions. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Writing Quality </td>
+   <td style="text-align:left;"> <b>5</b><br>Writing is clear, concise, and logically-structured; ideas are easily understood. </td>
+   <td style="text-align:left;"> <b>4</b><br>Writing is clear but verbose and the structure could be improved; ideas are mostly easily understood. </td>
+   <td style="text-align:left;"> <b>3</b><br>Writing is not clear, verbose, and poorly-structured; ideas are not easily understood. </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->

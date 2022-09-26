@@ -5,7 +5,18 @@ params:
   number: 7
   weight: '8%'
   purpose: 'I guarantee you one day you will need to present the results of a project you have worked on to someone in a professional settings, so this is an opportunity to practice that before stakes are higher.'
-  assessment: 'Your final presentation will be assessed using [this rubric](project/final_presentation/rubric.html){target="_blank"}.'
+  assessment: 'Your proposal will be assessed using [this rubric](../rubrics/final-presentation/rubric.qmd){target="_blank"}.'
 ---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+
+# Read in rubric data
+rubric <- read_csv(here::here('rubrics', 'final-presentation.csv'))
+maxPoints <- rubric %>%
+    filter(rating == "Excellent") %>%
+    summarise(max = sum(maxPoints)) %>%
+    pull(max)
+```
 
 Coming soon!
