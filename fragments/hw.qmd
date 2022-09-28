@@ -4,7 +4,6 @@ library(fontawesome)
 
 due <- get_schedule() %>%
   mutate(
-    assign_due = lead(date, 1) - 1,
     assign_due = format(assign_due, format = "%B %d")) %>% 
   filter(class_n == params$number) %>%
   pull(assign_due) %>% 
