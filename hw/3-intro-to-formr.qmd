@@ -1,11 +1,9 @@
 ---
-title: "formr"
+title: "Intro to formr"
 params:
   number: 3
   purpose: 'The purpose of this assignment is to get familiar with the [formr.org](https://formr.org/) survey platform, which we will be using to implement our surveys.'
 ---
-
-<script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
 source(here::here("R", "settings.R"))
