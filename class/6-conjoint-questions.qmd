@@ -1,7 +1,7 @@
 ---
 title: "Conjoint Questions"
 params:
-  class: "5-conjoint-questions"
+  class: "6-conjoint-questions"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---

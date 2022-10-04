@@ -1,7 +1,7 @@
 ---
 title: "WTP & Simulations"
 params:
-  class: "10-wtp-simulation"
+  class: "11-wtp-simulation"
   logitrcars: TRUE
   formr4conjoint: FALSE
 ---
