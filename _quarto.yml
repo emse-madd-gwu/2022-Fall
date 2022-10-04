@@ -56,24 +56,24 @@ website:
           href: class/4-intro-to-formr.qmd
         - text: "Sep 28: No Class - Team Meetings"
         - text: "Oct 05: Conjoint Questions"
-          href: class/5-conjoint-questions.qmd
+          href: class/6-conjoint-questions.qmd
         - text: "Oct 12: Utility Models"
-          href: class/6-utility-models.qmd
+          href: class/7-utility-models.qmd
         - text: "Oct 19: Optimization & MLE"
-          href: class/7-optimization-mle.qmd
+          href: class/8-optimization-mle.qmd
         - text: "Oct 26: Uncertainty"
-          href: class/8-uncertainty.qmd
+          href: class/9-uncertainty.qmd
         - text: "Nov 02: DOE & Power Analysis"
-          href: class/9-doe-power-analysis.qmd
+          href: class/10-doe-power-analysis.qmd
         - text: "Nov 09: WTP & Simulation"
-          href: class/10-wtp-simulation.qmd
+          href: class/11-wtp-simulation.qmd
         - text: "Nov 16: Heterogeneity"
-          href: class/11-heterogeneity.qmd
+          href: class/12-heterogeneity.qmd
         - text: "Nov 23: Thanksgiving - no class"
         - text: "Nov 30: Class Review"
-          href: class/12-class-review.qmd
+          href: class/14-class-review.qmd
         - text: "Dec 07: Exam Solutions"
-          href: class/13-exam-solutions.qmd
+          href: class/15-exam-solutions.qmd
         - text: "Dec 14: Final Presentations"
       - text: "Assignments"
         menu:
