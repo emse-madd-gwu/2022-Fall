@@ -9,10 +9,9 @@ renderthis::to_pdf("index.html", paste0(lesson, ".pdf"))
 zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
-        'practiceSurvey.Rmd',
-        'practiceSurvey_solutions.Rmd',
-        'demoSurvey.Rmd',
+        'data',
+        'p2-choice-questions-table.Rmd',
+        'p2-choice-questions.Rmd',
+        'make_choice_questions.R',
+        'images',
         paste0(lesson, ".Rproj")))
-
-
-
