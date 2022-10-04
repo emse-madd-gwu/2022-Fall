@@ -1,7 +1,7 @@
 ---
 title: "Heterogeneity"
 params:
-  class: "11-heterogeneity"
+  class: "12-heterogeneity"
   logitrcars: TRUE
   formr4conjoint: FALSE
 ---
