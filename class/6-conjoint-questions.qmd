@@ -1,0 +1,13 @@
+---
+title: "Conjoint Questions"
+params:
+  class: "5-conjoint-questions"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+```
+
+Coming soon!

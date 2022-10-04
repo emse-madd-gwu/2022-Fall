@@ -1,0 +1,13 @@
+---
+title: "Exam Review & Final Analysis Overview"
+params:
+  class: "12-class-review"
+  logitrcars: TRUE
+  formr4conjoint: FALSE
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+```
+
+Coming soon!

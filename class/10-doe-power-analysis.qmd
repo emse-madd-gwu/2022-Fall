@@ -1,0 +1,13 @@
+---
+title: "DOE & Power Analysis"
+params:
+  class: "9-doe-power-analysis"
+  logitrcars: FALSE
+  formr4conjoint: FALSE
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+```
+
+Coming soon!
