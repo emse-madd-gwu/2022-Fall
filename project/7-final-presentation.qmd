@@ -1,6 +1,8 @@
 ---
 title: "Final Presentation"
 toc: true
+toc-title: Table of contents
+toc-location: left
 params:
   number: 7
   weight: '8%'
