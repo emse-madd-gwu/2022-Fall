@@ -572,7 +572,7 @@ $$u_j = \beta_1 x_j^{\mathrm{price}} + \beta_2 x_j^{\mathrm{\%cacao}} + \beta_3 
 
 ## 1. Open `logitr-cars.Rproj`
 
-## 2. Open `code/4.1-model-og.R`
+## 2. Open `code/4.1-model-nochoice.R`
 
 ]
 
@@ -590,10 +590,9 @@ $$u_j = \beta_1 x_j^{\mathrm{price}} + \beta_2 x_j^{\mathrm{\%cacao}} + \beta_3 
 .center[Random choices]
 
 ```{r, eval=FALSE}
-data <- simulateChoices(
-  survey, 
-  altID = "altID",
-  obsID = "obsID"
+data <- cbc_choices(
+    design = design,
+    obsID = "obsID"
 )
 ```
 
@@ -607,21 +606,20 @@ data <- simulateChoices(
 
 .font80[
 
-$v_j = -0.1 x_j^{\mathrm{price}} + 0.1 x_j^{\mathrm{fuelEconomy}} + 0.1 x_j^{\mathrm{accelTime}} -4 \delta_j^{\mathrm{electric}}$
+$v_j = -0.7 x_j^{\mathrm{price}} + 0.1 x_j^{\mathrm{fuelEconomy}} - 0.2 x_j^{\mathrm{accelTime}} -4 \delta_j^{\mathrm{electric}}$
 
 ]]
 
 ```{r, eval=FALSE}
-data <- simulateChoices(
-  survey, 
-  altID = "altID",
-  obsID = "obsID",
-  pars = list(
-    price = -0.1,
-    fuelEconomy = 0.1, 
-    accelTime = 0.1,
-    powertrain_Electric = -4
-  )
+data <- cbc_choices(
+    design = design,
+    obsID = "obsID",
+    priors = list(
+        price       = -0.7,
+        fuelEconomy = 0.1,
+        accelTime   = -0.2,
+        powertrain_Electric = -4.0
+    )
 )
 ```
 
@@ -635,10 +633,12 @@ $$v_j = \beta_1 x_j^{\mathrm{price}} + \beta_2 x_j^{\mathrm{fuelEconomy}} + \bet
 
 ```{r, eval=FALSE}
 model <- logitr(
-  data   = data,
-  choice = "choice",
-  obsID  = "obsID",
-  pars   = c("price", "fuelEconomy", "accelTime", "powertrain_Electric")
+  data    = data,
+  outcome = "choice",
+  obsID   = "obsID",
+  pars    = c(
+      "price", "fuelEconomy", "accelTime", "powertrain_Electric"
+  )
 )
 ```
 
