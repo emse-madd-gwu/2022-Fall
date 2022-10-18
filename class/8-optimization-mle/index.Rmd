@@ -108,6 +108,7 @@ class: middle, inverse
 
 ---
 
+background-color: #EEEDEE
 ## .center[Computing the likelihood]
 
 .leftcol[
@@ -127,6 +128,8 @@ $f(x)$: probability of observing $x$
 ]
 
 ---
+
+background-color: #EEEDEE
 
 ## .center[Computing the likelihood]
 
@@ -152,6 +155,7 @@ $\mathcal{L}(\theta | x)$: probability that $\theta$ are the true parameters, gi
 
 ---
 
+background-color: #EEEDEE
 class: center
 
 ## We actually compute the _log_-likelihood<br>(converts multiplication to addition)
@@ -186,6 +190,7 @@ b) Compute the log-likelihood function using the same standard deviation $(\sigm
 
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 .leftcol40[
@@ -204,6 +209,7 @@ class: center, middle
 
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 .leftcol40[
@@ -222,9 +228,9 @@ class: center, middle
 
 ]
 
-
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 .leftcol40[
@@ -245,6 +251,7 @@ class: center, middle
 
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 <center>
@@ -253,6 +260,7 @@ class: center, middle
 
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 <center>
@@ -281,6 +289,7 @@ Using the starting point $x = 1$ and the step size $\gamma =  0.3$, apply the gr
 
 ---
 
+background-color: #EEEDEE
 class: center, middle 
 
 <center>
@@ -341,6 +350,8 @@ class: center
 ]
 
 ---
+
+background-color: #EEEDEE
 
 # Maximum likelihood estimation
 
@@ -625,12 +636,14 @@ band_members %>%
 class: inverse
 
 ```{r, echo=FALSE}
-countdown(minutes = 15,
-          warn_when = 30,
-          update_every = 1,
-          top = 0,
-          right = 0,
-          font_size = '2em')
+countdown(
+    minutes = 15,
+    warn_when = 30,
+    update_every = 1,
+    top = 0,
+    right = 0,
+    font_size = '2em'
+)
 ```
 
 ## Your turn

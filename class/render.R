@@ -10,8 +10,7 @@ zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
         'data',
-        'p2-choice-questions-table.Rmd',
-        'p2-choice-questions.Rmd',
-        'make_choice_questions.R',
-        'images',
+        'practice-solutions.html',
+        'practice-solutions.Rmd',
+        'practice.Rmd',
         paste0(lesson, ".Rproj")))
