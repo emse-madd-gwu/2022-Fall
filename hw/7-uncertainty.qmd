@@ -5,4 +5,51 @@ params:
   purpose: "The purpose of this assignment is to introduce how we quantify uncertainty around estimated parameters that result from maximizing the log-likelihood function."
 ---
 
-Coming soon!
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+source(here::here("R", "settings.R"))
+```
+
+```{r child = here::here("fragments", "hw.qmd")}
+```
+
+# Pilot Surveys
+
+In addition to the assignment below, this week you should also help out your fellow classmates by providing feedback on their pilot surveys. For every team other than your own, answer their pilot survey and provide any feedback you have in a row in [this spreadsheet](https://docs.google.com/spreadsheets/d/1CvrO4NoG0-LSo0qHjhwvn6NuFjXrKorpAM010hMk0C8/edit?usp=sharing). Feedback should be anonymous, constructive, and objective. Note things that didn't work and / or things that weren't clear or were confusing.
+
+If you got screened out early in the survey, go back and take it again and pick a response so that you won't get screened out. Do your best to actually answer the conjoint questions honestly (don't just click randomly).
+
+Completing all the surveys shouldn't take more than an hour. In addition to giving everyone very useful feedback, this exercise may also give you new ideas for improving your own survey.
+
+# 1. Get Organized
+
+Download and edit [this template](`r url_template`) when working through this assignment.
+
+Then unzip the template folder (make sure you unzip it!), then open the .Rproj file to open RStudio. Open the ``r paste0('hw', params$number, '.Rmd')`` file, take notes, and write some example code as you go through the following.
+
+# 2. Readings
+
+Last week we introduced how we can use maximum likelihood estimation to estimate the unknown parameters of utility models. This week we'll learn about how to quantify the _uncertainty_ associated with those parameter estimates by watching the third video in [our Youtube playlist](https://www.youtube.com/playlist?list=PLzFdSE-D7jUQnbczxdjohRqlBBrrsaFFg) on choice modeling: _Uncertainty_
+
+**Take notes** as you watch the video. Throughout the video, I ask practice questions at several places - you should answer to those questions as part of your reflection. You may submit your answers however you wish, e.g. hand-write them on paper and take a picture and / or type answers in your reflection .Rmd file.
+
+Click [here](../content/slides_uncertainty.pdf) to download the slides in the video as a PDF.
+
+<center>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/PmDhvrgB47g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+# 3. Reflect
+
+Reflect on what you've learned while going through these readings and exercises. Is there anything that jumped out at you? Anything you found particularly interesting or confusing? Write at least a paragraph in your ``r paste0('hw', params$number, '.Rmd')`` file. Here are some suggestions:
+
+- Discuss some of the key insights or things you found interesting in the readings or recent class periods.
+- Write about the messiest data you've seen.
+- Connect the course content to your own work or project you're working on.
+
+# 4. Knit
+
+Click the "knit" button to compile your ``r paste0('hw', params$number, '.Rmd')`` file into a html web page. Then open the ``r paste0('hw', params$number, '.html')`` file in a web browser and proofread your report. Does all of the formatting look correct?
+
+# 5. Submit
+
+To submit this assignment, create a zip file of all the files in your R project folder for this assignment. Name the zip file ``r paste0('hw', params$number, '-netID.zip')``, replacing `netID` with your netID (e.g., ``r paste0('hw', params$number, '-jph.zip')``). Then copy that zip file into the "submissions" folder in your Box folder created for this class.
