@@ -109,6 +109,7 @@ class: middle, inverse
 ---
 
 background-color: #EEEDEE
+
 ## .center[Computing the likelihood]
 
 .leftcol[
