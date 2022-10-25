@@ -20,6 +20,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -63,14 +126,17 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" href="images/favicon.ico">
 <script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - Pilot Analysis">
-<meta property="og:description" content="Coming soon!">
+<meta property="og:description" content="As a team, analyze your pilot survey data, and write a report of your findings. The course instructor will review and grade your analysis and report and provide feedback.">
 <meta property="og:site-name" content="https://madd.seas.gwu.edu/">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="EMSE 6035 - Pilot Analysis">
-<meta name="twitter:description" content="Coming soon!">
+<meta name="twitter:description" content="As a team, analyze your pilot survey data, and write a report of your findings. The course instructor will review and grade your analysis and report and provide feedback.">
 <meta name="twitter:image" content="https://madd.seas.gwu.edu/2022-Fall/project/images/logo-square.png">
 <meta name="twitter:creator" content="@johnhelveston">
 <meta name="twitter:card" content="summary">
@@ -341,7 +407,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#report-guidelines" id="toc-report-guidelines" class="nav-link active" data-scroll-target="#report-guidelines">1. Report Guidelines</a></li>
+  <li><a href="#pilot-data-analysis" id="toc-pilot-data-analysis" class="nav-link" data-scroll-target="#pilot-data-analysis">2. Pilot Data Analysis</a></li>
+  <li><a href="#pilot-analysis-report" id="toc-pilot-analysis-report" class="nav-link" data-scroll-target="#pilot-analysis-report">3. Pilot Analysis Report</a>
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#survey-design" id="toc-survey-design" class="nav-link" data-scroll-target="#survey-design">Survey Design</a></li>
+  <li><a href="#pilot-data-analysis-1" id="toc-pilot-data-analysis-1" class="nav-link" data-scroll-target="#pilot-data-analysis-1">Pilot Data Analysis</a></li>
+  <li><a href="#changes-to-final-survey" id="toc-changes-to-final-survey" class="nav-link" data-scroll-target="#changes-to-final-survey">Changes to Final Survey</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
+  </ul></li>
+  <li><a href="#knit-and-submit" id="toc-knit-and-submit" class="nav-link" data-scroll-target="#knit-and-submit">4. Knit and submit</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2022-Fall/edit/main/project/4-pilot-analysis.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2022-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -368,9 +452,164 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p>Coming soon!</p>
+<div class="cell" data-layout-align="center">
+
+</div>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Nov 06 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 9% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>As a team, analyze your pilot survey data, and write a report of your findings. The course instructor will review and grade your analysis and report and provide feedback. The primary purpose of the report is to 1) lay some initial groundwork for analyzing your survey data (you will be able to re-use this code for your final analysis), and 2) gain insights to improve your final survey.</p>
+<p>Your report should include three main components:</p>
+<ul>
+<li>A detailed description of your pilot survey (e.g., how it was designed, what it contained, etc.).</li>
+<li>A detailed description of the results from analyzing your pilot survey data.</li>
+<li>A detailed description of planned changes you will include in your final survey.</li>
+</ul>
+<p>Follow the guidelines below to prepare your analysis and report.</p>
+<section id="report-guidelines" class="level2">
+<h2 class="anchored" data-anchor-id="report-guidelines">1. Report Guidelines</h2>
+<p>Download and unzip <a href="templates/pilot-analysis.zip">this template</a> for your report. You should write your report in the <code>report.Rmd</code>.Rmd` file. The template comes with some text and code explaining how to use it - you should delete this code &amp; text as it is only for explanatory purposes. Be sure to adjust the content in the YAML:</p>
+<ul>
+<li>Write your project title in the <code>title</code> field (and provide a subtitle if you wish, or delete the <code>subtitle</code> field).</li>
+<li>In the <code>author</code> field, list the names of all teammates, e.g.&nbsp;<code>author: Luke Skywalker, Leia Organa, and Han Solo</code>.</li>
+</ul>
+<p>Your report should be written in a clear, concise, and logically-structured manner so that a reader can easily understand the ideas presented. The report should be proof-read before submission to correct any grammatical or spelling errors. Spell checking can be automated by installing the <code>spelling</code> package and running this in the R console:</p>
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>spelling<span class="sc">::</span><span class="fu">spell_check_files</span>(<span class="st">"report.Rmd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>All figures, tables, and equations should be referenced in the text.</p>
+</section>
+<section id="pilot-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-data-analysis">2. Pilot Data Analysis</h2>
+<p>Before writing your report, you should first analyze your pilot data by following these steps:</p>
+<ol type="1">
+<li>Download the data files from formr.org for your surveys and put them in the “data” folder in the report template.</li>
+<li>Open the <code>clean_data.R</code> file and write code to clean your pilot data and prepare it for modeling. Your cleaned choice data should be in a “long” format similar to the <a href="https://github.com/jhelvy/formr4conjoint/blob/master/data/choiceData.csv">example choice data here</a>.</li>
+<li>Save your cleaned data file as a .csv file in the “data” folder.</li>
+<li>Open the <code>modeling.R</code> file and write code to estimate preliminary models using your cleaned choice data.</li>
+<li>Open the <code>power_analysis.R</code> file and write code to conduct a power analysis to inform the sample size requirements for your final survey.</li>
+</ol>
+</section>
+<section id="pilot-analysis-report" class="level2">
+<h2 class="anchored" data-anchor-id="pilot-analysis-report">3. Pilot Analysis Report</h2>
+<p>Your report should contain the following items listed as separate sections.</p>
+<blockquote class="blockquote">
+<p>NOTE: You may re-use content from earlier project assignments in this report, such as introductory paragraphs, images, etc.</p>
+</blockquote>
+<section id="abstract" class="level3">
+<h3 class="anchored" data-anchor-id="abstract">Abstract</h3>
+<p>A few sentences summarizing the project and what you found from your pilot analysis. Include:</p>
+<ol type="1">
+<li>What is the product / policy you are studying?</li>
+<li>What were the product attributes and design decisions you were interested in?</li>
+<li>At least one key insight you gained from your pilot analysis (e.g., a modeling result, a design change you will make for your final survey, etc.).</li>
+</ol>
+</section>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Provide a brief description and background of the product / policy that motivates the study of it. Include a picture or diagram of the product. You should also discuss the key product attributes and decisions variables you chose to study in your pilot survey. This section can be largely similar to your proposal introduction.</p>
+</section>
+<section id="survey-design" class="level3">
+<h3 class="anchored" data-anchor-id="survey-design">Survey Design</h3>
+<p>This section should discuss the design choices you made in creating your pilot survey. Include the following:</p>
+<ul>
+<li>Describe the eligibility requirements you chose and why you chose them.</li>
+<li>What information about your respondents did you collect (e.g.&nbsp;critical information questions, demographics, etc.)?</li>
+<li>Describe any educational material presented to the respondents.</li>
+<li>Define and justify the attributes and levels chosen for your conjoint choice questions. Indicate the number of alternatives per choice question and the number of choice questions per respondent.</li>
+<li>If you included a “no-choice” option, define its meaning and state how that was communicated to the respondent.</li>
+<li>Include an example figure of a random conjoint question (this can be a screen shot).</li>
+</ul>
+<p>You should include a full copy of your survey in an appendix (see the <a href="#Appendix">Appendix section below</a>)</p>
+</section>
+<section id="pilot-data-analysis-1" class="level3">
+<h3 class="anchored" data-anchor-id="pilot-data-analysis-1">Pilot Data Analysis</h3>
+<p>This section should describe the analysis you carried out using your pilot data, including the following subsections:</p>
+<section id="sample-description" class="level4">
+<h4 class="anchored" data-anchor-id="sample-description">Sample Description</h4>
+<p>Describe your respondent sample, including the total sample size, the total number of choice question responses, and summary statistics of how your sample varies across critical information questions, demographics, etc. You should also include a description of what your target demographics should look like and compare these to your pilot sample (obviously your pilot sample was your classmates, so it may not be too representative of the target).</p>
+</section>
+<section id="data-cleaning" class="level4">
+<h4 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h4>
+<p>Describe any filtering process you applied to your data. Summarize how many acceptable vs.&nbsp;rejected responses you kept in your analysis and justify how you made that determination.</p>
+</section>
+<section id="modeling" class="level4">
+<h4 class="anchored" data-anchor-id="modeling">Modeling</h4>
+<p>Write out the specific utility model you estimated. <a href="https://www.codecogs.com/latex/eqneditor.php">This online LaTeX equation editor</a> might come in handy for this (also, some example LaTeX equations are provided in the <code>solutions.Rmd</code> files from previous classes). Include a summary table of your utility coefficient estimates with standard errors. You should also include summary figures of the estimated coefficients for all attributes. <strong>Your figures should include uncertainty bounds</strong>. Interpret and discuss the implications of your findings.</p>
+</section>
+<section id="power-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="power-analysis">Power Analysis</h4>
+<p>You should also include a description of conclusions from your power analysis, including a summary figure of your power analysis results (standard errors versus sample size).</p>
+</section>
+</section>
+<section id="changes-to-final-survey" class="level3">
+<h3 class="anchored" data-anchor-id="changes-to-final-survey">Changes to Final Survey</h3>
+<p>Based on your analyses, write a description of any changes you plan on making to your final survey (which should be based on your pilot survey). Consider the following:</p>
+<ul>
+<li>Did you make any changes to the product attributes and / or levels?</li>
+<li>Do you expect to be able to obtain the necessary sample size for your analysis?</li>
+<li>Other useful feedback did you receive from respondents / classmates that informed a design change.</li>
+</ul>
+</section>
+<section id="appendix" class="level3">
+<h3 class="anchored" data-anchor-id="appendix">Appendix</h3>
+<p>You should include a full copy of your conjoint survey in an appendix (i.e., the same information and questions respondents saw when taking the survey). This can be the same content used in your Rmd files from your survey plan (updated to match what you actually included in your pilot survey). For the conjoint choice questions, include just one example since the specific levels were different for each choice question.</p>
+</section>
+</section>
+<section id="knit-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="knit-and-submit">4. Knit and submit</h2>
+<p>Click the “knit” button to compile your <code>report.Rmd</code> file into a html web page, then create a zip file of everything in your pilot analysis folder. Name your file <code>pilot-analysis.zip</code>, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report.</p>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>35 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Category </th>
+   <th style="text-align:left;"> Excellent </th>
+   <th style="text-align:left;"> Good </th>
+   <th style="text-align:left;"> Needs work </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Organization &amp; Formatting </td>
+   <td style="text-align:left;"> <b>5</b><br>All formatting guidelines are followed. </td>
+   <td style="text-align:left;"> <b>4</b><br>Most formatting guidelines are followed; only one or two components from the template are missing. </td>
+   <td style="text-align:left;"> <b>3</b><br>Most formatting guidelines are followed; several components from the template are missing or incomplete. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Pilot Analysis </td>
+   <td style="text-align:left;"> <b>10 / 9</b><br>All analysis guidelines are followed, including data cleaning, modeling, and a power analysis. Code in related files runs without error and results can be fully reproduced. </td>
+   <td style="text-align:left;"> <b>8 / 7 / 6</b><br>Most analysis guidelines are followed, including data cleaning, modeling, and a power analysis. Code in related files might have a few errors, but the results can still be reproduced with a few fixes. </td>
+   <td style="text-align:left;"> <b>5 / 4 / 3</b><br>Some of the analysis guidelines components are incomplete or missing, including data cleaning, modeling, and a power analysis. Code in related files has multiple significant errors and results cannot be reproduced, even with efforts to correct errors. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Report Contents </td>
+   <td style="text-align:left;"> <b>15 / 14</b><br>All report guidelines are followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey. </td>
+   <td style="text-align:left;"> <b>13 / 12 / 11</b><br>Most report guidelines are followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey. Some may be unclear or missing important details. </td>
+   <td style="text-align:left;"> <b>10 / 9 / 8 / 7</b><br>Several report guidelines are not followed, including descriptions of the survey design, the pilot analysis results, and changes that will be made to the final survey. Some components are incomplete or missing. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Appendix </td>
+   <td style="text-align:left;"> <b>5</b><br>Appendix of the full survey is included. </td>
+   <td style="text-align:left;"> <b>4</b><br>Appendix of the full survey is included, but some parts of the survey may be missing. </td>
+   <td style="text-align:left;"> <b>3</b><br>No appendix of survey included </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
