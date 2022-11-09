@@ -9,7 +9,6 @@ renderthis::to_pdf("index.html", paste0(lesson, ".pdf"))
 zip::zip(
     zipfile = paste0(lesson, ".zip"),
     files = c(
-        'data',
         'practice-solutions.html',
         'practice-solutions.Rmd',
         'practice.Rmd',
