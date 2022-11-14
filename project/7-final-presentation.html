@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.251">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -63,16 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" href="images/favicon.ico">
 <script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="EMSE 6035 - Final Presentation">
-<meta property="og:description" content="Coming soon!">
+<meta property="og:description" content="Prepare a 10-minute presentation of your findings in your final report.">
 <meta property="og:site-name" content="https://madd.seas.gwu.edu/">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:title" content="EMSE 6035 - Final Presentation">
-<meta name="twitter:description" content="Coming soon!">
+<meta name="twitter:description" content="Prepare a 10-minute presentation of your findings in your final report.">
 <meta name="twitter:image" content="https://madd.seas.gwu.edu/2022-Fall/project/images/logo-square.png">
 <meta name="twitter:creator" content="@johnhelveston">
+<meta name="twitter:site" content="@johnhelveston">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -93,16 +97,21 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html">Syllabus</a>
+    <a class="nav-link" href="../syllabus.html">
+ <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html">Schedule</a>
+    <a class="nav-link" href="../schedule.html">
+ <span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-class" role="button" data-bs-toggle="dropdown" aria-expanded="false">Class</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-class" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Class</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-class">    
         <li>
     <a class="dropdown-item" href="../class/1-getting-started.html">
@@ -162,7 +171,9 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">Assignments</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-assignments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Assignments</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-assignments">    
         <li>
     <a class="dropdown-item" href="../hw/0-self-assessment.html">
@@ -215,7 +226,9 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Project</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-project">    
         <li>
     <a class="dropdown-item" href="../project/0-overview.html">
@@ -252,7 +265,9 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="button" data-bs-toggle="dropdown" aria-expanded="false">Help</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-help" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Help</span>
+    </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-help">    
         <li>
     <a class="dropdown-item" href="https://jhelvy.appointlet.com/b/professor-helveston"><i class="bi bi-person" role="img">
@@ -299,7 +314,7 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item compact">
     <a class="nav-link" href="https://emse-madd-f22.slack.com"><i class="bi bi-slack" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -307,6 +322,7 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-bi-list" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="bi bi-list" role="img">
 </i> 
+ <span class="menu-text"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-list">    
         <li>
@@ -341,7 +357,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#format" id="toc-format" class="nav-link active" data-scroll-target="#format">1. Format</a></li>
+  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">2. Content</a></li>
+  <li><a href="#publish-and-submit" id="toc-publish-and-submit" class="nav-link" data-scroll-target="#publish-and-submit">3. Publish and submit</a></li>
+  <li><a href="#grading-rubric" id="toc-grading-rubric" class="nav-link" data-scroll-target="#grading-rubric">Grading Rubric</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/emse-madd-gwu/2022-Fall/edit/main/project/7-final-presentation.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/emse-madd-gwu/2022-Fall/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -359,6 +384,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -368,9 +394,91 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 
 </div>
-<p>Coming soon!</p>
+<div class="cell" data-layout-align="center">
+
+</div>
+<blockquote class="blockquote">
+<p><strong>Due</strong>: Dec 14 by 11:59pm</p>
+<p><strong>Weight</strong>: This assignment is worth 8% of your final grade.</p>
+<p><strong>Assessment</strong>: Your submission will be assessed using the <a href="#grading-rubric">rubric</a> at the bottom of this page.</p>
+</blockquote>
+<p>Prepare a 10-minute presentation of your findings in your final report. <strong>You may choose to either present your presentation live in class on December 14, 2022 or pre-record your video to watch in class</strong>. Each team should prepare to answer questions from the audience during class. As always, you may call in to class on Zoom if you cannot be present in person, but I do expect everyone to be present (in person or virtually) for your presentation. Below is a list of specific items your presentation should include.</p>
+<section id="format" class="level2">
+<h2 class="anchored" data-anchor-id="format">1. Format</h2>
+<ul>
+<li>Your presentation should be no longer than 10 minutes in length.</li>
+<li>Each team member must present at least one slide.</li>
+<li>You may use as many slides as you feel helps you communicate your ideas (but keep the 10 minute limit in mind).</li>
+<li>Your title slide should include the project title, team member names, and the presentation date: December 15, 2021.</li>
+<li>All slides should be numbered in the bottom-left or bottom-right corners.</li>
+<li>Review the slide design guidelines discussed in <a href="https://madd.seas.gwu.edu/2022-Fall/class/14-class-review.html">class</a> as a check list when designing your slides.</li>
+</ul>
+</section>
+<section id="content" class="level2">
+<h2 class="anchored" data-anchor-id="content">2. Content</h2>
+<p>Your slides do not need to include the detailed code used to conduct your analysis - that should be accessible from your report. Rather, the purpose of your presentation is to present the “big picture” overview and results from your project. You should discuss:</p>
+<ol type="1">
+<li>An introduction of your product / policy (similar to the introduction in your report).</li>
+<li>A brief overview of your survey:
+<ul>
+<li>At least one slide depicting an example choice question</li>
+<li>At least one slide with some summary stats about your sample (e.g., sample size, etc.)</li>
+</ul></li>
+<li>Your main findings:
+<ul>
+<li>Polished charts of WTP, market simulations, sensitivity analyses.</li>
+<li>Your recommendations based on your findings.</li>
+</ul></li>
+</ol>
+</section>
+<section id="publish-and-submit" class="level2">
+<h2 class="anchored" data-anchor-id="publish-and-submit">3. Publish and submit</h2>
+<p>If you chose to pre-record your video, publish it somewhere on the web (e.g.&nbsp;via Youtube, Vimeo, etc.). This will make it easier to share your presentation video during class presentations. Only one team member needs to publish the video.</p>
+<p>Create a zip file of everything you used to make your presentation (e.g.&nbsp;.ppt slides) . Name your file <code>final-presentation.zip</code>, then go to your team Box folder and submit your zip file in the “submissions” folder. Only one person from your team should submit the report.</p>
+<p><strong>If you recorded your video, also send a link to the published video in a DM to Professor Helveston on slack</strong></p>
+</section>
+<section id="grading-rubric" class="level1">
+<h1>Grading Rubric</h1>
+<p><strong>35 Total Points</strong></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Category </th>
+   <th style="text-align:left;"> Excellent </th>
+   <th style="text-align:left;"> Good </th>
+   <th style="text-align:left;"> Needs work </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Slide Design </td>
+   <td style="text-align:left;"> <b>10 / 9</b><br>Slides are well-designed and well-organized to effectively communicate a coherent story on the project findings; design guidelines are followed. </td>
+   <td style="text-align:left;"> <b>8 / 7 / 6</b><br>Slides are largely well-designed and well-organized, but some include distracting or confusing elements; story is not fully coherent; design guidelinees are mostly followed. </td>
+   <td style="text-align:left;"> <b>5 / 4 / 3</b><br>Slides are poorly-designed and organized; frequent use of bullets and lots of text; story is poorly developed and / or does not clearly communicate findings; design guidelines are largely ignored. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Content </td>
+   <td style="text-align:left;"> <b>15 / 14</b><br>All required content is included, including a clear and concise introduction, an overview of the survey, and clear results with well-designed figures that communicate findings and recommendations. </td>
+   <td style="text-align:left;"> <b>13 / 12</b><br>Most required content is included, including an introduction, an overview of the survey, and results with well-designed figures that communicate findings and recommendations. Some charts may be sub-par and unclear, and some recommendations may not be clearly connected to the research results. </td>
+   <td style="text-align:left;"> <b>11 / 10 / 9</b><br>Multiple required content elements are missing, including an introduction, an overview of the survey, and results with figures that communicate findings and recommendations. Most charts are unclear and recommendations are not be connected to or supported by the research results. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Communication </td>
+   <td style="text-align:left;"> <b>10 / 9</b><br>Engaging speaking; all team members participate; findings and recommendations clearly presented; adequately responsed to audience questions. </td>
+   <td style="text-align:left;"> <b>8 / 7 / 6</b><br>Speaking is somewhat engaging; most team members participated; findings and recommendations presented but some unclear; responsed to audience questions, but did not fully answer question(s). </td>
+   <td style="text-align:left;"> <b>5 / 4 / 3</b><br>Speaking is not engaging; not all team members participate; findings and recommendations are poorly presented and / or not justified by presented results; poor responses to audience questions. </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -414,7 +522,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -450,24 +575,42 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var filterRegex = new RegExp(/https:\/\/madd\.seas\.gwu\.edu\/2022-Fall\//);
@@ -475,7 +618,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
-    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
