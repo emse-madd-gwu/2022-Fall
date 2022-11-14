@@ -6,8 +6,6 @@ toc-location: left
 params:
   number: 7
   weight: '8%'
-  purpose: 'I guarantee you one day you will need to present the results of a project you have worked on to someone in a professional settings, so this is an opportunity to practice that before stakes are higher.'
-  assessment: 'Your proposal will be assessed using [this rubric](../rubrics/final-presentation/rubric.qmd){target="_blank"}.'
 ---
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
@@ -21,4 +19,55 @@ maxPoints <- rubric %>%
     pull(max)
 ```
 
-Coming soon!
+```{r child = here::here("fragments", "project.qmd")}
+```
+
+Prepare a 10-minute presentation of your findings in your final report. **You may choose to either present your presentation live in class on December 14, 2022 or pre-record your video to watch in class**. Each team should prepare to answer questions from the audience during class. As always, you may call in to class on Zoom if you cannot be present in person, but I do expect everyone to be present (in person or virtually) for your presentation. Below is a list of specific items your presentation should include.
+
+## 1. Format
+
+- Your presentation should be no longer than 10 minutes in length.
+- Each team member must present at least one slide.
+- You may use as many slides as you feel helps you communicate your ideas (but keep the 10 minute limit in mind).
+- Your title slide should include the project title, team member names, and the presentation date: December 15, 2021.
+- All slides should be numbered in the bottom-left or bottom-right corners.
+- Review the slide design guidelines discussed in [class](https://madd.seas.gwu.edu/2022-Fall/class/14-class-review.html) as a check list when designing your slides.
+
+## 2. Content
+
+Your slides do not need to include the detailed code used to conduct your analysis - that should be accessible from your report. Rather, the purpose of your presentation is to present the "big picture" overview and results from your project. You should discuss:
+
+1. An introduction of your product / policy (similar to the introduction in your report).
+2. A brief overview of your survey:
+    - At least one slide depicting an example choice question
+    - At least one slide with some summary stats about your sample (e.g., sample size, etc.)
+3. Your main findings:
+    - Polished charts of WTP, market simulations, sensitivity analyses.
+    - Your recommendations based on your findings.
+
+## 3. Publish and submit
+
+If you chose to pre-record your video, publish it somewhere on the web (e.g. via Youtube, Vimeo, etc.). This will make it easier to share your presentation video during class presentations. Only one team member needs to publish the video.
+
+Create a zip file of everything you used to make your presentation (e.g. .ppt slides) . Name your file `final-presentation.zip`, then go to your team Box folder and submit your zip file in the "submissions" folder. Only one person from your team should submit the report.
+
+**If you recorded your video, also send a link to the published video in a DM to Professor Helveston on slack**
+
+# Grading Rubric
+
+**`r maxPoints` Total Points**
+
+```{r, echo=FALSE}
+rubric %>%
+  mutate(description = paste0("<b>", points, '</b><br>', description)) %>%
+  select(-points) %>%
+  spread(key = rating, value = description) %>%
+  select(-category) %>%
+  rename(Category = label) %>%
+  arrange(order) %>%
+  select(-order) %>%
+  select(-maxPoints) %>%
+  kable(format = 'html', escape = FALSE) %>%
+  kable_styling(bootstrap_options = "striped")
+```
+

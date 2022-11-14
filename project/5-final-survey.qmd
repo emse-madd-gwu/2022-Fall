@@ -19,10 +19,6 @@ maxPoints <- rubric %>%
     pull(max)
 ```
 
-```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
-source(here::here("R", "settings.R"))
-```
-
 ```{r child = here::here("fragments", "project.qmd")}
 ```
 
