@@ -410,7 +410,7 @@
     "href": "project/5-final-survey.html#upload-your-content-to-formr.org",
     "title": "Final Survey",
     "section": "3. Upload your content to formr.org",
-    "text": "3. Upload your content to formr.org\nUsing your team google and formr accounts:\n\nCreate a new Google Sheet for each of your survey .Rmd files. You may directly copy and edit from your pilot survey sheets.\nUpload each sheet as a separate Survey in formr, then create a Run linking the surveys together. Be sure to carefully edit the Run settings such that respondents are appropriately screened out as desired.\nWhen you are confident that the Run is ready, turn the “volume” settings to the third setting (“People who have the link can access”)."
+    "text": "3. Upload your content to formr.org\nUsing your team google and formr accounts:\n\nCreate a new Google Sheet for each of your survey .Rmd files. You may directly copy and edit from your pilot survey sheets.\nUpload each sheet as a separate Survey in formr, then create a Run linking the surveys together. Be sure to carefully edit the Run settings such that respondents are appropriately screened out as desired.\nWhen you are confident that the Run is ready, turn the “volume” settings to the third setting (“People who have the link can access”).\nSend the link to Professor Helveston in a message on slack (only one team member)."
   },
   {
     "objectID": "project/5-final-survey.html#knit-and-submit",
