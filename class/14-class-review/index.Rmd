@@ -1169,3 +1169,15 @@ countdown(
 - Compute sensitivities to price and other attributes. 
 
 ]]
+ 
+---
+
+class: center, middle, inverse
+
+## Fill out course evals: https://gwu.smartevals.com/
+
+### (please be specific!)
+
+<center>
+<img src="https://media.tenor.com/images/76f5c6f0db05171eef3ee586eba77410/tenor.gif" width=600>
+</center>
