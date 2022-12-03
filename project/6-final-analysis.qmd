@@ -148,7 +148,17 @@ Your appendix should include:
 - A full copy of your conjoint survey (for the conjoint choice questions, include just one example since the specific levels were different for each choice question).
 - Any other supplementary information that could not be included into the main report.
 
-## 4. Knit and submit
+## 4. Review your teammates
+
+On Blackboard under the assignment titled "Team Member Review", submit a short description of the specific contributions of each team member in your team (this is one of the only things I'll ask for on Blackboard). Here is an example review:
+
+```
+Student A identified the data source and wrote the documentation for it. Student B led the data cleaning process and did much of the initial data exploration. Student C helped write code for the main visualizations.
+```
+
+These reviews will be kept confidential and compared to assess that the workload and grading for team members are equitable. Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates.
+
+## 5. Knit and submit
 
 Click the "knit" button to compile your `report.Rmd` file into a html web page, then create a zip file of everything in your pilot analysis folder. Name your file `final-analysis.zip`, then go to your team Box folder and submit your zip file in the "submissions" folder. Only one person from your team should submit the report.
 
