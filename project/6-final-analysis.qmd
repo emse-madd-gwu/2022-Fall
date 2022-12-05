@@ -150,13 +150,32 @@ Your appendix should include:
 
 ## 4. Review your teammates
 
-On Blackboard under the assignment titled "Team Member Review", submit a short description of the specific contributions of each team member in your team (this is one of the only things I'll ask for on Blackboard). Here is an example review:
+(this is one of the only things I'll ask for on Blackboard)
+
+On Blackboard under the assignment titled "Team Member Review", write a short description of the specific contributions the team member made throughout the whole project (from proposal to the final report). Note down if there are any team members you feel have done an exceptional job (gone beyond what was required) or have not contributed in a significant way (e.g. does not respond to team communications, turns in parts they are responsible for late or never).
+
+These reviews will be kept confidential and compared to assess that the workload and grading for team members are equitable. Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their teammates.
+
+Here is an example review:
 
 ```
-Student A identified the data source and wrote the documentation for it. Student B led the data cleaning process and did much of the initial data exploration. Student C helped write code for the main visualizations.
+John:
+
+- Wrote most of the introduction of the final report.
+- Helped with initial data cleaning.
+
+Jane:
+
+ - Led the integration of the survey on formr.org.
+ - Made most of the final charts in the report.
+
+Paul:
+
+- Wrote code for the final, polished visualizations.
+- Estimated all models.
+- Did most of the remaining writing of the final report.
 ```
 
-These reviews will be kept confidential and compared to assess that the workload and grading for team members are equitable. Team members who do not make meaningful contributions to their projects will not receive the same grade as that of their team mates.
 
 ## 5. Knit and submit
 
