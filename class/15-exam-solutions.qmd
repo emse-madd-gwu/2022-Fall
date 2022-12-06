@@ -1,7 +1,7 @@
 ---
-title: "Exam Solutions"
+title: "Communicating Results"
 params:
-  class: "15-exam-solutions"
+  class: "15-communicating-results"
   logitrcars: FALSE
   formr4conjoint: FALSE
 ---
@@ -10,4 +10,5 @@ params:
 source(here::here("R", "settings.R"))
 ```
 
-All we're doing today is going over the exam and then spending the rest of class working on your final analysis, report, and presentation!
+```{r child = here::here("fragments", "class.qmd")}
+```
