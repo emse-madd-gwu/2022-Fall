@@ -112,11 +112,11 @@ Final grades will be calculated as follows:
 <div style="width:550px">
 Item                  | Weight | Notes
 ----------------------|--------|-------------------------------------
-Reflections           | 27 %   | Weekly assignment (10 x 3%, lowest dropped)
-Quizzes               | 8 %    | 5 quizzes, lowest dropped
+Reflections           | 30 %   | Weekly assignment (10 x 3%, lowest dropped)
+Quizzes               | 9 %    | 5 quizzes, lowest dropped
 Project Proposal      | 6 %    | Teams of 3-4 students
-Survey Plan           | 4 %    |
-Pilot Survey          | 4 %    |
+Survey Plan           | 5 %    |
+Pilot Survey          | 5 %    |
 Pilot Analysis        | 8 %    |
 Final Survey          | 5 %    |
 Final Analysis Report | 14 %   |
