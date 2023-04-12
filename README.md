@@ -38,3 +38,4 @@ website](https://madd.seas.gwu.edu/2022-Fall/).
 This course was inspired by many other courses / resources that cover
 similar material - see the course [about
 page](https://madd.seas.gwu.edu/2022-Fall/about.html) for more details.
+
