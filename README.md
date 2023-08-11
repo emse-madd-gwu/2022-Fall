@@ -1,12 +1,7 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-## EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022 <a href='https://github.com/emse-madd-gwu/2021-Fall'><img src='images/logo.png' align="right" height="139"/></a>
+## EMSE 6035: Marketing Analytics for Design Decisions - Fall 2022 <a href='https://madd.seas.gwu.edu/2022-Fall/'><img src='images/logo.png' align="right" height="139"/></a>
 
 <!-- badges: start -->
-
-![Render & Deploy
-Site](https://github.com/emse-madd-gwu/2022-Fall/workflows/Render%20&%20Deploy%20Site/badge.svg)
 [![License: CC-BY-SA
 4.0](https://img.shields.io/badge/License-CC%20BY--SA-lightgrey)](https://creativecommons.org/licenses/by-sa/4.0/)
 <!-- badges: end -->
